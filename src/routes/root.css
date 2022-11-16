@@ -1,0 +1,113 @@
+@font-face {
+    font-display: swap;
+    font-family: "Pretendard";
+    src: url("$assets/fonts/PretendardVariable.woff2") format("woff2");
+}
+
+:root {
+    --c-accent: #FFFFFF;
+    --c-foreground: #F5F2E5;
+    --c-foreground-dark: #aaaaaa;
+    --c-background: #06161E;
+
+    max-width: 50em;
+    padding: 8rem 1em;
+    margin: 0 auto;
+    color: var(--c-foreground);
+    background-color: var(--c-background);
+    font-family: "Pretendard", sans-serif;
+    font-variation-settings: "wght" 300;
+    line-height: 1.8;
+    word-break: keep-all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-variation-settings: "wght" 700;
+}
+
+a {
+    border-bottom: 1px solid transparent;
+    color: var(--c-accent);
+    outline: none;
+    text-decoration: none;
+}
+
+strong {
+    font-variation-settings: "wght" 500;
+}
+
+::selection {
+    background: var(--c-accent);
+    color: var(--c-background);
+}
+
+@media (width >= 960px) {
+    :root {
+        font-size: 1.125rem;
+    }
+}
+
+article.post {
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+        line-height: 1.4;
+    }
+
+    & h1 {
+        font-size: 3em;
+    }
+
+    @media (width <= 600px) {
+        & h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    & h2 {
+        font-size: 1.8em;
+    }
+
+    & ol,
+    & ul {
+        padding-left: 1em;
+    }
+
+    & img {
+        max-width: 100%;
+    }
+
+    & img[src*="#screenshot"] {
+        width: 100%;
+        margin: auto 1em auto;
+    }
+
+    & img[src*="#avatar"] {
+        width: 15%;
+        margin: auto 0.5em auto;
+    }
+
+    & img[src*="#bundle"] {
+        width: 80%;
+        margin: auto 0.5em auto;
+    }
+
+    & div[slot="image"] {
+        text-align: center;
+    }
+
+    & .bundles {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
