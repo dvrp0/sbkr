@@ -8,13 +8,24 @@
 </svelte:head>
 
 <article class="post">
-    <img alt="패치노트 이미지" src={headerImage} />
+    <img class="header" alt="패치노트 이미지" src={headerImage} />
     <h1>{title}</h1>
     <slot />
 </article>
 
 <style>
-    img {
+    .header {
+        width: 70rem;
         margin-bottom: -10%;
+        margin-left: calc((70em - 100%) / 2 * -1);
+        margin-right: calc((70em - 100%) / 2 * -1);
+    }
+
+    @media (max-width: 83rem) {
+        .header {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 </style>
