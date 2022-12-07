@@ -1,11 +1,14 @@
 ---
 title: 2022 11월 업데이트
+publishedAt: 2022/11
 headerImage: https://cdn.sanity.io/images/5hlpazgd/production/26106c4bb080b59079e421798884fd57f41ba58b-1920x622.png
+summary: 11월에는 신규 카드 2장이 추가되고, 일부 밸런스가 조정되며, 다양한 프리미엄 상품이 판매됩니다.
 ---
 
 <script>
     import Old from "$components/Old.svelte";
     import ImageBlock from "$components/ImageBlock.svelte";
+    import ImageList from "$components/ImageList.svelte";
     import Icon from "$components/Icon.svelte";
     import Card from "$components/Card.svelte";
 </script>
@@ -60,10 +63,7 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
   - 11월 10일에 시작하는 워리어 난투는 저주받은 묘지 난투입니다.
   - 11월 17일에 시작하는 워리어 난투는 전선 기술자 난투입니다.
 
-<ImageBlock align="right">
-    <div slot="image">
-        <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/7777bf0a7d2d316bedf1aa9e1438e19bb2024ac2-1125x2436.jpg#screenshot" />
-    </div>
+<ImageBlock position="right" src="https://cdn.sanity.io/images/5hlpazgd/production/7777bf0a7d2d316bedf1aa9e1438e19bb2024ac2-1125x2436.jpg#screenshot">
 
 또한 할로윈 이벤트의 일환으로 **으스스한 호박**이라는 특별 난투가 진행됩니다. 이 난투에서는 적 유닛이 사망할 때마다 으스스한 호박 건물이 소환됩니다. 이 건물은 특별한 조건을 충족하면 폭발하며, 난투 난이도에 따라 3/5/7 체력을 가집니다.
 
@@ -85,13 +85,11 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
 
 각각의 으스스한 호박 난투에서 6번째 업적을 달성하면 특별 할로윈 아바타를 획득하실 수 있습니다.
 
-<ImageBlock>
-    <div slot="image">
-        <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/7f621d062fb65dbbe358ce437b9a22d3e925abb5-568x621.png#avatar" />
-        <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/ff2feac75d70fcc0cd764698e755a10f64df7842-568x622.png#avatar" />
-        <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/198a61715df0387ab685c6b42631ba2903ab6521-568x622.png#avatar" />
-    </div>
-</ImageBlock>
+<ImageList srcs={[
+    "https://cdn.sanity.io/images/5hlpazgd/production/7f621d062fb65dbbe358ce437b9a22d3e925abb5-568x621.png#avatar",
+    "https://cdn.sanity.io/images/5hlpazgd/production/ff2feac75d70fcc0cd764698e755a10f64df7842-568x622.png#avatar",
+    "https://cdn.sanity.io/images/5hlpazgd/production/198a61715df0387ab685c6b42631ba2903ab6521-568x622.png#avatar"
+]} />
 
 ## 이벤트
 ### 할로윈 (10월 27일 ~ 11월 6일)
@@ -109,10 +107,7 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
 이벤트 기간 동안 한 번만 구매할 수 있는 특별 상품이 판매될 예정입니다.
 
 <div class="bundles">
-<ImageBlock align="top" type="vertical">
-    <div slot="image">
-        <img alt="번들" src="https://cdn.sanity.io/images/5hlpazgd/production/123abb43cf2bf38ca5c8fbb2513431eff46b0d20-1047x642.png?fit=max&auto=format&q=90#bundle" />
-    </div>
+<ImageBlock position="top" type="vertical" src="https://cdn.sanity.io/images/5hlpazgd/production/123abb43cf2bf38ca5c8fbb2513431eff46b0d20-1047x642.png?fit=max&auto=format&q=90#bundle">
 
 **쏟아지는 고양이 번들 ($9.99)**
   - 해적 고양이 아바타
@@ -120,10 +115,7 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
   - 클래식 고서 3개
 
 </ImageBlock>
-<ImageBlock align="top" type="vertical">
-    <div slot="image">
-        <img alt="번들" src="https://cdn.sanity.io/images/5hlpazgd/production/fb371224f52e53aa2ad2e1f2d659fcc8de266035-1047x642.png?fit=max&auto=format&q=90#bundle" />
-    </div>
+<ImageBlock position="top" type="vertical" src="https://cdn.sanity.io/images/5hlpazgd/production/fb371224f52e53aa2ad2e1f2d659fcc8de266035-1047x642.png?fit=max&auto=format&q=90#bundle">
 
 **에드릭의 군대 번들 ($19.99)**
   - 힙스터 아바타
@@ -131,20 +123,14 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
   - 지난 3달 동안 가장 많이 플레이된 카드 18장
 
 </ImageBlock>
-<ImageBlock align="top" type="vertical">
-    <div slot="image">
-        <img alt="번들" src="https://cdn.sanity.io/images/5hlpazgd/production/b13361e8db57188497ef79941c6e0a3496d011b4-1047x642.png?fit=max&auto=format&q=90#bundle" />
-    </div>
+<ImageBlock position="top" type="vertical" src="https://cdn.sanity.io/images/5hlpazgd/production/b13361e8db57188497ef79941c6e0a3496d011b4-1047x642.png?fit=max&auto=format&q=90#bundle">
 
 **영웅의 증표 번들 ($49.99)**
   - 뽀글머리 아바타
   - 영웅의 고서 35개
 
 </ImageBlock>
-<ImageBlock align="top" type="vertical">
-    <div slot="image">
-        <img alt="번들" src="https://cdn.sanity.io/images/5hlpazgd/production/bc14aeecb10f96584b9ef3e494d9af2fc2f3d7bb-1047x642.png?fit=max&auto=format&q=90#bundle" />
-    </div>
+<ImageBlock position="top" type="vertical" src="https://cdn.sanity.io/images/5hlpazgd/production/bc14aeecb10f96584b9ef3e494d9af2fc2f3d7bb-1047x642.png?fit=max&auto=format&q=90#bundle">
 
 **최고의 보물 번들 ($99.99)**
   - 외눈박이 아바타
@@ -154,14 +140,12 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
 
 </ImageBlock>
 </div>
-<ImageBlock>
-    <div slot="image" class="bundles">
-        <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/6da66095e4cb7bfe1826f22c54af392536f1c3bf-400x500.png?fit=max&auto=format&q=90#avatar" />
-        <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/141cbb8ace7384cebcbd6ff1959047feb63b5e9d-400x500.png?fit=max&auto=format&q=90#avatar" />
-        <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/a1d047e94985e3ae8c1727e932319cdae2c6dea3-400x500.png?fit=max&auto=format&q=90#avatar" />
-        <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/d9202e15b28b3679f1b128e44bb04a0e3f33ec68-400x500.png?fit=max&auto=format&q=90#avatar" />
-    </div>
-</ImageBlock>
+<ImageList srcs={[
+    "https://cdn.sanity.io/images/5hlpazgd/production/6da66095e4cb7bfe1826f22c54af392536f1c3bf-400x500.png?fit=max&auto=format&q=90#avatar",
+    "https://cdn.sanity.io/images/5hlpazgd/production/141cbb8ace7384cebcbd6ff1959047feb63b5e9d-400x500.png?fit=max&auto=format&q=90#avatar",
+    "https://cdn.sanity.io/images/5hlpazgd/production/a1d047e94985e3ae8c1727e932319cdae2c6dea3-400x500.png?fit=max&auto=format&q=90#avatar",
+    "https://cdn.sanity.io/images/5hlpazgd/production/d9202e15b28b3679f1b128e44bb04a0e3f33ec68-400x500.png?fit=max&auto=format&q=90#avatar"
+]} />
 
 무엇보다 이벤트 기간 동안 고결의 책을 포함한 모든 책에서 카드 1장이 추가로 지급됩니다. 또한 코인을 구매하면 10~30%의 코인을, 루비를 구매하면 10~60%의 루비를 추가로 지급되며, 획득하는 모든 코인(퀘스트 제외) 및 일일 코인 획득 제한량이 2배로 증가합니다.
 
@@ -189,7 +173,7 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
 
 한 턴에서 여러 장의 카드를 사용하거나 교체하면 턴이 종료될 때 그만큼의 카드를 뽑게 되며, 그때마다 덱에 있는 모든 카드의 가중치가 재계산됩니다. 수집가 머즈가 생성하는 카드의 경우는 가중치가 1입니다.
 
-빛의 인도자 가르디가 생성하는 카드는 독자적인 가중치 기반 드로우 알고리즘을 사용합니다. 11월 2일에 밸런스 변경점이 적용될 때 정상적인 수준으로 완화될 예정입니다(will now be tuned down). (***역주:*** *가르디가 생성한 사원들은 굉장히 빠르게 손에 들어와서 버그 아니냐고 말이 많았습니다*)
+빛의 인도자 가르디가 생성하는 카드는 독자적인 가중치 기반 드로우 알고리즘을 사용합니다. 11월 2일에 밸런스 변경점이 적용될 때 정상적인 수준으로 완화될 예정입니다. (***역주:*** *가르디가 생성한 사원들은 굉장히 빠르게 손에 들어와서 버그 아니냐고 말이 많았습니다*)
 
 드로우 메커니즘은 대략 다음과 같이 동작합니다.
 
@@ -199,10 +183,7 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
   4. 첫 핸드를 구성하기 위해 카드 4장을 가중치 랜덤으로 뽑습니다. 가중치 랜덤이기 때문에, 높은 가중치를 가진 카드가 뽑힐 확률이 높지만 반드시 뽑히지는 않습니다.
 
 ## 새로운 VS 애니메이션
-<ImageBlock align="right">
-    <div slot="image">
-        <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/73d0ebb1c28c3ac7fda11949b03b9ad01760cf24-883x1767.jpg?fit=max&auto=format&q=90#screenshot" />
-    </div>
+<ImageBlock position="right"  src="https://cdn.sanity.io/images/5hlpazgd/production/73d0ebb1c28c3ac7fda11949b03b9ad01760cf24-883x1767.jpg?fit=max&auto=format&q=90#screenshot">
 
 이번 업데이트에서 새로운 "그 상대는" 애니메이션이 추가됩니다. 화면 중단에 등장하며 회전하는 흰색 선과 함께 "VS" 텍스트가 나타납니다.
 

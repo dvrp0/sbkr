@@ -1,11 +1,14 @@
 ---
 title: 2022 12월 업데이트
+publishedAt: 2022/12
 headerImage: https://cdn.sanity.io/images/5hlpazgd/production/5da4aa3aadb504731d8ec0fc976eaee37c3e2a65-1920x622.png
+summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프를 포함해 밸런스가 조정되며, 다양한 상품들이 판매됩니다.
 ---
 
 <script>
     import Old from "$components/Old.svelte";
     import ImageBlock from "$components/ImageBlock.svelte";
+    import ImageList from "$components/ImageList.svelte";
     import Icon from "$components/Icon.svelte";
     import Card from "$components/Card.svelte";
 </script>
@@ -89,26 +92,22 @@ headerImage: https://cdn.sanity.io/images/5hlpazgd/production/5da4aa3aadb504731d
 
 마지막으로 12월 22일에 시작하는 난투의 입장료가 50% 감소합니다(패스 보유 시 60%).
 
-<ImageBlock>
-    <div slot="image">
-        <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/3d45211e6f5c605f950db04b6309e9614a0266d2-512x512.png#avatar" />
-        <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/95184beb6caa4613b4562f15b9b1365d3a35d2cc-512x512.png#avatar" />
-        <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/c361460507e970d5dc0fafbf83799da25d8cb73f-512x512.png#avatar" />
-    </div>
-</ImageBlock>
+<ImageList srcs={[
+    "https://cdn.sanity.io/images/5hlpazgd/production/3d45211e6f5c605f950db04b6309e9614a0266d2-512x512.png#avatar",
+    "https://cdn.sanity.io/images/5hlpazgd/production/95184beb6caa4613b4562f15b9b1365d3a35d2cc-512x512.png#avatar",
+    "https://cdn.sanity.io/images/5hlpazgd/production/c361460507e970d5dc0fafbf83799da25d8cb73f-512x512.png#avatar"
+]} />
 
 ## 크리스마스 이벤트
 작년처럼 크리스마스 이벤트가 12월 22일부터 1월 1일까지 진행됩니다.
 
 다른 연휴 이벤트와 마찬가지로 한 번만 구매할 수 있는 특별 상품이 판매될 예정입니다. 크리스마스 특별 상품은 12월 22일부터 구매 가능하며, 각 상품에는 크리스마스 아바타 하나씩이 포함됩니다.
 
-<ImageBlock>
-    <div slot="image">
-        <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/25f924ea54d9990337397dc386cf2edac58bc19c-512x512.png#avatar" />
-        <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/77826899fb3090b6a7a87ba73f2941eedc55fade-512x512.png#avatar" />
-        <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/bae2fabdb2b66a08740955a68070f298adf17df0-512x512.png#avatar" />
-    </div>
-</ImageBlock>
+<ImageList srcs={[
+    "https://cdn.sanity.io/images/5hlpazgd/production/25f924ea54d9990337397dc386cf2edac58bc19c-512x512.png#avatar",
+    "https://cdn.sanity.io/images/5hlpazgd/production/77826899fb3090b6a7a87ba73f2941eedc55fade-512x512.png#avatar",
+    "https://cdn.sanity.io/images/5hlpazgd/production/bae2fabdb2b66a08740955a68070f298adf17df0-512x512.png#avatar"
+]} />
 
 무엇보다 이벤트 기간 동안 모든 책(고결 포함, 겸손 제외)에서 카드 1장이 추가로 지급되며, 코인과 루비 구매 시 30%를 추가로 획득하실 수 있습니다. 크리스마스 이벤트 기간 중에 로그인하시면 40 루비와 400 코인을 드립니다.
 
@@ -121,13 +120,11 @@ headerImage: https://cdn.sanity.io/images/5hlpazgd/production/5da4aa3aadb504731d
 
 포인트를 모음으로써 업적 단계에 도달해 재화를 획득할 수 있습니다. 업적 단계가 높을수록 포인트 요구치가 높아지지만 보상 또한 증가합니다. 업적 단계에 도달하면 보상을 획득할 수 있고 다음 업적 단계에 대한 포인트가 0으로 초기화됩니다.
 
-<ImageBlock allowImagesOverflow>
-    <div slot="image">
-        <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/b539a810fdfed2715bda56cb47055b9cbcc3f12c-1080x1920.png#screenshot" />
-        <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/94a9cfabae6516d22df0ad508a65e00513592c93-1080x1920.png#screenshot" />
-        <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/851978ec197a15c24335e4b0d71c93ec944a28b7-1080x1920.png#screenshot" />
-    </div>
-</ImageBlock>
+<ImageList isScreenshots srcs={[
+    "https://cdn.sanity.io/images/5hlpazgd/production/b539a810fdfed2715bda56cb47055b9cbcc3f12c-1080x1920.png#screenshot",
+    "https://cdn.sanity.io/images/5hlpazgd/production/94a9cfabae6516d22df0ad508a65e00513592c93-1080x1920.png#screenshot",
+    "https://cdn.sanity.io/images/5hlpazgd/production/851978ec197a15c24335e4b0d71c93ec944a28b7-1080x1920.png#screenshot"
+]} />
 
 ## 자주 묻는 질문
 ### 언제 업데이트가 진행되나요?

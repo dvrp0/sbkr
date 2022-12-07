@@ -12,13 +12,8 @@
     export let isMultiple: boolean = false;
     export let count: number = 5;
 
-    let cardImage: string = "";
+    let cardImage: string = `/images/${faction}-${rarity == "legendary" ? "legendary" : ""}${type}.webp`;;
     let levels: number[] = Array(count);
-
-    if (rarity == "legendary")
-        cardImage = `/src/assets/images/${faction}-legendary${type}.webp`;
-    else
-        cardImage = `/src/assets/images/${faction}-${type}.webp`;
 
     function unpack(value: any, index: number)
     {
@@ -47,7 +42,7 @@
                 </div>
                 <div class="levels">
                     <div class="rarity">
-                        <img alt="희귀도" src="/src/assets/images/{rarity}_{i + 1}.webp" />
+                        <img alt="희귀도" src="/images/{rarity}_{i + 1}.webp" />
                     </div>
                     <p class="level {rarity} {type}">레벨 {i + 1}</p>
                 </div>
@@ -61,7 +56,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
 
     .container {
-        margin: 0.5rem calc(((70rem - 100%) / 2 * -1) - 1.25rem);
+        margin: 2rem calc(((70rem - 100%) / 2 * -1) - 1.25rem);
     }
 
     .cards {
@@ -212,7 +207,7 @@
     @media (max-width: 60rem) {
         .container {
             font-size: 6vw;
-            margin: 0 auto;
+            margin: 2rem auto;
         }
 
         .cards {
@@ -226,7 +221,7 @@
         }
 
         .rarity img {
-            width: 100%;
+            width: 60%;
         }
     }
 </style>

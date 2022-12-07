@@ -59,10 +59,12 @@ article.post {
 
     & h1 {
         font-size: 3rem;
+        text-align: center;
     }
 
     & h2 {
         font-size: 1.8rem;
+        margin-top: 4rem;
     }
 
     & ol,
@@ -71,10 +73,11 @@ article.post {
     }
 
     & img[src*="#screenshot"] {
-        width: 20rem;
+        max-width: 21.7em;
+        margin: auto 1.25em;
 
-        @media (width > 50rem) {
-            margin: auto 1rem;
+        @media (width <= 60rem) {
+            margin: auto;
         }
     }
 
@@ -85,11 +88,7 @@ article.post {
 
     & img[src*="#bundle"] {
         width: 80%;
-        margin: auto 0.5rem;
-    }
-
-    & div[slot="image"] {
-        text-align: center;
+        /* margin: auto 0.5rem; */
     }
 
     & .bundles {
