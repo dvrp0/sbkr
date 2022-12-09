@@ -8,7 +8,7 @@ summary: 11월에는 신규 카드 2장이 추가되고, 일부 밸런스가 조
 <script>
     import Old from "$components/Old.svelte";
     import ImageBlock from "$components/ImageBlock.svelte";
-    import ImageList from "$components/ImageList.svelte";
+    import FlexibleList from "$components/FlexibleList.svelte";
     import Icon from "$components/Icon.svelte";
     import Card from "$components/Card.svelte";
 </script>
@@ -53,7 +53,7 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
     "내 턴 시작 시, 양쪽 타일에 <strong>3 체력</strong> 언데드를 <strong>소환</strong>합니다"
 ]} />
 
-각 신규 카드마다 특별 상품이 판매될 예정입니다. 카드 10장, 750 코인, 5 합성석을 획득할 수 있습니다.
+각 신규 카드마다 특별 상품이 판매될 예정입니다. 카드 10장, <Icon type="coin" /> 750 코인, <Icon type="stone" /> 5 합성석을 획득할 수 있습니다.
 
 ## 신규 난투
 저번 달과 같이 2장의 신규 카드를 위한 신규 난투들이 추가됩니다. 저희는 이러한 방식이 신규 카드를 본격적으로 모으기 전에 시도해보고 즐길 수 있는 좋은 방식이라고 생각합니다.
@@ -85,19 +85,47 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
 
 각각의 으스스한 호박 난투에서 6번째 업적을 달성하면 특별 할로윈 아바타를 획득하실 수 있습니다.
 
-<ImageList srcs={[
-    "https://cdn.sanity.io/images/5hlpazgd/production/7f621d062fb65dbbe358ce437b9a22d3e925abb5-568x621.png#avatar",
-    "https://cdn.sanity.io/images/5hlpazgd/production/ff2feac75d70fcc0cd764698e755a10f64df7842-568x622.png#avatar",
-    "https://cdn.sanity.io/images/5hlpazgd/production/198a61715df0387ab685c6b42631ba2903ab6521-568x622.png#avatar"
-]} />
+<FlexibleList disableVertical>
+    <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/7f621d062fb65dbbe358ce437b9a22d3e925abb5-568x621.png#avatar" />
+    <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/ff2feac75d70fcc0cd764698e755a10f64df7842-568x622.png#avatar" />
+    <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/198a61715df0387ab685c6b42631ba2903ab6521-568x622.png#avatar" />
+</FlexibleList>
 
 ## 이벤트
 ### 할로윈 (10월 27일 ~ 11월 6일)
-할로윈을 기념하는 의미에서 3종류의 프리미엄 번들이 판매될 예정입니다. 또한 이벤트 기간 동안 로그인하는 모든 분들께 20 루비를 드립니다.
+할로윈을 기념하는 의미에서 3종류의 프리미엄 번들이 판매될 예정입니다. 또한 이벤트 기간 동안 로그인하는 모든 분들께 <Icon type="ruby" /> 20 루비를 드립니다.
 
-  - **13가지 무서운 이야기 번들 ($79.99)**: 프랑켄슈타인의 괴물 아바타, 전설의 책 13개, 5000 코인, 500 루비, 50 합성석
-  - **과자 하나 주면 안 잡아먹지 번들 ($29.99)**: 귀여운 호박 아바타, 신화의 고서 6개, 영웅의 고서 6개, 클래식 고서 6개
-  - **마법 가마솥 번들 ($9.99)**: 마녀 고양이 아바타, 마법의 책 3개, 엘더의 책 3개, 300 코인, 30 루비
+<FlexibleList allowOverflow setFontSizeFixed>
+<ImageBlock position="top" type="vertical" src="https://cdn.sanity.io/images/5hlpazgd/production/f37998030f217b75810e3e5e9b402c8c7df84b0e-1047x642.png#bundle">
+
+**13가지 무서운 이야기 번들 ($79.99)**
+  - 프랑켄슈타인의 괴물 아바타
+  - 전설의 책 13개
+  - <Icon type="coin" /> 5000 코인
+  - <Icon type="ruby" /> 500 루비
+  - <Icon type="stone" /> 50 합성석
+
+</ImageBlock>
+<ImageBlock position="top" type="vertical" src="https://cdn.sanity.io/images/5hlpazgd/production/0bf8d8f0b885ea035f1c508a7dcb522801f4c965-1047x642.png#bundle">
+
+**과자 하나 주면 안 잡아먹지 번들 ($29.99)**
+  - 귀여운 호박 아바타
+  - 신화의 고서 6개
+  - 영웅의 고서 6개
+  - 클래식 고서 6개
+
+</ImageBlock>
+<ImageBlock position="top" type="vertical" src="https://cdn.sanity.io/images/5hlpazgd/production/6face8684fa3428338ea7e88cbca7c4383ab26a1-1047x642.png#bundle">
+
+**마법 가마솥 번들 ($9.99)**
+  - 마녀 고양이 아바타
+  - 마법의 책 3개
+  - 엘더의 책 3개
+  - <Icon type="coin" /> 300 코인
+  - <Icon type="ruby" /> 30 루비
+
+</ImageBlock>
+</FlexibleList>
 
 작년과 마찬가지로 11월 동안 특별한 주간 및 월간 사라지는 팩이 등장합니다.
 
@@ -106,7 +134,7 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
 ### 블랙 프라이데이 (11월 24일 ~ 11월 28일)
 이벤트 기간 동안 한 번만 구매할 수 있는 특별 상품이 판매될 예정입니다.
 
-<div class="bundles">
+<FlexibleList setFontSizeFixed>
 <ImageBlock position="top" type="vertical" src="https://cdn.sanity.io/images/5hlpazgd/production/123abb43cf2bf38ca5c8fbb2513431eff46b0d20-1047x642.png?fit=max&auto=format&q=90#bundle">
 
 **쏟아지는 고양이 번들 ($9.99)**
@@ -123,6 +151,8 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
   - 지난 3달 동안 가장 많이 플레이된 카드 18장
 
 </ImageBlock>
+</FlexibleList>
+<FlexibleList setFontSizeFixed>
 <ImageBlock position="top" type="vertical" src="https://cdn.sanity.io/images/5hlpazgd/production/b13361e8db57188497ef79941c6e0a3496d011b4-1047x642.png?fit=max&auto=format&q=90#bundle">
 
 **영웅의 증표 번들 ($49.99)**
@@ -139,20 +169,21 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
   - <Icon type="coin" /> 5000 코인
 
 </ImageBlock>
-</div>
-<ImageList srcs={[
-    "https://cdn.sanity.io/images/5hlpazgd/production/6da66095e4cb7bfe1826f22c54af392536f1c3bf-400x500.png?fit=max&auto=format&q=90#avatar",
-    "https://cdn.sanity.io/images/5hlpazgd/production/141cbb8ace7384cebcbd6ff1959047feb63b5e9d-400x500.png?fit=max&auto=format&q=90#avatar",
-    "https://cdn.sanity.io/images/5hlpazgd/production/a1d047e94985e3ae8c1727e932319cdae2c6dea3-400x500.png?fit=max&auto=format&q=90#avatar",
-    "https://cdn.sanity.io/images/5hlpazgd/production/d9202e15b28b3679f1b128e44bb04a0e3f33ec68-400x500.png?fit=max&auto=format&q=90#avatar"
-]} />
+</FlexibleList>
+
+<FlexibleList disableVertical>
+    <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/6da66095e4cb7bfe1826f22c54af392536f1c3bf-400x500.png?fit=max&auto=format&q=90#avatar" />
+    <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/141cbb8ace7384cebcbd6ff1959047feb63b5e9d-400x500.png?fit=max&auto=format&q=90#avatar" />
+    <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/a1d047e94985e3ae8c1727e932319cdae2c6dea3-400x500.png?fit=max&auto=format&q=90#avatar" />
+    <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/d9202e15b28b3679f1b128e44bb04a0e3f33ec68-400x500.png?fit=max&auto=format&q=90#avatar" />
+</FlexibleList>
 
 무엇보다 이벤트 기간 동안 고결의 책을 포함한 모든 책에서 카드 1장이 추가로 지급됩니다. 또한 코인을 구매하면 10~30%의 코인을, 루비를 구매하면 10~60%의 루비를 추가로 지급되며, 획득하는 모든 코인(퀘스트 제외) 및 일일 코인 획득 제한량이 2배로 증가합니다.
 
 마지막으로 11월 24일에 시작하는 난투의 입장료가 50% 감소합니다. (패스 보유 시 60%)
 
 ## 신규 로그인 시스템 베타
-신규 로그인 시스템이 안드로이드와 iOS에서 출시될 준비가 거의 완료되었습니다. 오류가 없음을 확인하기 위해 추가 테스트를 진행하려고 합니다. 테스트에 신청해 새로운 시스템을 먼저 경험하고 50 루비를 획득하세요!
+신규 로그인 시스템이 안드로이드와 iOS에서 출시될 준비가 거의 완료되었습니다. 오류가 없음을 확인하기 위해 추가 테스트를 진행하려고 합니다. 테스트에 신청해 새로운 시스템을 먼저 경험하고 <Icon type="ruby" /> 50 루비를 획득하세요!
 
 참가하시려면 **new.login.beta@stormboundgames.com**로 다음 내용들을 보내 주세요.
 

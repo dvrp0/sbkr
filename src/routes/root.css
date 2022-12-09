@@ -7,8 +7,13 @@
 :root {
     --c-accent: #FFFFFF;
     --c-foreground: #F5F2E5;
-    --c-foreground-dark: #aaaaaa;
+    --c-foreground-dark: #a0a0a0;
     --c-background: #06161E;
+    --card: 12em;
+    --padding: 1.25em;
+    --large: calc(var(--card) * 5 + var(--padding) * 8);
+    --large-limit: 74rem;
+    --medium-limit: 53rem;
 
     max-width: 50rem;
     padding: 8rem 1rem;
@@ -16,8 +21,7 @@
     color: var(--c-foreground);
     background-color: var(--c-background);
     font-family: "Pretendard", sans-serif;
-    font-variation-settings: "wght" 300;
-    font-size: 1.125rem;
+    font-variation-settings: "wght" 400;
     line-height: 1.8;
     word-break: keep-all;
 }
@@ -72,11 +76,15 @@ article.post {
         padding-left: 1rem;
     }
 
+    & li {
+        padding-left: 0.5rem;
+    }
+
     & img[src*="#screenshot"] {
         max-width: 21.7em;
-        margin: auto 1.25em;
+        margin: auto var(--padding);
 
-        @media (width <= 60rem) {
+        @media (width <= 53rem) {
             margin: auto;
         }
     }

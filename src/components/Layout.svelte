@@ -15,13 +15,13 @@
 
 <style>
     .header {
-        width: 70rem;
+        width: var(--large);
         margin-bottom: -10%;
-        margin-left: calc((70em - 100%) / 2 * -1);
-        margin-right: calc((70em - 100%) / 2 * -1);
+        margin-left: calc(((var(--large) - 100%) / 2 * -1));
+        margin-right: calc(((var(--large) - 100%) / 2 * -1));
     }
 
-    @media (max-width: 83rem) {
+    @media (max-width: 74rem) {
         .header {
             width: 100%;
             margin-left: auto;

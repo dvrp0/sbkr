@@ -8,7 +8,7 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
 <script>
     import Old from "$components/Old.svelte";
     import ImageBlock from "$components/ImageBlock.svelte";
-    import ImageList from "$components/ImageList.svelte";
+    import FlexibleList from "$components/FlexibleList.svelte";
     import Icon from "$components/Icon.svelte";
     import Card from "$components/Card.svelte";
 </script>
@@ -24,8 +24,10 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
   - **파란 돛의 침입자**: 체력 <Old>3/4/5/6/7</Old> → 4/5/6/7/8
   - **전장의 질주자**: 체력 <Old>2/3/4/5/6</Old> → 3/4/5/6/7
 
+> 혼령의 방첩탐을 소유하고 계신 분들에게는 코인 및 합성석 보상이 지급됩니다. 보상은 카드의 레벨과 희귀도에 따라 달라집니다. 
+
 ## 신규 카드
-11월에는 신규 동방 건물과 철갑 컨스트럭트가 추가됩니다.
+12월에는 두 장의 신규 카드가 추가됩니다. 바로 새로운 유형의 능력을 선보이는 신규 해적 전설과 그림자 토드입니다.
 
 <Card type="unit" faction="shadowfen" name="산성 풋내기" unitType="토드" cost={3} strengths={[1, 2, 3, 4, 5]} movement={0} rarity="rare" cardart="https://cdn.sanity.io/images/5hlpazgd/production/b63ffb8ca42139fb215814f94ccca958e154292a-512x512.png" abilities={[
     "카드 사용 시, 자신과 <strong>주변의</strong> 유닛 <strong>1명</strong>을 <strong>중독</strong>시킵니다",
@@ -42,7 +44,7 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
     "카드 사용 시, 무작위 일회성 <strong>사악한 카드</strong>를 <strong>생성</strong>해 적 덱에 추가합니다"
 ]}/>
 
-각 신규 카드마다 특별 상품이 판매될 예정입니다. 카드 10장, 750 코인, 5 합성석을 획득할 수 있습니다.
+각 신규 카드마다 특별 상품이 판매될 예정입니다. 카드 10장, <Icon type="coin" /> 750 코인, <Icon type="stone" /> 5 합성석을 획득할 수 있습니다.
 
 ### 사악한 핀치에 대해
 카드를 사용하면, 다음의 사악한 카드 3장 중에서 한 장이 선택되어 적 덱으로 들어갑니다. 사악한 카드는 일회성이므로 사용된 뒤에는 사라지며 일반 카드처럼 사이클될 수 있습니다.
@@ -53,7 +55,7 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
   - (0 마나) 내 손에서 무작위 카드를 **버립니다**
   - (1 마나) **아무 효과가 없습니다**
 
-<Card count={3} isMultiple type="spell" faction="neutral" name={["사악한 데미지", "사악한 버리기", "사악한 고길"]} cost={[0, 0, 1]} rarity="common" cardart={[
+<Card count={3} isMultiple type="spell" faction="neutral" name={["사악한 데미지", "사악한 버리기", "사악한 고갈"]} cost={[0, 0, 1]} rarity="common" cardart={[
     "https://cdn.sanity.io/images/5hlpazgd/production/14ef07055f5b7d031abe6128bc2013d513f0e463-512x512.png",
     "https://cdn.sanity.io/images/5hlpazgd/production/615accb205161dbc4800f117185331c391dd0297-1887x2410.png",
     "https://cdn.sanity.io/images/5hlpazgd/production/039aae0824b377d80c09a09e23b80ea3a0410030-1885x2410.png"]} abilities={[
@@ -70,7 +72,7 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
   - 12월 15일에 시작하는 워리어 난투는 **산성 풋내기** 난투입니다.
   - 12월 22일에 시작하는 워리어 난투는 **사악한 핀치** 난투입니다.
 
-또한 크리스마스 이벤트의 일환으로 특별한 눈싸움 난투가 진행됩니다.
+또한 크리스마스 이벤트의 일환으로 특별한 **눈싸움 난투**가 진행됩니다.
 
 전투가 시작되면 각 플레이어의 두 번째 줄의 무작위 타일에 눈사람이 소환됩니다. 내 눈사람과 적 눈사람은 각 플레이어의 시점에서 같은 타일에 위치하므로 서로 마주보지 않게 됩니다. 예시를 들자면 각 플레이어의 왼쪽에서 3번째 타일에 소환될 수 있겠죠. 눈사람은 난투 난이도에 따라 10/15/20 체력을 가집니다. 파괴되면 재생성되지 않고 전선에 영향을 미치지 않습니다.
 
@@ -88,30 +90,30 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
     "내 턴 시작 시, <strong>주변의</strong> 아군 유닛들이 전방의 첫 번째 적에게 <strong>1 데미지</strong>를 <strong>입히게</strong> 만듭니다"
 ]} />
 
-각각의 눈싸움 난투에서 6번째 업적을 달성하면 특별 할로윈 아바타를 획득하실 수 있습니다.
+각각의 눈싸움 난투에서 6번째 업적을 달성하면 특별 크리스마스 아바타를 획득하실 수 있습니다.
 
 마지막으로 12월 22일에 시작하는 난투의 입장료가 50% 감소합니다(패스 보유 시 60%).
 
-<ImageList srcs={[
-    "https://cdn.sanity.io/images/5hlpazgd/production/3d45211e6f5c605f950db04b6309e9614a0266d2-512x512.png#avatar",
-    "https://cdn.sanity.io/images/5hlpazgd/production/95184beb6caa4613b4562f15b9b1365d3a35d2cc-512x512.png#avatar",
-    "https://cdn.sanity.io/images/5hlpazgd/production/c361460507e970d5dc0fafbf83799da25d8cb73f-512x512.png#avatar"
-]} />
+<FlexibleList disableVertical>
+    <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/3d45211e6f5c605f950db04b6309e9614a0266d2-512x512.png#avatar" />
+    <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/95184beb6caa4613b4562f15b9b1365d3a35d2cc-512x512.png#avatar" />
+    <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/c361460507e970d5dc0fafbf83799da25d8cb73f-512x512.png#avatar" />
+</FlexibleList>
 
 ## 크리스마스 이벤트
 작년처럼 크리스마스 이벤트가 12월 22일부터 1월 1일까지 진행됩니다.
 
 다른 연휴 이벤트와 마찬가지로 한 번만 구매할 수 있는 특별 상품이 판매될 예정입니다. 크리스마스 특별 상품은 12월 22일부터 구매 가능하며, 각 상품에는 크리스마스 아바타 하나씩이 포함됩니다.
 
-<ImageList srcs={[
-    "https://cdn.sanity.io/images/5hlpazgd/production/25f924ea54d9990337397dc386cf2edac58bc19c-512x512.png#avatar",
-    "https://cdn.sanity.io/images/5hlpazgd/production/77826899fb3090b6a7a87ba73f2941eedc55fade-512x512.png#avatar",
-    "https://cdn.sanity.io/images/5hlpazgd/production/bae2fabdb2b66a08740955a68070f298adf17df0-512x512.png#avatar"
-]} />
+<FlexibleList disableVertical>
+    <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/25f924ea54d9990337397dc386cf2edac58bc19c-512x512.png#avatar" />
+    <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/77826899fb3090b6a7a87ba73f2941eedc55fade-512x512.png#avatar" />
+    <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/bae2fabdb2b66a08740955a68070f298adf17df0-512x512.png#avatar" />
+</FlexibleList>
 
-무엇보다 이벤트 기간 동안 모든 책(고결 포함, 겸손 제외)에서 카드 1장이 추가로 지급되며, 코인과 루비 구매 시 30%를 추가로 획득하실 수 있습니다. 크리스마스 이벤트 기간 중에 로그인하시면 40 루비와 400 코인을 드립니다.
+무엇보다 이벤트 기간 동안 모든 책(고결 포함, 겸손 제외)에서 카드 1장이 추가로 지급되며, 코인과 루비 구매 시 30%를 추가로 획득하실 수 있습니다. 크리스마스 이벤트 기간 중에 로그인하시면 <Icon type="ruby" /> 40 루비와 <Icon type="coin" /> 400 코인을 드립니다.
 
-마지막으로 이벤트 기간 동안 획득하는 승리 시 코인이 2배로 증가하며 일일 코인 획득 제한량이 800 코인으로 증가합니다(패스 보유 시 1400 코인).
+마지막으로 이벤트 기간 동안 획득하는 승리 시 코인이 2배로 증가하며 일일 코인 획득 제한량이 <Icon type="coin" /> 800 코인으로 증가합니다(패스 보유 시 <Icon type="coin" /> 1400 코인).
 
 ## 기지 함락자
 새로운 기능인 **기지 함락자**가 추가됩니다.
@@ -120,11 +122,11 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
 
 포인트를 모음으로써 업적 단계에 도달해 재화를 획득할 수 있습니다. 업적 단계가 높을수록 포인트 요구치가 높아지지만 보상 또한 증가합니다. 업적 단계에 도달하면 보상을 획득할 수 있고 다음 업적 단계에 대한 포인트가 0으로 초기화됩니다.
 
-<ImageList isScreenshots srcs={[
-    "https://cdn.sanity.io/images/5hlpazgd/production/b539a810fdfed2715bda56cb47055b9cbcc3f12c-1080x1920.png#screenshot",
-    "https://cdn.sanity.io/images/5hlpazgd/production/94a9cfabae6516d22df0ad508a65e00513592c93-1080x1920.png#screenshot",
-    "https://cdn.sanity.io/images/5hlpazgd/production/851978ec197a15c24335e4b0d71c93ec944a28b7-1080x1920.png#screenshot"
-]} />
+<FlexibleList allowOverflow>
+    <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/b539a810fdfed2715bda56cb47055b9cbcc3f12c-1080x1920.png#screenshot" />
+    <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/94a9cfabae6516d22df0ad508a65e00513592c93-1080x1920.png#screenshot" />
+    <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/851978ec197a15c24335e4b0d71c93ec944a28b7-1080x1920.png#screenshot" />
+</FlexibleList>
 
 ## 자주 묻는 질문
 ### 언제 업데이트가 진행되나요?

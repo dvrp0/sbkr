@@ -56,10 +56,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
 
     .container {
-        margin: 2rem calc(((70rem - 100%) / 2 * -1) - 1.25rem);
+        margin: 2rem calc(((var(--large) - 100%) / 2 * -1) - var(--padding));
     }
 
     .cards {
+        width: fit-content;
+        margin: 0 auto;
         display: flex;
     }
 
@@ -75,7 +77,7 @@
         background-position: top;
         background-repeat: no-repeat;
         text-align: center;
-        margin: 0 1.25em;
+        margin: 0 var(--padding);
     }
 
     .card-contents {
@@ -144,7 +146,7 @@
 
     .rarity {
         height: 1.5em;
-        margin-bottom: -0.2em;
+        margin-bottom: -0.1em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -192,11 +194,11 @@
         margin-bottom: 1.325em;
     }
 
-    @media (max-width: 83rem) {
+    @media (max-width: 74rem) {
         .container {
             font-size: 0.7rem;
-            margin-left: -1.25em;
-            margin-right: -1.25em;
+            margin-left: calc(var(--padding) * -1);
+            margin-right: calc(var(--padding) * -1);
         }
 
         .rarity img {
@@ -204,7 +206,7 @@
         }
     }
 
-    @media (max-width: 60rem) {
+    @media (max-width: 53rem) {
         .container {
             font-size: 6vw;
             margin: 2rem auto;
@@ -221,7 +223,7 @@
         }
 
         .rarity img {
-            width: 60%;
+            width: 80%;
         }
     }
 </style>

@@ -39,15 +39,15 @@
 
     .left {
         margin-top: 1rem;
-        margin-left: -1.25rem;
+        margin-left: calc(var(--padding) * -1)
     }
 
     .right {
         margin-top: 1rem;
-        margin-right: -1.25rem;
+        margin-right: calc(var(--padding) * -1)
     }
 
-    @media (max-width: 60rem) {
+    @media (max-width: 53rem) {
         .horizontal {
             flex-direction: column;
             align-items: center;
