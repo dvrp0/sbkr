@@ -6,19 +6,17 @@
     switch (type)
     {
         case "coin":
-            src = "https://stormbound-kitty.com/assets/images/iconography/coin.webp";
-            break;
-
         case "ruby":
-            src = "https://stormbound-kitty.com/assets/images/iconography/ruby.webp";
-            break;
-
         case "stone":
-            src = "https://stormbound-kitty.com/assets/images/iconography/stones.webp";
+        case "crown":
+            src = `/images/${type}.webp`;
             break;
 
-        case "crown":
-            src = "https://stormbound-kitty.com/assets/images/iconography/crown_icon.webp";
+        case "common":
+        case "rare":
+        case "epic":
+        case "legendary":
+            src = `/images/${type}_4.webp`
             break;
     }
 </script>
