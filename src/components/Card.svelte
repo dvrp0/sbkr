@@ -42,9 +42,9 @@
                 </div>
                 <div class="levels">
                     <div class="rarity">
-                        <img alt="희귀도" src="/images/{rarity}_{i + 1}.webp" />
+                        <img alt="희귀도" src="/images/{rarity}_{isMultiple ? 1 : i + 1}.webp" />
                     </div>
-                    <p class="level {rarity} {type}">레벨 {i + 1}</p>
+                    <p class="level {rarity} {type}">레벨 {isMultiple ? 1 : i + 1}</p>
                 </div>
             </div>
         </div>
@@ -196,7 +196,7 @@
 
     @media (max-width: 74rem) {
         .container {
-            font-size: 0.7rem;
+            font-size: min(0.7rem, 1.3vw);
             margin-left: calc(var(--padding) * -1);
             margin-right: calc(var(--padding) * -1);
         }
@@ -206,7 +206,7 @@
         }
     }
 
-    @media (max-width: 53rem) {
+    @media (max-width: 43rem) {
         .container {
             font-size: 6vw;
             margin: 2rem auto;
@@ -223,7 +223,7 @@
         }
 
         .rarity img {
-            width: 80%;
+            width: 60%;
         }
     }
 </style>

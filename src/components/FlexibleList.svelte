@@ -27,11 +27,11 @@
         }
 
         .variable-font {
-            font-size: 0.7rem;
+            font-size: min(0.7rem, 1.3vw);
         }
     }
 
-    @media (max-width: 53rem) {
+    @media (max-width: 43rem) {
         .vertical {
             flex-direction: column;
             align-items: center;

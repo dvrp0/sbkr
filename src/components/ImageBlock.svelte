@@ -47,7 +47,7 @@
         margin-right: calc(var(--padding) * -1)
     }
 
-    @media (max-width: 53rem) {
+    @media (max-width: 43rem) {
         .horizontal {
             flex-direction: column;
             align-items: center;
