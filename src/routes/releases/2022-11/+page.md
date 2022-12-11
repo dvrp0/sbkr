@@ -48,19 +48,19 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
 11월에는 신규 동방 건물과 철갑 컨스트럭트가 추가됩니다.
 
 <Card type="unit" faction="ironclad" name="전선 기술자" unitType="컨스트럭트" cost=4 strengths={[2, 3, 4, 4, 5]} movement=1 rarity="rare" cardart="https://cdn.sanity.io/images/5hlpazgd/production/f3ac4ee9a976f053d6d8d0316839c55d4696d845-512x512.png" abilities={[
-    "카드 사용 시, <strong>주변의</strong> 아군 건물 하나마다 <strong>2 체력</strong>을 <strong>획득</strong>합니다",
-    "카드 사용 시, <strong>주변의</strong> 아군 건물 하나마다 <strong>2 체력</strong>을 <strong>획득</strong>합니다",
-    "카드 사용 시, <strong>주변의</strong> 아군 건물 하나마다 <strong>3 체력</strong>을 <strong>획득</strong>합니다",
-    "카드 사용 시, <strong>주변의</strong> 아군 건물 하나마다 <strong>4 체력</strong>을 <strong>획득</strong>합니다",
-    "카드 사용 시, <strong>주변의</strong> 아군 건물 하나마다 <strong>4 체력</strong>을 <strong>획득</strong>합니다"
+    "카드 사용 시, **주변의** 아군 건물 하나마다 **2 체력**을 **획득**합니다",
+    "카드 사용 시, **주변의** 아군 건물 하나마다 **2 체력**을 **획득**합니다",
+    "카드 사용 시, **주변의** 아군 건물 하나마다 **3 체력**을 **획득**합니다",
+    "카드 사용 시, **주변의** 아군 건물 하나마다 **4 체력**을 **획득**합니다",
+    "카드 사용 시, **주변의** 아군 건물 하나마다 **4 체력**을 **획득**합니다"
 ]} />
 
 <Card type="building" faction="swarm" name="저주받은 묘지" cost=4 strengths={[3, 4, 5, 6, 7]} rarity="common" cardart="https://cdn.sanity.io/images/5hlpazgd/production/35a665df172f01539b0547404ab2430a97749641-1451x1451.png" abilities={[
-    "내 턴 시작 시, 양쪽 타일에 <strong>1 체력</strong> 언데드를 <strong>소환</strong>합니다",
-    "내 턴 시작 시, 양쪽 타일에 <strong>2 체력</strong> 언데드를 <strong>소환</strong>합니다",
-    "내 턴 시작 시, 양쪽 타일에 <strong>2 체력</strong> 언데드를 <strong>소환</strong>합니다",
-    "내 턴 시작 시, 양쪽 타일에 <strong>3 체력</strong> 언데드를 <strong>소환</strong>합니다",
-    "내 턴 시작 시, 양쪽 타일에 <strong>3 체력</strong> 언데드를 <strong>소환</strong>합니다"
+    "내 턴 시작 시, 양쪽 타일에 **1 체력** 언데드를 **소환**합니다",
+    "내 턴 시작 시, 양쪽 타일에 **2 체력** 언데드를 **소환**합니다",
+    "내 턴 시작 시, 양쪽 타일에 **2 체력** 언데드를 **소환**합니다",
+    "내 턴 시작 시, 양쪽 타일에 **3 체력** 언데드를 **소환**합니다",
+    "내 턴 시작 시, 양쪽 타일에 **3 체력** 언데드를 **소환**합니다"
 ]} />
 
 각 신규 카드마다 특별 상품이 판매될 예정입니다. 카드 10장, <Icon type="coin" /> 750 코인, <Icon type="stone" /> 5 합성석을 획득할 수 있습니다.
@@ -86,11 +86,11 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
 </ImageBlock>
 
 <Card type="building" faction="neutral" name="으스스한 호박" cost=0 strengths={[5, 5, 5, 5, 5]} rarity="common" cardart="https://cdn.sanity.io/images/5hlpazgd/production/68a09c8a1be3ab12a762051d8141d8b7d49722e3-512x512.png" abilities={[
-    "내 턴 시작 시, 아군 으스스한 호박이 3개 이상이라면, 모두 <strong>파괴</strong>하고 파괴된 호박 하나마다 <strong>1 데미지</strong>를 적 기지에 <strong>입힙니다</strong>",
-    "내 턴 시작 시, 아군 으스스한 호박이 3개 이상이라면, 모두 <strong>파괴</strong>하고 파괴된 호박 하나마다 <strong>1 데미지</strong>를 적 기지에 <strong>입힙니다</strong>",
-    "내 턴 시작 시, 아군 으스스한 호박이 3개 이상이라면, 모두 <strong>파괴</strong>하고 파괴된 호박 하나마다 <strong>1 데미지</strong>를 적 기지에 <strong>입힙니다</strong>",
-    "내 턴 시작 시, 아군 으스스한 호박이 3개 이상이라면, 모두 <strong>파괴</strong>하고 파괴된 호박 하나마다 <strong>1 데미지</strong>를 적 기지에 <strong>입힙니다</strong>",
-    "내 턴 시작 시, 아군 으스스한 호박이 3개 이상이라면, 모두 <strong>파괴</strong>하고 파괴된 호박 하나마다 <strong>1 데미지</strong>를 적 기지에 <strong>입힙니다</strong>"
+    "내 턴 시작 시, 아군 으스스한 호박이 3개 이상이라면, 모두 **파괴**하고 파괴된 호박 하나마다 **1 데미지**를 적 기지에 **입힙니다**",
+    "내 턴 시작 시, 아군 으스스한 호박이 3개 이상이라면, 모두 **파괴**하고 파괴된 호박 하나마다 **1 데미지**를 적 기지에 **입힙니다**",
+    "내 턴 시작 시, 아군 으스스한 호박이 3개 이상이라면, 모두 **파괴**하고 파괴된 호박 하나마다 **1 데미지**를 적 기지에 **입힙니다**",
+    "내 턴 시작 시, 아군 으스스한 호박이 3개 이상이라면, 모두 **파괴**하고 파괴된 호박 하나마다 **1 데미지**를 적 기지에 **입힙니다**",
+    "내 턴 시작 시, 아군 으스스한 호박이 3개 이상이라면, 모두 **파괴**하고 파괴된 호박 하나마다 **1 데미지**를 적 기지에 **입힙니다**"
 ]} />
 
 각각의 으스스한 호박 난투에서 6번째 업적을 달성하면 특별 할로윈 아바타를 획득하실 수 있습니다.

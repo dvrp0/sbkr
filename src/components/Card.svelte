@@ -34,7 +34,7 @@
                 <p class="unit-type" class:invisible={type != "unit"}>{unitType}</p>
                 <img class="cardart" alt="카드아트" src={unpack(cardart, i)} />
                 <div class="ability">
-                    <p>{@html abilities[i]}</p>
+                    <p>{@html abilities[i].replace(/^\*\*/g, "<strong>").replace(/\s\*\*/g, " <strong>").replace(/\*\*/g, "</strong>")}</p>
                 </div>
                 <div class="stats">
                     <p class="stat strength" class:invisible={type == "spell"}>{strengths[i]}</p>
@@ -223,7 +223,7 @@
         }
 
         .rarity img {
-            width: 60%;
+            width: 50%;
         }
     }
 </style>
