@@ -8,12 +8,12 @@
     --c-accent: #FFFFFF;
     --c-foreground: #F5F2E5;
     --c-foreground-dark: #a0a0a0;
+    --c-foreground-comment: #8fadb9;
     --c-background: #06161E;
+    --c-background-light: #132229;
     --card: 12em;
     --padding: 1.25em;
     --large: calc(var(--card) * 5 + var(--padding) * 8);
-    --large-limit: 74rem;
-    --medium-limit: 53rem;
 
     max-width: 50rem;
     padding: 8rem 1rem;
@@ -84,7 +84,7 @@ article.post {
         max-width: 21.7em;
         margin: auto var(--padding);
 
-        @media (width <= 53rem) {
+        @media (width <= 43rem) {
             margin: auto;
         }
     }
@@ -104,5 +104,15 @@ article.post {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    & .comment .inner {
+        & p {
+            margin-top: 0;
+        }
+
+        & ul {
+            margin-bottom: 0;
+        }
     }
 }

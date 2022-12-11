@@ -11,6 +11,7 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
     import FlexibleList from "$components/FlexibleList.svelte";
     import Icon from "$components/Icon.svelte";
     import Card from "$components/Card.svelte";
+    import Comment from "$components/Comment.svelte";
 </script>
 
 ## 밸런스 변경점
@@ -24,7 +25,13 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
   - **파란 돛의 침입자**: 체력 <Old>3/4/5/6/7</Old> → 4/5/6/7/8
   - **전장의 질주자**: 체력 <Old>2/3/4/5/6</Old> → 3/4/5/6/7
 
-> 혼령의 방첩탐을 소유하고 계신 분들에게는 코인 및 합성석 보상이 지급됩니다. 보상은 카드의 레벨과 희귀도에 따라 달라집니다. 
+<Comment>
+
+혼령의 방첩탐을 소유하고 계신 분들에게는 코인 및 합성석 보상이 지급됩니다. 보상은 카드의 레벨과 희귀도에 따라 달라집니다.
+
+  - <Icon type="common" /> 일반 카드: <Icon type="coin" /> 10 코인(레벨 2), <Icon type="coin" /> 20 코인 및 <Icon type="stone" /> 1 합성석(레벨 3), <Icon type="coin" /> 50 코인 및 <Icon type="stone" /> 2 합성석(레벨 4), <Icon type="coin" /> 120 코인 및 <Icon type="stone" /> 5 합성석(레벨 5)
+
+</Comment>
 
 ## 신규 카드
 12월에는 두 장의 신규 카드가 추가됩니다. 바로 새로운 유형의 능력을 선보이는 신규 해적 전설과 그림자 토드입니다.
@@ -94,7 +101,7 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
 
 마지막으로 12월 22일에 시작하는 난투의 입장료가 50% 감소합니다(패스 보유 시 60%).
 
-<FlexibleList disableVertical>
+<FlexibleList setFontSizeFixed disableVertical>
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/3d45211e6f5c605f950db04b6309e9614a0266d2-512x512.png#avatar" />
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/95184beb6caa4613b4562f15b9b1365d3a35d2cc-512x512.png#avatar" />
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/c361460507e970d5dc0fafbf83799da25d8cb73f-512x512.png#avatar" />
@@ -105,7 +112,7 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
 
 다른 연휴 이벤트와 마찬가지로 한 번만 구매할 수 있는 특별 상품이 판매될 예정입니다. 크리스마스 특별 상품은 12월 22일부터 구매 가능하며, 각 상품에는 크리스마스 아바타 하나씩이 포함됩니다.
 
-<FlexibleList disableVertical>
+<FlexibleList setFontSizeFixed disableVertical>
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/25f924ea54d9990337397dc386cf2edac58bc19c-512x512.png#avatar" />
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/77826899fb3090b6a7a87ba73f2941eedc55fade-512x512.png#avatar" />
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/bae2fabdb2b66a08740955a68070f298adf17df0-512x512.png#avatar" />

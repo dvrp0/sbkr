@@ -11,6 +11,7 @@ summary: 11월에는 신규 카드 2장이 추가되고, 일부 밸런스가 조
     import FlexibleList from "$components/FlexibleList.svelte";
     import Icon from "$components/Icon.svelte";
     import Card from "$components/Card.svelte";
+    import Comment from "$components/Comment.svelte";
 </script>
 
 ## 밸런스 변경점
@@ -33,6 +34,15 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
   - **대예언자 브라그다**: 대상 유닛 수 <Old>모두</Old> → 2/3/3/4/4명
 
 ***역주:*** *아래에도 다시 나오지만 가르디 또한 너프입니다. 생성된 사원 카드가 이제 정상적인 사이클 알고리즘을 따라서 손패에 더 늦게 잡힙니다.*
+
+<Comment>
+
+방랑하는 시의원, 대예언자 브라그다, 반복자 바벨, 빛의 인도자 가르디를 소유하고 계신 분들에게는 코인 및 합성석 보상이 지급됩니다. 보상은 카드의 레벨과 희귀도에 따라 달라집니다.
+
+  - <Icon type="rare" /> 레어 카드: <Icon type="coin" /> 15 코인 및 <Icon type="stone" /> 2 합성석(레벨 2), <Icon type="coin" /> 30 코인 및 <Icon type="stone" /> 3 합성석(레벨 3), <Icon type="coin" /> 90 코인 및 <Icon type="stone" /> 7 합성석(레벨 4), <Icon type="coin" /> 190 코인 및 <Icon type="stone" /> 10 합성석(레벨 5)
+  - <Icon type="legendary" /> 레전더리 카드: <Icon type="stone" /> 1 합성석(레벨 1), <Icon type="coin" /> 20 코인 및 <Icon type="stone" /> 5 합성석(레벨 2), <Icon type="coin" /> 50 코인 및 <Icon type="stone" /> 10 합성석(레벨 3), <Icon type="coin" /> 150 코인 및 <Icon type="stone" /> 20 합성석(레벨 4), <Icon type="coin" /> 300 코인 및 <Icon type="stone" /> 50 합성석(레벨 5)
+
+</Comment>
 
 ## 신규 카드
 11월에는 신규 동방 건물과 철갑 컨스트럭트가 추가됩니다.
@@ -85,7 +95,7 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
 
 각각의 으스스한 호박 난투에서 6번째 업적을 달성하면 특별 할로윈 아바타를 획득하실 수 있습니다.
 
-<FlexibleList disableVertical>
+<FlexibleList setFontSizeFixed disableVertical>
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/7f621d062fb65dbbe358ce437b9a22d3e925abb5-568x621.png#avatar" />
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/ff2feac75d70fcc0cd764698e755a10f64df7842-568x622.png#avatar" />
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/198a61715df0387ab685c6b42631ba2903ab6521-568x622.png#avatar" />
@@ -171,7 +181,7 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
 </ImageBlock>
 </FlexibleList>
 
-<FlexibleList disableVertical>
+<FlexibleList setFontSizeFixed disableVertical>
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/6da66095e4cb7bfe1826f22c54af392536f1c3bf-400x500.png?fit=max&auto=format&q=90#avatar" />
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/141cbb8ace7384cebcbd6ff1959047feb63b5e9d-400x500.png?fit=max&auto=format&q=90#avatar" />
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/a1d047e94985e3ae8c1727e932319cdae2c6dea3-400x500.png?fit=max&auto=format&q=90#avatar" />
