@@ -27,7 +27,7 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
 
 <Comment>
 
-혼령의 방첩탐을 소유하고 계신 분들에게는 코인 및 합성석 보상이 지급됩니다. 보상은 카드의 레벨과 희귀도에 따라 달라집니다.
+혼령의 방첩탐을 소유하고 계신 분들에게는 코인 및 합성석 보상이 지급됩니다. 보상은 카드 레벨과 희귀도에 따라 달라집니다.
 
   - <Icon type="common" /> 일반 카드: <Icon type="coin" /> 10 코인(레벨 2), <Icon type="coin" /> 20 코인 및 <Icon type="stone" /> 1 합성석(레벨 3), <Icon type="coin" /> 50 코인 및 <Icon type="stone" /> 2 합성석(레벨 4), <Icon type="coin" /> 120 코인 및 <Icon type="stone" /> 5 합성석(레벨 5)
 
