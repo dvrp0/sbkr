@@ -16,7 +16,7 @@
     {#each posts as post}
     <article>
         <img class="header-image" alt="메인 이미지" src={post.headerImage} />
-        <h2 class="title"><a href={`/posts/${post.id}`}>{post.title}</a></h2>
+        <h2 class="title"><a href={`/releases/${post.id}`}>{post.title}</a></h2>
         <p class="published-at">{post.publishedAt}</p>
         <p class="summary">{post.summary}</p>
     </article>
