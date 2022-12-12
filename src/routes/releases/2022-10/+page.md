@@ -1,6 +1,6 @@
 ---
 title: 2022 10월 업데이트
-publishedAt: 2022/11
+publishedAt: 2022/10
 headerImage: https://cdn.sanity.io/images/5hlpazgd/production/8d832232926ea86a6b41a5e6c9134b98fd4605b3-1920x622.png
 summary: 10월에는 신규 카드 2장이 추가되고, 일부 밸런스가 조정되며, 영웅 리그 변경과 함께 일일 달력이 새롭게 변화합니다.
 ---

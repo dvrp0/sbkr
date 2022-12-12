@@ -2,8 +2,10 @@
   import "../app.postcss";
 </script>
 
-<slot />
+<main>
+    <slot />
+</main>
 
 <style global lang="postcss">
-  @import "./root.css";
+    @import "./root.css";
 </style>

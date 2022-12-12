@@ -9,6 +9,7 @@
     --c-foreground: #F5F2E5;
     --c-foreground-dark: #a0a0a0;
     --c-foreground-comment: #8fadb9;
+    --c-foreground-hover: #bcd0e2;
     --c-background: #06161E;
     --c-background-light: #132229;
     --card: 12em;
@@ -40,6 +41,11 @@ a {
     color: var(--c-accent);
     outline: none;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: var(--c-foreground-hover);
 }
 
 strong {
@@ -97,13 +103,6 @@ article.post {
     & img[src*="#bundle"] {
         width: 80%;
         /* margin: auto 0.5rem; */
-    }
-
-    & .bundles {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
     }
 
     & .comment .inner {
