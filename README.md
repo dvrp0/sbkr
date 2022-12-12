@@ -1,3 +1,5 @@
-# MarkStorm
+# sbkr
+[Website](https://sbkr.pages.dev/) for Korean-translated Stormbound contents made with SvelteKit
 
-Korean-translated Stormbound patchnotes made with SvelteKit
+## Features
+  * Patch notes
