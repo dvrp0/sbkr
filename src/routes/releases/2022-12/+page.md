@@ -135,6 +135,33 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
     <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/851978ec197a15c24335e4b0d71c93ec944a28b7-1080x1920.png#screenshot" />
 </FlexibleList>
 
+<Comment>
+
+**2022년 12월 13일 추가** - 기지 함락자가 게임에 미치는 영향과 데이터를 검토한 결과, 보상을 감소하기로 결정했습니다. 이제 목표별 보상은 다음과 같습니다.
+
+  - 목표 1: <Icon type="ruby" /> 5 루비
+  - 목표 2: <Icon type="coin" /> 75 코인
+  - 목표 3: <Icon type="coin" /> 100 코인
+  - 목표 4: <Icon type="stone" /> 5 합성석
+  - 목표 5: <Icon type="coin" /> 150 코인
+  - 목표 6: <Icon type="coin" /> 200 코인
+  - 목표 7: <Icon type="coin" /> 250 코인
+  - 목표 8: <Icon type="stone" /> 10 합성석
+  - 목표 9: <Icon type="coin" /> 350 코인
+  - 목표 10: <Icon type="coin" /> 450 코인
+  - 목표 11: <Icon type="coin" /> 550 코인
+  - 목표 12: <Icon type="stone" /> 25 합성석
+  - 목표 13: <Icon type="coin" /> 700 코인
+  - 목표 14: <Icon type="coin" /> 850 코인
+  - 목표 15: <Icon type="coin" /> 1000 코인
+  - 목표 16: <Icon type="stone" /> 50 합성석
+  - 목표 17: <Icon type="coin" /> 1500 코인
+  - 목표 18: <Icon type="coin" /> 2000 코인
+  - 목표 19: <Icon type="coin" /> 2500 코인
+  - 목표 20: <Icon type="stone" /> 75 합성석
+
+</Comment>
+
 ## 자주 묻는 질문
 ### 언제 업데이트가 진행되나요?
 밸런스 변경점은 시즌이 초기화되면 적용됩니다. 모든 특별 상품과 각종 보너스를 포함한 크리스마스 이벤트는 12월 22일부터 시작합니다.
