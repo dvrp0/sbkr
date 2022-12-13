@@ -16,15 +16,22 @@
     --padding: 1.25em;
     --large: calc(var(--card) * 5 + var(--padding) * 8);
 
-    max-width: 50rem;
-    padding: 8rem 1rem;
-    margin: 0 auto;
     color: var(--c-foreground);
     background-color: var(--c-background);
     font-family: "Pretendard", sans-serif;
     font-variation-settings: "wght" 400;
     line-height: 1.8;
     word-break: keep-all;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    max-width: 50rem;
+    padding: 8rem 1rem;
+    margin: 0 auto;
 }
 
 h1,
@@ -37,8 +44,7 @@ h6 {
 }
 
 a {
-    border-bottom: 1px solid transparent;
-    color: var(--c-accent);
+    color: var(--c-foreground);
     outline: none;
     text-decoration: none;
     transition: 0.5s;
