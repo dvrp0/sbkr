@@ -12,6 +12,7 @@ summary: 11월에는 신규 카드 2장이 추가되고, 일부 밸런스가 조
     import Icon from "$components/Icon.svelte";
     import Card from "$components/Card.svelte";
     import Comment from "$components/Comment.svelte";
+    import DiscountedBrawl from "$components/DiscountedBrawl.md";
 </script>
 
 ## 밸런스 변경점
@@ -139,7 +140,11 @@ CPU를 상대하는 것이 조금 더 어려워지겠지만, 이 변경을 통�
 
 작년과 마찬가지로 11월 동안 특별한 주간 및 월간 사라지는 팩이 등장합니다.
 
-마지막으로 11월 3일에 시작하는 난투의 입장료가 50% 감소합니다. (패스 보유 시 60%)
+마지막으로 11월 3일에 시작하는 난투의 입장료가 50% 감소합니다(패스 보유 시 60%).
+
+다음은 감소한 입장료입니다.
+
+<DiscountedBrawl />
 
 ### 블랙 프라이데이 (11월 24일 ~ 11월 28일)
 이벤트 기간 동안 한 번만 구매할 수 있는 특별 상품이 판매될 예정입니다.

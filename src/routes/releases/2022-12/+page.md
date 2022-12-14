@@ -12,6 +12,7 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
     import Icon from "$components/Icon.svelte";
     import Card from "$components/Card.svelte";
     import Comment from "$components/Comment.svelte";
+    import DiscountedBrawl from "$components/DiscountedBrawl.md";
 </script>
 
 ## 밸런스 변경점
@@ -106,6 +107,10 @@ summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/95184beb6caa4613b4562f15b9b1365d3a35d2cc-512x512.png#avatar" />
     <img alt="아바타" src="https://cdn.sanity.io/images/5hlpazgd/production/c361460507e970d5dc0fafbf83799da25d8cb73f-512x512.png#avatar" />
 </FlexibleList>
+
+다음은 감소한 입장료입니다.
+
+<DiscountedBrawl />
 
 ## 크리스마스 이벤트
 작년처럼 크리스마스 이벤트가 12월 22일부터 1월 1일까지 진행됩니다.
