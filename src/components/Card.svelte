@@ -17,7 +17,7 @@
 
     function unpack(value: any, index: number)
     {
-        if (isMultiple)
+        if (value instanceof Array<typeof value>)
             return (value as Array<typeof value>)[index];
         else
             return value;
@@ -31,20 +31,20 @@
             <div class="card-contents">
                 <p class="stat cost">{unpack(cost, i)}</p>
                 <p class="name">{unpack(name, i)}</p>
-                <p class="unit-type" class:invisible={type != "unit"}>{unitType}</p>
+                <p class="unit-type" class:invisible={unpack(type, i) != "unit"}>{unpack(unitType, i)}</p>
                 <img class="cardart" alt="카드아트" src={unpack(cardart, i)} />
                 <div class="ability">
                     <p>{@html abilities[i].replace(/^\*\*/g, "<strong>").replace(/\s\*\*/g, " <strong>").replace(/\*\*/g, "</strong>")}</p>
                 </div>
                 <div class="stats">
-                    <p class="stat strength" class:invisible={type == "spell"}>{strengths[i]}</p>
-                    <p class="stat" class:invisible={type != "unit"}>{movement}</p>
+                    <p class="stat strength" class:invisible={unpack(type, i) == "spell"}>{strengths[i]}</p>
+                    <p class="stat" class:invisible={unpack(type, i) != "unit"}>{unpack(movement, i)}</p>
                 </div>
                 <div class="levels">
                     <div class="rarity">
-                        <img alt="희귀도" src="/images/{rarity}_{isMultiple ? 1 : i + 1}.webp" />
+                        <img alt="희귀도" src="/images/{unpack(rarity, i)}_{isMultiple ? 1 : i + 1}.webp" />
                     </div>
-                    <p class="level {rarity} {type}">레벨 {isMultiple ? 1 : i + 1}</p>
+                    <p class="level {unpack(rarity, i)} {unpack(type, i)}">레벨 {isMultiple ? 1 : i + 1}</p>
                 </div>
             </div>
         </div>
