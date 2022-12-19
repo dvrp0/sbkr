@@ -10,7 +10,7 @@
         <img alt="이미지" {src} />
     </div>
     {/if}
-    <div>
+    <div class:less-margin={position == "left" || position == "right"}>
         <slot />
     </div>
     {#if position == "right" || position == "bottom"}
@@ -37,13 +37,15 @@
         justify-content: center;
     }
 
+    .less-margin {
+        margin-top: -1rem;
+    }
+
     .left {
-        margin-top: 1rem;
         margin-left: calc(var(--padding) * -1)
     }
 
     .right {
-        margin-top: 1rem;
         margin-right: calc(var(--padding) * -1)
     }
 
