@@ -11,6 +11,7 @@
     .comment {
         background-color: var(--c-background-light);
         color: var(--c-foreground-comment);
+        margin-bottom: 1.5rem;
     }
 
     .inner {

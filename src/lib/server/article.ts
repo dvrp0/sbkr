@@ -36,5 +36,6 @@ export async function getArticleMetas(dir: string): Promise<ArticleMeta[]>
     const promises = (await fs.readdir(dir)).filter(x => fss.existsSync(`${dir}/${x}/+page.md`))
                                             .map(x => getArticleMeta(dir, x));
 
-    return (await Promise.all(promises)).sort((x, y) => x.publishedAt < y.publishedAt ? 1 : -1);
+    return (await Promise.all(promises)).filter(x => !x.draft)
+                                        .sort((x, y) => x.publishedAt < y.publishedAt ? 1 : -1);
 }
