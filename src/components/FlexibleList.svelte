@@ -17,7 +17,7 @@
     }
 
     .overflow {
-        margin: 2rem calc(((var(--large) - 100%) / 2 * -1) - var(--padding));
+        margin: 2rem calc((var(--large) - 100%) / 2 * -1);
     }
 
     @media (max-width: 74rem) {

@@ -3,6 +3,7 @@ title: 2023 1월 업데이트
 publishedAt: 2023/01
 headerImage: https://cdn.sanity.io/images/5hlpazgd/production/b3b4146d867a9888d2eb422ed2dc50768f59eee9-1920x622.png
 summary: 1월에는 신규 카드 2장이 추가되고, 일부 밸런스가 조정되며, 신규 로그인 시스템이 적용됩니다!
+source: https://stormbound-kitty.com/releases/01-2023
 ---
 
 <script>

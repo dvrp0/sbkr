@@ -8,6 +8,7 @@ export type ArticleMeta = {
     publishedAt: string;
     headerImage: string;
     summary: string;
+    source: string;
     draft: boolean;
 };
 

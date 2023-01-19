@@ -3,6 +3,7 @@ title: 2022 12월 업데이트
 publishedAt: 2022/12
 headerImage: https://cdn.sanity.io/images/5hlpazgd/production/5da4aa3aadb504731d8ec0fc976eaee37c3e2a65-1920x622.png
 summary: 12월에는 신규 카드 2장이 추가되고, 바닐라 카드 버프를 포함해 밸런스가 조정되며, 다양한 상품들이 판매됩니다.
+source: https://stormbound-kitty.com/releases/12-2022
 ---
 
 <script>

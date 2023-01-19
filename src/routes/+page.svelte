@@ -10,9 +10,9 @@
     <title>스톰바운드 한국어 패치 노트</title>
 </svelte:head>
 
-<div class="header">
+<!-- <div class="header">
     <img class="logo" alt="로고" src="/favicon.png" />
-</div>
+</div> -->
 
 {#each posts as post}
 <article class="entry">

@@ -1,11 +1,8 @@
 <script>
     export let title = "";
     export let headerImage = "";
-    export let publishedAt = "";
     export let summary = "";
-
-    let dates = publishedAt.split("/");
-    let origin = `https://stormbound-kitty.com/releases/${dates[1]}-${dates[0]}`
+    export let source = "";
 </script>
 
 <svelte:head >
@@ -13,13 +10,15 @@
 </svelte:head>
 
 <article class="post">
-    <img class="header" alt="패치노트 이미지" src={headerImage} />
+    <img class="header" alt="이미지" src={headerImage} />
     <h1>{title}</h1>
     <div class="intro">
         <p class="summary">{summary}</p>
         <div class="links">
             <a href="/"><img alt="홈" src="/images/home.webp" /></a>
-            <a href={origin}><img alt="Kitty" src="/images/kitty.webp" /></a>
+            {#if source != ""}
+            <a href={source}><img alt="Kitty" src="/images/kitty.webp" /></a>
+            {/if}
         </div>
     </div>
     <slot />
@@ -29,8 +28,8 @@
     .header {
         width: var(--large);
         margin-bottom: -4.8rem;
-        margin-left: calc(((var(--large) - 100%) / 2 * -1));
-        margin-right: calc(((var(--large) - 100%) / 2 * -1));
+        margin-left: calc((var(--large) - 100%) / 2 * -1);
+        margin-right: calc((var(--large) - 100%) / 2 * -1);
     }
 
     .intro {

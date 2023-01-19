@@ -3,6 +3,7 @@ title: 2022 11월 업데이트
 publishedAt: 2022/11
 headerImage: https://cdn.sanity.io/images/5hlpazgd/production/26106c4bb080b59079e421798884fd57f41ba58b-1920x622.png
 summary: 11월에는 신규 카드 2장이 추가되고, 일부 밸런스가 조정되며, 다양한 프리미엄 상품이 판매됩니다.
+source: https://stormbound-kitty.com/releases/11-2022
 ---
 
 <script>
