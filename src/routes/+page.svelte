@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-    <title>스톰바운드 한국어 패치 노트</title>
+    <title>sbkr</title>
 </svelte:head>
 
 <!-- <div class="header">
@@ -24,7 +24,7 @@
 {/each}
 
 <style>
-    .header {
+    /* .header {
         width: 100%;
         display: flex;
         align-items: center;
@@ -34,7 +34,7 @@
 
     .logo {
         width: 15%;
-    }
+    } */
 
     .entry {
         margin: 4rem 0;

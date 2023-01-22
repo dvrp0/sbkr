@@ -12,7 +12,7 @@
     export let isMultiple: boolean = false;
     export let count: number = 5;
 
-    let cardImage: string = `/images/${faction}-${rarity == "legendary" ? "legendary" : ""}${type}.webp`;;
+    let cardImage: string = `/images/card-backgrounds/${faction}-${rarity == "legendary" ? "legendary" : ""}${type}.webp`;;
     let levels: number[] = Array(count);
 
     function unpack(value: any, index: number)
@@ -42,7 +42,7 @@
                 </div>
                 <div class="levels">
                     <div class="rarity">
-                        <img alt="희귀도" src="/images/{unpack(rarity, i)}_{isMultiple ? 1 : i + 1}.webp" />
+                        <img alt="희귀도" src="/images/icons/{unpack(rarity, i)}_{isMultiple ? 1 : i + 1}.webp" />
                     </div>
                     <p class="level {unpack(rarity, i)} {unpack(type, i)}">레벨 {isMultiple ? 1 : i + 1}</p>
                 </div>

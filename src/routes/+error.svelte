@@ -5,7 +5,7 @@
 <div class="content">
     <img alt="고양이가 세상을 지배한다" src="/images/404.png" />
     <h1>{$page.status}: {$page.error?.message}</h1>
-    <a href="/"><img class="home" alt="홈" src="/images/home.webp" /></a>
+    <a href="/"><img class="home" alt="홈" src="/images/icons/home.webp" /></a>
 </div>
 
 <style>

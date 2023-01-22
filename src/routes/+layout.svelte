@@ -7,6 +7,7 @@
         <a href="/"><img alt="홈" src="/favicon.png" /></a>
         <ul>
             <li><a href="/">패치 노트</a></li>
+            <li><a href="/card-usages">카드 사용량</a></li>
             <li><a href="/about">소개</a></li>
         </ul>
     </div>

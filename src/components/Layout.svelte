@@ -5,7 +5,7 @@
     export let source = "";
 </script>
 
-<svelte:head >
+<svelte:head>
     <title>{title}</title>
 </svelte:head>
 
@@ -15,9 +15,9 @@
     <div class="intro">
         <p class="summary">{summary}</p>
         <div class="links">
-            <a href="/"><img alt="홈" src="/images/home.webp" /></a>
+            <a href="/"><img alt="뒤로 가기" src="/images/icons/back.webp" /></a>
             {#if source != ""}
-            <a href={source}><img alt="Kitty" src="/images/kitty.webp" /></a>
+            <a href={source}><img alt="Kitty" src="/images/icons/kitty.webp" /></a>
             {/if}
         </div>
     </div>
