@@ -154,7 +154,9 @@
             margin-left: auto;
             margin-right: auto;
         }
+    }
 
+    @media (max-width: 43rem) {
         .entry {
             width: 100%;
         }
