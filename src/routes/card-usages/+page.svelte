@@ -6,6 +6,10 @@
     let posts = data.posts;
 </script>
 
+<svelte:head>
+    <title>카드 사용량</title>
+</svelte:head>
+
 {#each posts as post}
 <article class="entry">
     <img class="image" alt="메인 이미지" src="{post.headerImage}" />
