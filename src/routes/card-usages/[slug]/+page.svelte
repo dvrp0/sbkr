@@ -42,6 +42,13 @@
             <a href={source}><img alt="Kitty" src="/images/icons/kitty.webp" /></a>
         </div>
     </div>
+    <ul>
+        <li>모든 데이터는 게임에서 바로 추출되었으며 매일 업데이트됩니다.</li>
+        <li>각 소제목은 카드가 등장하는 비율을 나타냅니다. 0.5 – 0.6로 분류된 카드들은 지난 30일 동안 이 리그에서 플레이된 모든 덱 중 50~60%에 포함됐다는 의미입니다.</li>
+        <li>승패나 한 번이라도 사용됐는지 여부와는 상관없이, 랭크전에서 플레이된 덱에 카드가 포함됐다면 집계됩니다.</li>
+        <li>본 데이터는 파벌간 우위를 나타내지 않으며, 항상 겨울-철갑-그림자-동방 순으로 표시합니다. 동일한 파벌 내의 사용량 순위만이 유의미합니다.</li>
+        <li>다만 중립 카드가 사용량이 가장 높게 나오는 이유는 모든 파벌의 덱에서 사용되기 때문입니다.</li>
+    </ul>
     {#each Object.entries(usage).reverse() as [key, value]}
     <h2>{key}</h2>
         <div class="entries">
@@ -85,7 +92,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
         margin-top: -3rem;
     }
 
@@ -146,6 +152,10 @@
 
     .entry-info-change span {
         color: var(--c-foreground-dark);
+    }
+
+    ul {
+        margin-top: 4rem;
     }
 
     @media (max-width: 74rem) {
