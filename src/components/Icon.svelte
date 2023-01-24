@@ -1,6 +1,5 @@
 <script lang="ts">
     export let type: string;
-    export let givesMargin: boolean = false;
 
     let src: string = "";
 
@@ -34,7 +33,7 @@
     }
 </script>
 
-<img class:margin={givesMargin} alt="아이콘" {src} />
+<img alt="아이콘" {src} />
 
 <style>
     img {
@@ -42,9 +41,5 @@
         width: 1em;
         vertical-align: middle;
         padding-bottom: 0.15em;
-    }
-
-    .margin {
-        margin-right: 0.25em;
     }
 </style>

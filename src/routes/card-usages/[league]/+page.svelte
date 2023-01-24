@@ -64,13 +64,14 @@
                         {#if c === "0"}
                         <span>-</span>
                         {:else if c === "new"}
-                        <Icon type="new" givesMargin />
+                        <Icon type="new" />
+                        <span class="margin">신규</span>
                         {:else if isPositive(c)}
-                        <Icon type="up" givesMargin />
-                        <span>{c}</span>
+                        <Icon type="up" />
+                        <span class="margin">{c}</span>
                         {:else}
-                        <Icon type="down" givesMargin />
-                        <span>{Math.abs(convertToNumber(c))}</span>
+                        <Icon type="down" />
+                        <span class="margin">{Math.abs(convertToNumber(c))}</span>
                         {/if}
                     </div>
                 </div>
@@ -152,6 +153,10 @@
 
     .entry-info-change span {
         color: var(--c-foreground-dark);
+    }
+
+    .margin {
+        margin-left: 0.25em;
     }
 
     ul {
