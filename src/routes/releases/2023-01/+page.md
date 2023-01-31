@@ -99,7 +99,7 @@ Google 또는 Apple 계정을 생성하고 로그인한 뒤 기존 Kongregate �
 </FlexibleList>
 
 ## 난투 추첨
-<ImageBlock position="right"  src="https://cdn.sanity.io/images/5hlpazgd/production/81f717c6a822afa7ad9e2782cafea27420afba4a-1080x2400.jpg#screenshot">
+<ImageBlock position="right" src="https://cdn.sanity.io/images/5hlpazgd/production/81f717c6a822afa7ad9e2782cafea27420afba4a-1080x2400.jpg#screenshot">
 
 난투에서 생명이 하나 남으면, 플레이어는 승리했을 때 보상을 고르는 것과 같은 방식으로 보너스를 선택할지 결정할 수 있습니다. 보너스를 선택하려면 드래프트 모드에 사용되는 티켓 카드를 하나 소모해야 합니다.
 
