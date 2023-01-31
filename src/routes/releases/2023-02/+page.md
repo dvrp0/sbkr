@@ -2,7 +2,7 @@
 title: 2023 2월 업데이트
 publishedAt: 2023/02
 headerImage: https://cdn.sanity.io/images/5hlpazgd/production/57361b354dc771f4fd277696755d4cbf413a1fde-1920x622.png
-summary: 2월에는 신규 카드 2장이 추가되고, 일부 밸런스가 조정되며, 신규 로그인 시스템이 적용됩니다!
+summary: 2월에는 신규 카드 2장이 추가되고, 일부 밸런스가 조정되며, 닉네임을 변경할 수 있게 됩니다!
 source: https://stormbound-kitty.com/releases/02-2023
 ---
 
