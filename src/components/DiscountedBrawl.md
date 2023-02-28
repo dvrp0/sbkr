@@ -5,6 +5,7 @@ layout: false
 <script lang="ts">
     import Icon from "./Icon.svelte";
 
+    export let percentage: number = 50;
     let type: string = "casual";
 
     function assign_type(target: string)
@@ -20,7 +21,20 @@ layout: false
         <button class:selected={type == "ultimate"} on:click={() => assign_type("ultimate")}>얼티메이트</button>
     </div>
 
-    {#if type == "casual"}
+    {#if type == "casual" && percentage == 30}
+|필요 왕관 수|게임당 입장료|업적 달성 보상|
+|---|---|---|
+|<Icon type="crown" /> 7 왕관|<Icon type="coin" /> 0 코인 (0)|<Icon type="coin" /> 10 코인|
+|<Icon type="crown" /> 20 왕관|<Icon type="coin" /> 5 코인 (0)|겸손의 책 1개|
+|<Icon type="crown" /> 35 왕관|<Icon type="coin" /> 5 코인 (-5)|<Icon type="ruby" /> 5 루비|
+|<Icon type="crown" /> 50 왕관|<Icon type="coin" /> 15 코인 (-5)|<Icon type="stone" /> 1 합성석|
+|<Icon type="crown" /> 70 왕관|<Icon type="coin" /> 25 코인 (-5)|<Icon type="ruby" /> 15 루비|
+|<Icon type="crown" /> 95 왕관|<Icon type="coin" /> 30 코인 (-10)|<Icon type="rare" /> 레어 카드 1장|
+|<Icon type="crown" /> 125 왕관|<Icon type="coin" /> 35 코인 (-15)|<Icon type="stone" /> 7 합성석|
+|<Icon type="crown" /> 160 왕관|<Icon type="coin" /> 50 코인 (-15)|<Icon type="ruby" /> 60 루비|
+|<Icon type="crown" /> 200 왕관|<Icon type="coin" /> 60 코인 (-20)|<Icon type="rare" /> 레어 카드 7장|
+|<Icon type="crown" /> 250 왕관|<Icon type="coin" /> 70 코인 (-30)|<Icon type="ruby" /> 200 루비|
+    {:else if type == "casual" && percentage == 50}
 |필요 왕관 수|게임당 입장료|업적 달성 보상|
 |---|---|---|
 |<Icon type="crown" /> 7 왕관|<Icon type="coin" /> 0 코인 (0)|<Icon type="coin" /> 10 코인|
@@ -33,7 +47,20 @@ layout: false
 |<Icon type="crown" /> 160 왕관|<Icon type="coin" /> 35 코인 (-30)|<Icon type="ruby" /> 60 루비|
 |<Icon type="crown" /> 200 왕관|<Icon type="coin" /> 40 코인 (-40)|<Icon type="rare" /> 레어 카드 7장|
 |<Icon type="crown" /> 250 왕관|<Icon type="coin" /> 50 코인 (-50)|<Icon type="ruby" /> 200 루비|
-    {:else if type == "warrior"}
+    {:else if type == "warrior" && percentage == 30}
+|필요 왕관 수|게임당 입장료|업적 달성 보상|
+|---|---|---|
+|<Icon type="crown" /> 7 왕관|<Icon type="coin" /> 0 코인 (0)|<Icon type="coin" /> 20 코인|
+|<Icon type="crown" /> 20 왕관|<Icon type="coin" /> 5 코인 (-5)|겸손의 책 1개|
+|<Icon type="crown" /> 35 왕관|<Icon type="coin" /> 20 코인 (-5)|고결의 책 1개|
+|<Icon type="crown" /> 50 왕관|<Icon type="coin" /> 35 코인 (-15)|<Icon type="stone" /> 4 합성석|
+|<Icon type="crown" /> 70 왕관|<Icon type="coin" /> 55 코인 (-20)|영웅의 고서 1개|
+|<Icon type="crown" /> 95 왕관|<Icon type="coin" /> 70 코인 (-30)|<Icon type="epic" /> 에픽 카드 1장|
+|<Icon type="crown" /> 125 왕관|<Icon type="coin" /> 90 코인 (-35)|<Icon type="stone" /> 20 합성석|
+|<Icon type="crown" /> 160 왕관|<Icon type="coin" /> 105 코인 (-45)|<Icon type="ruby" /> 125 루비|
+|<Icon type="crown" /> 200 왕관|<Icon type="coin" /> 140 코인 (-60)|<Icon type="epic" /> 에픽 카드 7장|
+|<Icon type="crown" /> 250 왕관|<Icon type="coin" /> 175 코인 (-75)|<Icon type="ruby" /> 500 루비|
+    {:else if type == "warrior" && percentage == 50}
 |필요 왕관 수|게임당 입장료|업적 달성 보상|
 |---|---|---|
 |<Icon type="crown" /> 7 왕관|<Icon type="coin" /> 0 코인 (0)|<Icon type="coin" /> 20 코인|
@@ -46,7 +73,20 @@ layout: false
 |<Icon type="crown" /> 160 왕관|<Icon type="coin" /> 75 코인 (-75)|<Icon type="ruby" /> 125 루비|
 |<Icon type="crown" /> 200 왕관|<Icon type="coin" /> 100 코인 (-100)|<Icon type="epic" /> 에픽 카드 7장|
 |<Icon type="crown" /> 250 왕관|<Icon type="coin" /> 125 코인 (-125)|<Icon type="ruby" /> 500 루비|
-    {:else if type == "ultimate"}
+    {:else if type == "ultimate" && percentage == 30}
+|필요 왕관 수|게임당 입장료|업적 달성 보상|
+|---|---|---|
+|<Icon type="crown" /> 7 왕관|<Icon type="coin" /> 0 코인 (0)|겸손의 책 1개|
+|<Icon type="crown" /> 20 왕관|<Icon type="coin" /> 15 코인 (-5)|<Icon type="ruby" /> 5 루비|
+|<Icon type="crown" /> 35 왕관|<Icon type="coin" /> 35 코인 (-15)|클래식 고서 1개|
+|<Icon type="crown" /> 50 왕관|<Icon type="coin" /> 70 코인 (-30)|<Icon type="stone" /> 10 합성석|
+|<Icon type="crown" /> 70 왕관|<Icon type="coin" /> 105 코인 (-45)|신화의 고서 1개|
+|<Icon type="crown" /> 95 왕관|<Icon type="coin" /> 140 코인 (-60)|<Icon type="legendary" /> 레전더리 카드 1장|
+|<Icon type="crown" /> 125 왕관|<Icon type="coin" /> 175 코인 (-75)|<Icon type="stone" /> 50 합성석|
+|<Icon type="crown" /> 160 왕관|<Icon type="coin" /> 210 코인 (-90)|<Icon type="ruby" /> 250 루비|
+|<Icon type="crown" /> 200 왕관|<Icon type="coin" /> 280 코인 (-120)|<Icon type="legendary" /> 레전더리 카드 7장|
+|<Icon type="crown" /> 250 왕관|<Icon type="coin" /> 350 코인 (-150)|<Icon type="stone" /> 200 합성석|
+    {:else if type == "ultimate" && percentage == 50}
 |필요 왕관 수|게임당 입장료|업적 달성 보상|
 |---|---|---|
 |<Icon type="crown" /> 7 왕관|<Icon type="coin" /> 0 코인 (0)|겸손의 책 1개|
