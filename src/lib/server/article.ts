@@ -47,7 +47,7 @@ export function getCardUsagesMetas(): ArticleMeta[]
             title: `${league[1]} 리그 카드 사용량`,
             headerImage: `/images/headers/header_${league[0]}.png`,
             summary: `최근 30일 동안 ${league[1]} 리그에서 가장 많이 사용된 카드 목록입니다.`,
-            source: `https://stormbound-kitty.com/tier-list/${league[0]}`,
+            source: `https://stormbound-kitty.com/card-usage/${league[0]}`,
             id: league[0]
         } as ArticleMeta);
     }

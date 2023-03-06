@@ -38,14 +38,14 @@ source: https://stormbound-kitty.com/releases/01-2023
 ## 신규 카드
 1월에는 두 장의 신규 카드가 추가됩니다. 또 다른 해적과 새로운 유형의 능력(어느 정도는 말이죠)을 선보이는 신규 에픽 주문입니다.
 
-<Card type="unit" faction="neutral" name="엄격한 갑판수" unitType="해적" cost={3} strengths={[1, 2, 3, 4, 5]} movement={1} rarity="rare" cardart="https://cdn.sanity.io/images/5hlpazgd/production/b60e48db26a8265e88907ef9acc02bdc3ff76928-512x512.png" abilities={[
+<Card type="unit" faction="neutral" name="엄격한 갑판수" unitType="해적" cost={3} strengths={[1, 2, 3, 4, 5]} movement={1} rarity="rare" cardart="/images/cards/cardart_U063.png" abilities={[
     "카드 사용 시, 덱에서 무작위 해적 카드 **1장**을 **뽑습니다**",
     "카드 사용 시, 덱에서 무작위 해적 카드 **1장**을 **뽑습니다**",
     "카드 사용 시, 덱에서 무작위 해적 카드 **1장**을 **뽑습니다**",
     "카드 사용 시, 덱에서 무작위 해적 카드 **1장**을 **뽑습니다**",
     "카드 사용 시, 덱에서 무작위 해적 카드 **1장**을 **뽑습니다**"
 ]}/>
-<Card type="spell" faction="neutral" name="천둥 소리" cost={5} rarity="epic" cardart="https://cdn.sanity.io/images/5hlpazgd/production/c8667b47e17eba7f55801a19328c386c3bc5f995-512x512.png" abilities={[
+<Card type="spell" faction="neutral" name="천둥 소리" cost={5} rarity="epic" cardart="/images/cards/cardart_S022.png" abilities={[
     "아군 유닛들에게 내 손의 빈 카드 공간 하나마다 **2 체력**을 무작위로 나누어 **부여**합니다",
     "아군 유닛들에게 내 손의 빈 카드 공간 하나마다 **3 체력**을 무작위로 나누어 **부여**합니다",
     "아군 유닛들에게 내 손의 빈 카드 공간 하나마다 **4 체력**을 무작위로 나누어 **부여**합니다",

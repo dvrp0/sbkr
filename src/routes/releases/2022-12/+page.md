@@ -38,14 +38,14 @@ source: https://stormbound-kitty.com/releases/12-2022
 ## 신규 카드
 12월에는 두 장의 신규 카드가 추가됩니다. 바로 새로운 유형의 능력을 선보이는 신규 해적 전설과 그림자 토드입니다.
 
-<Card type="unit" faction="shadowfen" name="산성 풋내기" unitType="토드" cost={3} strengths={[1, 2, 3, 4, 5]} movement={0} rarity="rare" cardart="https://cdn.sanity.io/images/5hlpazgd/production/b63ffb8ca42139fb215814f94ccca958e154292a-512x512.png" abilities={[
+<Card type="unit" faction="shadowfen" name="산성 풋내기" unitType="토드" cost={3} strengths={[1, 2, 3, 4, 5]} movement={0} rarity="rare" cardart="/images/cards/cardart_U417.png" abilities={[
     "카드 사용 시, 자신과 **주변의** 유닛 **1명**을 **중독**시킵니다",
     "카드 사용 시, 자신과 **주변의** 유닛 **2명**을 **중독**시킵니다",
     "카드 사용 시, 자신과 **주변의** 유닛 **3명**을 **중독**시킵니다",
     "카드 사용 시, 자신과 **주변의** 유닛 **4명**을 **중독**시킵니다",
     "카드 사용 시, 자신과 **주변의** 유닛들을 **중독**시킵니다"
 ]}/>
-<Card type="unit" faction="neutral" name="사악한 핀치" unitType="해적 영웅" cost={4} strengths={[4, 5, 6, 7, 8]} movement={1} rarity="legendary" cardart="https://cdn.sanity.io/images/5hlpazgd/production/123343778e4576137c234d8843f2bdcafdce0d08-2427x2953.png" abilities={[
+<Card type="unit" faction="neutral" name="사악한 핀치" unitType="해적 영웅" cost={4} strengths={[4, 5, 6, 7, 8]} movement={1} rarity="legendary" cardart="/images/cards/cardart_U062.png" abilities={[
     "카드 사용 시, 무작위 일회성 **사악한 카드**를 **생성**해 적 덱에 추가합니다",
     "카드 사용 시, 무작위 일회성 **사악한 카드**를 **생성**해 적 덱에 추가합니다",
     "카드 사용 시, 무작위 일회성 **사악한 카드**를 **생성**해 적 덱에 추가합니다",
@@ -65,9 +65,9 @@ source: https://stormbound-kitty.com/releases/12-2022
   - (1 마나) **아무 효과가 없습니다**
 
 <Card count={3} isMultiple type="spell" faction="neutral" name={["사악한 데미지", "사악한 버리기", "사악한 고갈"]} cost={[0, 0, 1]} rarity="common" cardart={[
-    "https://cdn.sanity.io/images/5hlpazgd/production/14ef07055f5b7d031abe6128bc2013d513f0e463-512x512.png",
-    "https://cdn.sanity.io/images/5hlpazgd/production/615accb205161dbc4800f117185331c391dd0297-1887x2410.png",
-    "https://cdn.sanity.io/images/5hlpazgd/production/039aae0824b377d80c09a09e23b80ea3a0410030-1885x2410.png"]} abilities={[
+    "/images/cards/cardart_CS02.png",
+    "/images/cards/cardart_CS01.png",
+    "/images/cards/cardart_CS03.png"]} abilities={[
     "내 기지에 **1 데미지**를 **입힙니다**",
     "내 손에서 무작위 카드를 **버립니다**",
     "**아무 효과가 없습니다**"
@@ -91,7 +91,7 @@ source: https://stormbound-kitty.com/releases/12-2022
   - 12월 29일 워리어 난투
   - 1월 5일 얼티메이트 난투
 
-<Card type="building" faction="neutral" name="눈사람" cost={0} strengths={[10, 10, 10, 10, 10]} rarity="common" cardart="https://cdn.sanity.io/images/5hlpazgd/production/25e61cae9b7762b1c92511d395bbe66d0b1d03b8-512x512.png" abilities={[
+<Card type="building" faction="neutral" name="눈사람" cost={0} strengths={[10, 10, 10, 10, 10]} rarity="common" cardart="/images/cards/cardart_TD04.png" abilities={[
     "내 턴 시작 시, **주변의** 아군 유닛들이 전방의 첫 번째 적에게 **1 데미지**를 **입히게** 만듭니다",
     "내 턴 시작 시, **주변의** 아군 유닛들이 전방의 첫 번째 적에게 **1 데미지**를 **입히게** 만듭니다",
     "내 턴 시작 시, **주변의** 아군 유닛들이 전방의 첫 번째 적에게 **1 데미지**를 **입히게** 만듭니다",

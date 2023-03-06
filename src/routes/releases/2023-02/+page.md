@@ -35,14 +35,14 @@ source: https://stormbound-kitty.com/releases/02-2023
 ## 신규 카드
 2월에는 두 장의 신규 카드가 추가됩니다. 바로 중립 사티로스와 중립 레이븐입니다.
 
-<Card type="unit" faction="neutral" name="앙심 품은 놈팡이" unitType="레이븐" cost={3} strengths={[1, 2, 3, 4, 5]} movement={1} rarity="common" cardart="https://cdn.sanity.io/images/5hlpazgd/production/677c4d8466c38388f1af171b0fac70c220ee9ba5-512x512.png" abilities={[
+<Card type="unit" faction="neutral" name="앙심 품은 놈팡이" unitType="레이븐" cost={3} strengths={[1, 2, 3, 4, 5]} movement={1} rarity="common" cardart="/images/cards/cardart_U064.png" abilities={[
     "사망 시, 가장 약한 적 유닛을 **파괴**합니다",
     "사망 시, 가장 약한 적 유닛을 **파괴**합니다",
     "사망 시, 가장 약한 적 유닛을 **파괴**합니다",
     "사망 시, 가장 약한 적 유닛을 **파괴**합니다",
     "사망 시, 가장 약한 적 유닛을 **파괴**합니다"
 ]}/>
-<Card type="unit" faction="neutral" name="믿음직한 양치기" unitType="사티로스" cost={4} strengths={[1, 2, 2, 3, 4]} movement={0} rarity="rare" cardart="https://cdn.sanity.io/images/5hlpazgd/production/1c54c40f89fe7896f272e8b9ae208b86b5a73e37-512x512.png" abilities={[
+<Card type="unit" faction="neutral" name="믿음직한 양치기" unitType="사티로스" cost={4} strengths={[1, 2, 2, 3, 4]} movement={0} rarity="rare" cardart="/images/cards/cardart_U065.png" abilities={[
     "카드 사용 시, 최대 **3명**의 다른 아군 유닛 하나마다 **2 체력**을 **획득**합니다",
     "카드 사용 시, 최대 **3명**의 다른 아군 유닛 하나마다 **2 체력**을 **획득**합니다",
     "카드 사용 시, 최대 **3명**의 다른 아군 유닛 하나마다 **3 체력**을 **획득**합니다",
@@ -80,12 +80,12 @@ source: https://stormbound-kitty.com/releases/02-2023
 ### 발렌타인 난투
 특별한 발렌타인 난투에서 플레이어는 아군 마음의 사원과 함께 게임을 시작합니다. 마음의 사원의 능력치나 능력은 평소와 완벽하게 동일하지만, **파괴될 수 없다는 점**이 다릅니다. 게임이 시작되면 마음의 사원이 각 플레이어의 첫 번째 열에 무작위로 소환됩니다.
 
-<Card type="building" faction="neutral" name="마음의 사원" cost={3} strengths={[3, 4, 5, 6, 7]} rarity="common" cardart="https://cdn.sanity.io/images/5hlpazgd/production/053786ff9efe07087f8582ceb0edfb384ed935db-512x512.png" abilities={[
-    "내 턴 시작 시, 더 강한 기지에서 1 체력을 제거해 더 약한 기지에 부여합니다",
-    "내 턴 시작 시, 더 강한 기지에서 1 체력을 제거해 더 약한 기지에 부여합니다",
-    "내 턴 시작 시, 더 강한 기지에서 1 체력을 제거해 더 약한 기지에 부여합니다",
-    "내 턴 시작 시, 더 강한 기지에서 2 체력을 제거해 더 약한 기지에 부여합니다",
-    "내 턴 시작 시, 더 강한 기지에서 2 체력을 제거해 더 약한 기지에 부여합니다"
+<Card type="building" faction="neutral" name="마음의 사원" cost={3} strengths={[3, 4, 5, 6, 7]} rarity="common" cardart="/images/cards/cardart_B007.png" abilities={[
+    "내 턴 시작 시, 더 강한 기지에서 **1 체력**을 **제거**해 더 약한 기지에 **부여**합니다",
+    "내 턴 시작 시, 더 강한 기지에서 **1 체력**을 **제거**해 더 약한 기지에 **부여**합니다",
+    "내 턴 시작 시, 더 강한 기지에서 **1 체력**을 **제거**해 더 약한 기지에 **부여**합니다",
+    "내 턴 시작 시, 더 강한 기지에서 **2 체력**을 **제거**해 더 약한 기지에 **부여**합니다",
+    "내 턴 시작 시, 더 강한 기지에서 **2 체력**을 **제거**해 더 약한 기지에 **부여**합니다"
 ]}/>
 
 발렌타인 난투는 난이도별로 한 번씩 진행됩니다. 정확한 날짜는 패치 노트 하단에 있는 일정을 참고하세요.

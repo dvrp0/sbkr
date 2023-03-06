@@ -41,7 +41,7 @@ source: https://stormbound-kitty.com/releases/01-2023
 ## 신규 카드
 10월에는 새로운 그림자 건물과 철갑 로덴트가 추가됩니다.
 
-<Card type="unit" faction="ironclad" name="치즈 유혹자" unitType="로덴트" cost=3 strengths={[1, 2, 3, 4, 5]} movement=1 rarity="common" cardart="https://cdn.sanity.io/images/5hlpazgd/production/adf8737d573cb072b0cffcca1e8393fac9ae3d67-1451x1451.png" abilities={[
+<Card type="unit" faction="ironclad" name="치즈 유혹자" unitType="로덴트" cost=3 strengths={[1, 2, 3, 4, 5]} movement=1 rarity="common" cardart="/images/cards/cardart_U318.png" abilities={[
     "카드 사용 시, 전방의 첫 번째 적 유닛을 **끌어오고 2 데미지**를 **입힙니다**",
     "카드 사용 시, 전방의 첫 번째 적 유닛을 **끌어오고 3 데미지**를 **입힙니다**",
     "카드 사용 시, 전방의 첫 번째 적 유닛을 **끌어오고 4 데미지**를 **입힙니다**",
@@ -49,7 +49,7 @@ source: https://stormbound-kitty.com/releases/01-2023
     "카드 사용 시, 전방의 첫 번째 적 유닛을 **끌어오고 6 데미지**를 **입힙니다**"
 ]} />
 
-<Card type="building" faction="shadowfen" name="혼령의 방첨탑" cost=3 strengths={[2,3,4,5,6]} rarity="common" cardart="https://cdn.sanity.io/images/5hlpazgd/production/173dba14afb2da888bd7aeb2dc96e7757eb0b356-1620x1720.png" abilities={[
+<Card type="building" faction="shadowfen" name="혼령의 방첨탑" cost=3 strengths={[2,3,4,5,6]} rarity="common" cardart="/images/cards/cardart_B403.png" abilities={[
     "내 턴 시작 시, 가장 강력한 적 유닛으로부터 **1 체력**을 **흡수**합니다",
     "내 턴 시작 시, 가장 강력한 적 유닛으로부터 **1 체력**을 **흡수**합니다",
     "내 턴 시작 시, 가장 강력한 적 유닛으로부터 **2 체력**을 **흡수**합니다",
