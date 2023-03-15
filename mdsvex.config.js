@@ -13,7 +13,7 @@ const config = {
     },
     rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, { behaviour: "wrap" }]],
     layout: {
-        _: path.join(__dirname, "./src/components/Layout.svelte")
+        _: path.join(__dirname, "./src/components/ReleaseLayout.svelte")
     }
 };
 
