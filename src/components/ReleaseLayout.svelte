@@ -1,13 +1,44 @@
 <script>
+    import { MetaTags } from "svelte-meta-tags";
+
     export let title = "";
+    export let publishedAt = "";
     export let headerImage = "";
     export let summary = "";
     export let source = "";
+
+    let splitted = publishedAt.split("/");
+    let id = `${splitted[0]}-${splitted[1]}`;
 </script>
 
-<svelte:head>
-    <title>{title}</title>
-</svelte:head>
+<MetaTags
+    title={title}
+    titleTemplate="%s - sbkr"
+    description={summary}
+    canonical="https://sbkr.pages.dev/releases/{id}"
+    openGraph={{
+        type: "website",
+        site_name: "sbkr",
+        url: `https://sbkr.pages.dev/releases/${id}`,
+        title: title,
+        description: summary,
+        images: [
+            {
+                url: headerImage
+            }
+        ]
+    }}
+    additionalMetaTags={[
+        {
+            property: "author",
+            content: "DVRP"
+        },
+        {
+            property: "theme-color",
+            content: "#06161E"
+        }
+    ]}
+/>
 
 <article class="post">
     <img class="header" alt="이미지" src={headerImage} />

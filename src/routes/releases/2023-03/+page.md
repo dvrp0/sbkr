@@ -69,11 +69,11 @@ source: https://stormbound-kitty.com/releases/03-2023
 ## 성 패트릭 데이 이벤트
 점점 가까워지는 성 패트릭 데이(3월 17일)를 기념하기 위해 작은 이벤트가 진행됩니다. 성 패트릭 데이 이벤트가 진행되는 3월 17일부터 3월 27일까지 코인과 루비를 구매하면 추가로 지급됩니다.
 
-3월 16일에 시작하는 난투의 입장료가 30% 감소합니다(패스 보유 시 40%).
+3월 16일에 시작하는 난투의 입장료가 50% 감소합니다(패스 보유 시 60%).
 
 다음은 감소한 입장료입니다.
 
-<DiscountedBrawl percentage=30 />
+<DiscountedBrawl />
 
 또한 각기 다른 아바타를 포함하는 성 패트릭 데이 특별 상품 또한 판매될 예정입니다.
 
@@ -101,7 +101,7 @@ source: https://stormbound-kitty.com/releases/03-2023
       * 5승: <Icon type="stone" /> 10 합성석 (기본 상자까지 합산 시 <Icon type="stone" /> 15 합성석)
       * 6승: <Icon type="stone" /> 12 합성석 (기본 상자까지 합산 시 <Icon type="stone" /> 18 합성석)
 
-<FlexibleList allowOverflow >
+<FlexibleList allowOverflow>
     <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/e6f055b16a24888abc0b1c23e8e9e6d2060a951c-540x959.png#screenshot" />
 </FlexibleList>
 
@@ -115,14 +115,14 @@ source: https://stormbound-kitty.com/releases/03-2023
       * 광고를 3개 시청해 세 번째 겸손의 책 획득
       * 광고를 4개 시청해 네 번째 겸손의 책 획득
 
-<FlexibleList allowOverflow >
+<FlexibleList allowOverflow>
     <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/903588e751afbb4bf3c9ddf4d639387b68c84060-1080x2340.jpg#screenshot" />
     <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/5b3fdb4d84e5e423bc9a30adf5b00aabb6bd476a-1080x2340.jpg#screenshot" />
 </FlexibleList>
 
 <Comment>
 
-역주: 프리미엄 패스 보유 시 광고를 하나도 보지 않고 겸손의 책 4개를 모두 획득할 수 있다고 합니다.
+**역주**: 프리미엄 패스 보유 시 광고를 하나도 보지 않고 겸손의 책 4개를 모두 획득할 수 있다고 합니다.
 
 </Comment>
 

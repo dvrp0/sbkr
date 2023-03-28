@@ -1,5 +1,8 @@
 <script lang="ts">
     import type { PageData } from "./$types";
+    import { cards } from "../../../store";
+    import { convertFaction } from "$lib/card";
+    import { MetaTags } from "svelte-meta-tags";
     import Icon from "$components/Icon.svelte";
 
     export let data: PageData;
@@ -8,9 +11,9 @@
     let headerImage = data.headerImage;
     let summary = data.summary;
     let source = data.source;
+    let league = data.league;
     let usage = data.usage;
     let change = data.change;
-    let translations = data.translations;
 
     function convertToJSONKey(value: string): keyof JSON
     {
@@ -28,9 +31,34 @@
     }
 </script>
 
-<svelte:head>
-    <title>{title}</title>
-</svelte:head>
+<MetaTags
+    title={title}
+    titleTemplate="%s - sbkr"
+    description={summary}
+    canonical="https://sbkr.pages.dev/card-usages/{league}"
+    openGraph={{
+        type: "website",
+        site_name: "sbkr",
+        url: `https://sbkr.pages.dev/card-usages/${league}`,
+        title: title,
+        description: summary,
+        images: [
+            {
+                url: headerImage
+            }
+        ]
+    }}
+    additionalMetaTags={[
+        {
+            property: "author",
+            content: "DVRP"
+        },
+        {
+            property: "theme-color",
+            content: "#06161E"
+        }
+    ]}
+/>
 
 <article class="post">
     <img class="header" alt="이미지" src={headerImage} />
@@ -54,12 +82,12 @@
         <div class="entries">
             {#each value as entry}
             {@const c = change[convertToJSONKey(entry)]}
-            <div class="entry">
+            <div class="entry {convertFaction($cards.find(({ id }) => id === entry)?.kingdom ?? "neutral")}">
                 <div class="entry-image">
                     <img alt={entry} src="/images/cards/cardart_{entry.toUpperCase()}.png" />
                 </div>
                 <div class="entry-info">
-                    <span>{translations[convertToJSONKey(entry)]}</span>
+                    <span><a href="/cards/{entry}">{$cards.find(({ id }) => id === entry)?.name}</a></span>
                     <div class="entry-info-change">
                         {#if c === "0"}
                         <span>-</span>
@@ -118,12 +146,31 @@
     }
     
     .entry {
-        background-color: var(--c-background-light);
         display: flex;
         width: calc(50% - 2.5em);
         padding: 1em;
         margin-right: 0.5em;
         margin-bottom: 0.5em;
+    }
+
+    .neutral {
+        background-color: var(--c-background-light);
+    }
+
+    .swarm {
+        background-color: var(--c-background-light-swarm);
+    }
+
+    .ironclad {
+        background-color: var(--c-background-light-ironclad);
+    }
+
+    .shadowfen {
+        background-color: var(--c-background-light-shadowfen);
+    }
+
+    .winter {
+        background-color: var(--c-background-light-winter);
     }
 
     .entry-image {

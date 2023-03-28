@@ -1,6 +1,33 @@
-<svelte:head>
-    <title>소개</title>
-</svelte:head>
+<script>
+    import { MetaTags } from "svelte-meta-tags";
+
+    let title = "소개";
+    let description = "sbkr은 스톰바운드의 한국어 컨텐츠를 제공하는 웹사이트입니다.";
+</script>
+
+<MetaTags
+    title={title}
+    titleTemplate="%s - sbkr"
+    description={description}
+    canonical="https://sbkr.pages.dev/about"
+    openGraph={{
+        type: "website",
+        site_name: "sbkr",
+        url: "https://sbkr.pages.dev/about",
+        title: title,
+        description: description
+    }}
+    additionalMetaTags={[
+        {
+            property: "author",
+            content: "DVRP"
+        },
+        {
+            property: "theme-color",
+            content: "#06161E"
+        }
+    ]}
+/>
 
 <div class="info">
     <img class="logo" alt="DVRP" src="/images/DVRP.png" />

@@ -33,8 +33,9 @@
                 <p class="name">{unpack(name, i)}</p>
                 <p class="unit-type" class:invisible={unpack(type, i) != "unit"}>{unpack(unitType, i)}</p>
                 <img class="cardart" alt="카드아트" src={unpack(cardart, i)} />
-                <div class="ability">
-                    <p>{@html abilities[i].replace(/^\*\*/g, "<strong>").replace(/\s\*\*/g, " <strong>").replace(/\*\*/g, "</strong>")}</p>
+                <div class="ability" class:invisible={abilities[i] === ""}>
+                    <p>{@html abilities[i] === "" ? "." :
+                        abilities[i].replace(/^\*/g, "<strong>").replace(/\s\*/g, " <strong>").replace(/\*/g, "</strong>")}</p>
                 </div>
                 <div class="stats">
                     <p class="stat strength" class:invisible={unpack(type, i) == "spell"}>{strengths[i]}</p>

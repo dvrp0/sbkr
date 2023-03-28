@@ -16,16 +16,10 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
         return (await response.json())["result"] as JSON;
     }
 
-    const translations = async () => {
-        const response = await fetch("https://sbkrserver.deta.dev/translations");
-        return (await response.json())["result"] as JSON;
-    }
-
     return {
         ...meta,
         league: params.league,
         usage: usage(),
-        change: change(),
-        translations: translations()
+        change: change()
     };
 }

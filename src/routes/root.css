@@ -14,6 +14,10 @@
     --c-foreground-hover: #bcd0e2;
     --c-background: #06161E;
     --c-background-light: #132229;
+    --c-background-light-swarm: #292E2B;
+    --c-background-light-ironclad: #23252B;
+    --c-background-light-shadowfen: #1A2D30;
+    --c-background-light-winter: #132D36;
     --c-background-nav: #131E23;
     --card: 12em;
     --padding: 1.25em;

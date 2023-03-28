@@ -1,14 +1,37 @@
 <script lang="ts">
     import type { PageData } from "./$types"
+    import { MetaTags } from "svelte-meta-tags";
 
     export let data: PageData
 
     let posts = data.posts;
+    let title: string = "카드 사용량";
+    let description: string = "매일 업데이트되는 리그별 카드 사용량입니다.";
 </script>
 
-<svelte:head>
-    <title>카드 사용량</title>
-</svelte:head>
+<MetaTags
+    title={title}
+    titleTemplate="%s - sbkr"
+    description={description}
+    canonical="https://sbkr.pages.dev/card-usages"
+    openGraph={{
+        type: "website",
+        site_name: "sbkr",
+        url: "https://sbkr.pages.dev/releases/card-usages",
+        title: title,
+        description: description
+    }}
+    additionalMetaTags={[
+        {
+            property: "author",
+            content: "DVRP"
+        },
+        {
+            property: "theme-color",
+            content: "#06161E"
+        }
+    ]}
+/>
 
 {#each posts as post}
 <article class="entry">

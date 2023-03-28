@@ -1,9 +1,11 @@
 <script lang="ts">
-    import type { PageData } from "./$types"
+    import type { PageData } from "./$types";
+    import { cards } from "../store";
 
     export let data: PageData
 
     let posts = data.posts;
+    cards.update(x => x = data.cards);
 </script>
 
 <svelte:head>
