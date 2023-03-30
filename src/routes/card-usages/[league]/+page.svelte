@@ -1,10 +1,7 @@
 <script lang="ts">
     import type { PageData } from "./$types";
-    import { cards } from "../../../store";
-    import { convertFaction } from "$lib/card";
     import { MetaTags } from "svelte-meta-tags";
     import CardEntry from "$components/CardEntry.svelte";
-    import Icon from "$components/Icon.svelte";
 
     export let data: PageData;
 

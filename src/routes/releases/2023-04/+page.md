@@ -20,11 +20,11 @@ source: https://stormbound-kitty.com/releases/04-2023
 ## 밸런스 변경점
 이번 업데이트에는 평소와 같이 일부 밸런스가 조정됩니다.
 
-  - **<CardLink>서풍의 선원</CardLink>**: 체력 <Old>2/3/4/5/6</Old> → 3/4/5/6/7
-  - **<CardLink>의욕 상실의 공격</CardLink>**: 데미지 <Old>2/3/4/5/6</Old> → 3/4/5/6/7
-  - **<CardLink>파우누스 동료</CardLink>**: 체력 <Old>1/1/2/2/3</Old> → 2/2/3/3/4
-  - **<CardLink>가시 많은 밤나무</CardLink>**: 체력 <Old>5/6/8/10/12</Old> → 6/7/9/11/14
-  - **<CardLink>공간의 사원</CardLink>**: 손으로 돌아오는 카드 마나 <Old>0</Old> → 1
+  - **<CardLink target="서풍의 선원" />**: 체력 <Old>2/3/4/5/6</Old> → 3/4/5/6/7
+  - **<CardLink target="의욕 상실의 공격" />**: 데미지 <Old>2/3/4/5/6</Old> → 3/4/5/6/7
+  - **<CardLink target="파우누스 동료" />**: 체력 <Old>1/1/2/2/3</Old> → 2/2/3/3/4
+  - **<CardLink target="가시 많은 밤나무" />**: 체력 <Old>5/6/8/10/12</Old> → 6/7/9/11/14
+  - **<CardLink target="공간의 사원" />**: 손으로 돌아오는 카드 마나 <Old>0</Old> → 1
 
 <Comment>
 
@@ -64,8 +64,8 @@ source: https://stormbound-kitty.com/releases/04-2023
 
 신규 카드의 0 마나 버전이 덱에 자동으로 추가됩니다(즉 모든 덱이 13장). 신규 카드를 소유하고 있지 않거나 레벨을 올리지 않았다면 1레벨로, 레벨을 올렸다면 해당 레벨로 추가됩니다.
 
-  - 4월 13일에 시작하는 워리어 난투는 **<CardLink>초음속 돌파자</CardLink>** 난투입니다.
-  - 4월 27일에 시작하는 워리어 난투는 **<CardLink>눈더미</CardLink>** 난투입니다.
+  - 4월 13일에 시작하는 워리어 난투는 **<CardLink target="초음속 돌파자" />** 난투입니다.
+  - 4월 27일에 시작하는 워리어 난투는 **<CardLink target="눈더미" />** 난투입니다.
 
 4월 6일에 시작하는 난투의 입장료가 50% 감소합니다(패스 보유 시 60%).
 

@@ -1,6 +1,5 @@
 <script lang="ts">
     import { cards } from "../../store";
-    import { convertFaction } from "$lib/card";
     import CardEntry from "$components/CardEntry.svelte";
 </script>
 
