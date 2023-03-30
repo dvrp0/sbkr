@@ -32,7 +32,9 @@
                 <p class="stat cost">{unpack(cost, i)}</p>
                 <p class="name">{unpack(name, i)}</p>
                 <p class="unit-type" class:invisible={unpack(type, i) != "unit"}>{unpack(unitType, i)}</p>
-                <img class="cardart" alt="카드아트" src={unpack(cardart, i)} />
+                <div class="fill" />
+                <img class="cardart" class:small={abilities[i] === ""} alt="카드아트" src={unpack(cardart, i)} />
+                <div class="fill" />
                 <div class="ability" class:invisible={abilities[i] === ""}>
                     <p>{@html abilities[i] === "" ? "." :
                         abilities[i].replace(/^\*/g, "<strong>").replace(/\s\*/g, " <strong>").replace(/\*/g, "</strong>")}</p>
@@ -82,8 +84,8 @@
     }
 
     .card-contents {
-        max-width: 80%;
-        max-height: 100%;
+        width: 80%;
+        height: 100%;
         display: inline-flex;
         flex-direction: column;
         align-items: center;
@@ -104,9 +106,14 @@
         margin-bottom: 0;
     }
 
+    .fill {
+        flex: 1 0 auto;
+    }
+
     .cardart {
         min-width: 0;
         min-height: 0;
+        max-width: 100%;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
@@ -118,6 +125,7 @@
     }
 
     .stats {
+        height: fit-content;
         display: flex;
         align-items: center;
         justify-content: center;

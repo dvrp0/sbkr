@@ -40,7 +40,7 @@ source: https://stormbound-kitty.com/releases/03-2023
 </Comment>
 
 ## 신규 카드
-2월에는 두 장의 신규 카드가 추가됩니다. 바로 중립 나이트와 중립 드워프입니다.
+3월에는 두 장의 신규 카드가 추가됩니다. 바로 중립 나이트와 중립 드워프입니다.
 
 <Card type="unit" faction="neutral" name="잎보듬이" unitType="드워프" cost={5} strengths={[2, 3, 4, 5, 6]} movement={2} rarity="common" cardart="https://cdn.sanity.io/images/5hlpazgd/production/8ef3508ab1555ae3c436b03d1aa5acf0c763c977-2180x2271.png" abilities={[
     "카드 사용 시, **주변에** 아군 유닛이 없다면, **4 체력**을 **획득**합니다",
@@ -137,7 +137,7 @@ source: https://stormbound-kitty.com/releases/03-2023
 아래에서 3월 업데이트에 대한 자세한 일정을 확인하시기 바랍니다.
 
   - **밸런스 변경점**: 3월 1일 오후 4시
-  - **입장료 30% 감소 난투**: 3월 16일 오후 4시 ~ 3월 20일 오후 4시
+  - **입장료 50% 감소 난투**: 3월 16일 오후 4시 ~ 3월 20일 오후 4시
   - **성 패트릭 데이 기념 선물 (200 코인)**: 3월 17일 오후 4시 ~ 3월 20일 오후 4시
   - **잎보듬이 출시**: 3월 17일 오후 4시
   - **성 패트릭 데이 코인 보너스**: 3월 17일 오후 4시 ~ 3월 27일 오후 4시
