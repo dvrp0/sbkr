@@ -3,6 +3,7 @@
     import { cards } from "../../../store";
     import { convertFaction } from "$lib/card";
     import { MetaTags } from "svelte-meta-tags";
+    import CardEntry from "$components/CardEntry.svelte";
     import Icon from "$components/Icon.svelte";
 
     export let data: PageData;
@@ -20,14 +21,9 @@
         return value as keyof JSON;
     }
 
-    function convertToNumber(value: any): number
+    function convertToString(value: any): string
     {
-        return value as unknown as number;
-    }
-
-    function isPositive(value: any): boolean
-    {
-        return value !== "new" && convertToNumber(value) > 0;
+        return value as string;
     }
 </script>
 
@@ -81,29 +77,7 @@
     <h2>{key}</h2>
         <div class="entries">
             {#each value as entry}
-            {@const c = change[convertToJSONKey(entry)]}
-            <div class="entry {convertFaction($cards.find(({ id }) => id === entry)?.kingdom ?? "neutral")}">
-                <div class="entry-image">
-                    <img alt={entry} src="/images/cards/cardart_{entry.toUpperCase()}.png" />
-                </div>
-                <div class="entry-info">
-                    <span><a href="/cards/{entry}">{$cards.find(({ id }) => id === entry)?.name}</a></span>
-                    <div class="entry-info-change">
-                        {#if c === "0"}
-                        <span>-</span>
-                        {:else if c === "new"}
-                        <Icon type="new" />
-                        <span class="margin">신규</span>
-                        {:else if isPositive(c)}
-                        <Icon type="up" />
-                        <span class="margin">{c}</span>
-                        {:else}
-                        <Icon type="down" />
-                        <span class="margin">{Math.abs(convertToNumber(c))}</span>
-                        {/if}
-                    </div>
-                </div>
-            </div>
+            <CardEntry entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
             {/each}
         </div>
     {/each}
@@ -144,67 +118,6 @@
         align-items: center;
         margin-right: -0.5em;
     }
-    
-    .entry {
-        display: flex;
-        width: calc(50% - 2.5em);
-        padding: 1em;
-        margin-right: 0.5em;
-        margin-bottom: 0.5em;
-    }
-
-    .neutral {
-        background-color: var(--c-background-light);
-    }
-
-    .swarm {
-        background-color: var(--c-background-light-swarm);
-    }
-
-    .ironclad {
-        background-color: var(--c-background-light-ironclad);
-    }
-
-    .shadowfen {
-        background-color: var(--c-background-light-shadowfen);
-    }
-
-    .winter {
-        background-color: var(--c-background-light-winter);
-    }
-
-    .entry-image {
-        width: 6em;
-        height: 6em;
-        margin-right: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .entry-image img {
-        max-width: 5em;
-        max-height: 5em;
-    }
-
-    .entry-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .entry-info-change {
-        display: flex;
-        align-items: center;
-    }
-
-    .entry-info-change span {
-        color: var(--c-foreground-dark);
-    }
-
-    .margin {
-        margin-left: 0.25em;
-    }
 
     ul {
         margin-top: 4rem;
@@ -215,12 +128,6 @@
             width: 100%;
             margin-left: auto;
             margin-right: auto;
-        }
-    }
-
-    @media (max-width: 43rem) {
-        .entry {
-            width: 100%;
         }
     }
 </style>

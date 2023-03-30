@@ -19,6 +19,10 @@
     --c-background-light-shadowfen: #1A2D30;
     --c-background-light-winter: #132D36;
     --c-background-nav: #131E23;
+    --c-rarity-common: #f5f1e5;
+    --c-rarity-rare: #95d7f9;
+    --c-rarity-epic: #dba8f5;
+    --c-rarity-legendary: #f5c79f;
     --card: 12em;
     --padding: 1.25em;
     --large: calc(var(--card) * 5 + var(--padding) * 8);

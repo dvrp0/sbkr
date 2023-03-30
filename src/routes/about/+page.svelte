@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
     import { MetaTags } from "svelte-meta-tags";
 
-    let title = "소개";
-    let description = "sbkr은 스톰바운드의 한국어 컨텐츠를 제공하는 웹사이트입니다.";
+    let title: string = "소개";
+    let description: string = "sbkr은 스톰바운드의 한국어 컨텐츠를 제공하는 웹사이트입니다.";
 </script>
 
 <MetaTags

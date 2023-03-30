@@ -12,6 +12,7 @@ source: https://stormbound-kitty.com/releases/01-2023
     import FlexibleList from "$components/FlexibleList.svelte";
     import Icon from "$components/Icon.svelte";
     import Card from "$components/Card.svelte";
+    import CardLink from "$components/CardLink.svelte";
     import Comment from "$components/Comment.svelte";
     import DiscountedBrawl from "$components/DiscountedBrawl.md";
 </script>
@@ -19,19 +20,19 @@ source: https://stormbound-kitty.com/releases/01-2023
 ## 밸런스 변경점
 이번 업데이트에는 평소와 같이 일부 밸런스가 조정됩니다. 저희는 모든 바닐라 카드를 버프하기로 결정했으나, 안정성을 해치지 않도록 여러 단계에 걸쳐 진행하고 있습니다. 1월에는 두 번째 대상인 1 이동 바닐라 카드들이 버프되며, 2월에 마지막 대상들에 대한 버프가 진행됩니다.
 
-  - **전쟁 베테랑**: 체력 <Old>8/10/12/15/18</Old> → 9/11/13/16/19
-  - **아이스 드로플링**: 체력 <Old>7/8/10/12/15</Old> → 8/9/11/13/16
-  - **연산자**: 체력 <Old>10/13/16/20/24</Old> → 12/15/18/22/26
-  - **대리자**: 체력 <Old>7/8/10/12/15</Old> → 8/9/11/13/16
-  - **영웅적인 병사**: 체력 <Old>5/6/7/8/10</Old> → 6/7/8/9/11
+  - **<CardLink>전쟁 베테랑</CardLink>**: 체력 <Old>8/10/12/15/18</Old> → 9/11/13/16/19
+  - **<CardLink>아이스 드로플링</CardLink>**: 체력 <Old>7/8/10/12/15</Old> → 8/9/11/13/16
+  - **<CardLink>연산자</CardLink>**: 체력 <Old>10/13/16/20/24</Old> → 12/15/18/22/26
+  - **<CardLink>대리자</CardLink>**: 체력 <Old>7/8/10/12/15</Old> → 8/9/11/13/16
+  - **<CardLink>영웅적인 병사</CardLink>**: 체력 <Old>5/6/7/8/10</Old> → 6/7/8/9/11
 
 <Comment>
 
 **역주**: 다음 달에는 0 이동 바닐라 카드들이 버프될 예정으로, 다음 변경점들이 예고됐습니다.
 
-  - **선실의 여인**: 체력 5/6/7/8/10 → 6/7/8/9/11
-  - **뱃멀미 경비원**: 체력 8/10/12/15/18 → 10/12/14/17/20
-  - **거침없는 광신도**: 체력 10/13/16/20/24 → 12/15/18/22/26
+  - **<CardLink>선실의 여인</CardLink>**: 체력 5/6/7/8/10 → 6/7/8/9/11
+  - **<CardLink>뱃멀미 경비원</CardLink>**: 체력 8/10/12/15/18 → 10/12/14/17/20
+  - **<CardLink>거침없는 광신도</CardLink>**: 체력 10/13/16/20/24 → 12/15/18/22/26
 
 </Comment>
 
@@ -45,7 +46,7 @@ source: https://stormbound-kitty.com/releases/01-2023
     "카드 사용 시, 덱에서 무작위 해적 카드 *1장*을 *뽑습니다*",
     "카드 사용 시, 덱에서 무작위 해적 카드 *1장*을 *뽑습니다*"
 ]}/>
-<Card type="spell" faction="neutral" name="천둥 소리" cost={5} rarity="epic" cardart="/images/cards/cardart_S022.png" abilities={[
+<Card type="spell" faction="neutral" name="천둥소리" cost={5} rarity="epic" cardart="/images/cards/cardart_S022.png" abilities={[
     "아군 유닛들에게 내 손의 빈 카드 공간 하나마다 *2 체력*을 무작위로 나누어 *부여*합니다",
     "아군 유닛들에게 내 손의 빈 카드 공간 하나마다 *3 체력*을 무작위로 나누어 *부여*합니다",
     "아군 유닛들에게 내 손의 빈 카드 공간 하나마다 *4 체력*을 무작위로 나누어 *부여*합니다",
@@ -60,8 +61,8 @@ source: https://stormbound-kitty.com/releases/01-2023
 
 신규 카드의 0 마나 버전이 덱에 자동으로 추가됩니다(즉 모든 덱이 13장). 신규 카드를 소유하고 있지 않거나 레벨을 올리지 않았다면 1레벨로, 레벨을 올렸다면 해당 레벨로 추가됩니다.
 
-  - 1월 12일에 시작하는 워리어 난투는 **엄격한 갑판수** 난투입니다.
-  - 1월 26일에 시작하는 워리어 난투는 **천둥 소리** 난투입니다.
+  - 1월 12일에 시작하는 워리어 난투는 **<CardLink>엄격한 갑판수</CardLink>** 난투입니다.
+  - 1월 26일에 시작하는 워리어 난투는 **<CardLink>천둥소리</CardLink>** 난투입니다.
 
 ## 신규 로그인 시스템
 오랜 기다림 끝에 신규 로그인 시스템이 드디어 준비되었으며, **12월 20일**에 모든 플랫폼으로 출시된다는 소식을 기쁜 마음으로 전해드립니다.

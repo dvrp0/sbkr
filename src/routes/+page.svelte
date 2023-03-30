@@ -1,20 +1,39 @@
 <script lang="ts">
     import type { PageData } from "./$types";
     import { cards } from "../store";
+    import { MetaTags } from "svelte-meta-tags";
 
     export let data: PageData
 
     let posts = data.posts;
     cards.update(x => x = data.cards);
+
+    let title: string = "sbkr";
+    let description: string = "sbkr은 스톰바운드의 한국어 컨텐츠를 제공하는 웹사이트입니다.";
 </script>
 
-<svelte:head>
-    <title>sbkr</title>
-</svelte:head>
-
-<!-- <div class="header">
-    <img class="logo" alt="로고" src="/favicon.png" />
-</div> -->
+<MetaTags
+    title={title}
+    description={description}
+    canonical="https://sbkr.pages.dev/about"
+    openGraph={{
+        type: "website",
+        site_name: "sbkr",
+        url: "https://sbkr.pages.dev/about",
+        title: title,
+        description: description
+    }}
+    additionalMetaTags={[
+        {
+            property: "author",
+            content: "DVRP"
+        },
+        {
+            property: "theme-color",
+            content: "#06161E"
+        }
+    ]}
+/>
 
 {#each posts as post}
 <article class="entry">
@@ -26,18 +45,6 @@
 {/each}
 
 <style>
-    /* .header {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 1rem;
-    }
-
-    .logo {
-        width: 15%;
-    } */
-
     .entry {
         margin: 4rem 0;
     }

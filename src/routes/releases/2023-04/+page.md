@@ -13,6 +13,7 @@ draft: true
     import FlexibleList from "$components/FlexibleList.svelte";
     import Icon from "$components/Icon.svelte";
     import Card from "$components/Card.svelte";
+    import CardLink from "$components/CardLink.svelte";
     import Comment from "$components/Comment.svelte";
     import DiscountedBrawl from "$components/DiscountedBrawl.md";
 </script>
@@ -20,9 +21,9 @@ draft: true
 ## 밸런스 변경점
 이번 업데이트에는 평소와 같이 일부 밸런스가 조정됩니다.
 
-  - **서풍의 선원**: 체력 <Old>2/3/4/5/6</Old> → 3/4/5/6/7
-  - **가시 많은 밤나무**: 체력 <Old>5/6/8/10/12</Old> → 6/7/9/11/14
-  - **공간의 사원**: 손으로 돌아오는 카드 마나 <Old>0</Old> → 1
+  - **<CardLink>서풍의 선원</CardLink>**: 체력 <Old>2/3/4/5/6</Old> → 3/4/5/6/7
+  - **<CardLink>가시 많은 밤나무</CardLink>**: 체력 <Old>5/6/8/10/12</Old> → 6/7/9/11/14
+  - **<CardLink>공간의 사원</CardLink>**: 손으로 돌아오는 카드 마나 <Old>0</Old> → 1
 
 ## 신규 카드
 2월에는 두 장의 신규 카드가 추가됩니다. 바로 중립 나이트와 중립 드워프입니다.

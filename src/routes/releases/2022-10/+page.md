@@ -12,6 +12,7 @@ source: https://stormbound-kitty.com/releases/01-2023
     import FlexibleList from "$components/FlexibleList.svelte";
     import Icon from "$components/Icon.svelte";
     import Card from "$components/Card.svelte";
+    import CardLink from "$components/CardLink.svelte";
     import Comment from "$components/Comment.svelte";
 </script>
 
@@ -25,10 +26,10 @@ source: https://stormbound-kitty.com/releases/01-2023
 ## 밸런스 변경점
 이번 달부터 다시 밸런스가 조정됩니다.
 
-  - **늑대 망토**: 마나 <Old>6</Old> → 7
-  - **용자리 방랑자**: 소환하는 드래곤 체력 <Old>1/1/2/2/3</Old> → 2/2/3/3/4
-  - **황혼을 부르는 노인**: 체력 부여량 <Old>4/5/6/7/9</Old> → 5/6/7/8/10
-  - **사원 수호자**: <Old>아군 사원이나 기지의 앞이나 양옆에 카드 사용 시</Old> → 아군 사원이나 기지와 인접하여 카드 사용 시
+  - **<CardLink>늑대 망토</CardLink>**: 마나 <Old>6</Old> → 7
+  - **<CardLink>용자리 방랑자</CardLink>**: 소환하는 드래곤 체력 <Old>1/1/2/2/3</Old> → 2/2/3/3/4
+  - **<CardLink>황혼을 부르는 노인</CardLink>**: 체력 부여량 <Old>4/5/6/7/9</Old> → 5/6/7/8/10
+  - **<CardLink>사원 수호자</CardLink>**: <Old>아군 사원이나 기지의 앞이나 양옆에 카드 사용 시</Old> → 아군 사원이나 기지와 인접하여 카드 사용 시
 
 <Comment>
 
@@ -64,8 +65,8 @@ source: https://stormbound-kitty.com/releases/01-2023
 
 신규 카드의 0 마나 버전이 덱에 자동으로 추가됩니다(즉 모든 덱이 13장). 신규 카드를 소유하고 있지 않거나 레벨을 올리지 않았다면 1레벨로, 레벨을 올렸다면 해당 레벨로 추가됩니다.
 
-  - 10월 13일에 시작하는 워리어 난투는 **치즈 유혹자** 난투입니다.
-  - 10월 20일에 시작하는 워리어 난투는 **혼령의 방첨탑** 난투입니다.
+  - 10월 13일에 시작하는 워리어 난투는 **<CardLink>치즈 유혹자</CardLink>** 난투입니다.
+  - 10월 20일에 시작하는 워리어 난투는 **<CardLink>혼령의 방첨탑</CardLink>** 난투입니다.
 
 ## 영웅 리그
 ### 상위 500명

@@ -168,19 +168,19 @@
     }
 
     .common {
-        color: #f5f1e5;
+        color: var(--c-rarity-common);
     }
 
     .rare {
-        color: #95d7f9;
+        color: var(--c-rarity-rare);
     }
 
     .epic {
-        color: #dba8f5;
+        color: var(--c-rarity-epic);
     }
 
     .legendary {
-        color: #f5c79f;
+        color: var(--c-rarity-legendary);
     }
 
     .unit {
