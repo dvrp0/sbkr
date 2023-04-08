@@ -1,13 +1,13 @@
 <script lang="ts">
-    import type { CardData } from "$lib/card";
     import type { PageData } from "./$types"
-    import { convertType, convertRarity, convertFaction } from "$lib/card";
+    import { type CardData, convertType, convertRarity, convertFaction } from "$lib/card";
+    import { cards } from "../../../store";
     import { MetaTags } from "svelte-meta-tags";
     import Card from "$components/Card.svelte";
 
     export let data: PageData
 
-    let card: CardData = data.card;
+    let card: CardData = $cards.find(({ id }) => id === data.id) ?? {} as CardData;
     let stringified: string = data.stringified;
 </script>
 

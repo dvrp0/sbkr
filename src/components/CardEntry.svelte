@@ -1,7 +1,6 @@
 <script lang="ts">
-    import type { CardData } from "$lib/card";
     import { cards } from "../store";
-    import { convertFaction } from "$lib/card";
+    import { type CardData, convertFaction } from "$lib/card";
     import Icon from "$components/Icon.svelte";
 
     export let entryId: string;

@@ -7,12 +7,12 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
     const meta = getCardUsagesMetas().find(x => x.id == params.league) as ArticleMeta;
 
     const usage = async () => {
-        const response = await fetch(`https://sbkrserver.deta.dev/usages?league=${params.league}`);
+        const response = await fetch(`https://sbkr-1-x0172776.deta.app/usages?league=${params.league}`);
         return (await response.json())["result"] as JSON;
     }
 
     const change = async () => {
-        const response = await fetch(`https://sbkrserver.deta.dev/usage-changes?league=${params.league}`);
+        const response = await fetch(`https://sbkr-1-x0172776.deta.app/usage-changes?league=${params.league}`);
         return (await response.json())["result"] as JSON;
     }
 

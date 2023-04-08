@@ -126,6 +126,8 @@ layout: false
         font-size: 1rem;
         font-variation-settings: "wght" 700;
         padding: 20px;
+        transition: 0.5s;
+        cursor: pointer;
     }
 
     button:hover {
