@@ -12,6 +12,11 @@
     let position = { x: 0, y: 0 };
     let card: CardData = $cards.find(({ name }) => name === target) ?? {} as CardData;
 
+    function handleFocus()
+    {
+        isHovered = true;
+    }
+
     function handleMouseOver(event: any)
     {
         isHovered = true;
@@ -29,16 +34,6 @@
     }
 </script>
 
-<strong>
-    <span
-        on:focus={() => isHovered = true}
-        on:mouseover={handleMouseOver}
-        on:mousemove={handleMouseMove}
-        on:mouseleave={handleMouseLeave}>
-        <a href="/cards/{card.id}">{target}</a>
-    </span>
-</strong>
-
 {#if isHovered}
 <div class="tooltip" style="top: {position.y}px; left: {position.x}px;">
     <Card type={convertType(card.type)} faction={convertFaction(card.kingdom)} name={card.name} unitType={card.unitTypes}
@@ -46,6 +41,13 @@
           cardart={`/images/cards/cardart_${card.id.toUpperCase()}.png`} abilities={card.descriptions} count={1} />
 </div>
 {/if}
+
+<strong>
+    <a href="/cards/{card.id}" on:focus={handleFocus} on:mouseover={handleMouseOver} on:mousemove={handleMouseMove}
+       on:mouseleave={handleMouseLeave}>
+        {target}
+    </a>
+</strong>
 
 <style>
     .tooltip {

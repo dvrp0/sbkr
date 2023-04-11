@@ -52,14 +52,18 @@ h4,
 h5,
 h6 {
     font-variation-settings: "wght" 700;
+
+    & a {
+        text-decoration: none;
+    }
 }
 
 a {
     color: var(--c-foreground);
-    outline: none;
-    text-decoration: none;
     transition: 0.5s;
     line-height: 0;
+    text-decoration-color: var(--c-foreground-dark);
+    text-underline-offset: 4.35px;
 }
 
 a:hover {

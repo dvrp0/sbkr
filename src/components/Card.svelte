@@ -113,7 +113,7 @@
     .cardart {
         min-width: 0;
         min-height: 0;
-        max-width: 100%;
+        max-width: 90%;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
