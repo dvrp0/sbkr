@@ -3,7 +3,7 @@
     import { cards } from "../store";
     import { MetaTags } from "svelte-meta-tags";
 
-    export let data: PageData
+    export let data: PageData;
 
     let posts = data.posts;
     cards.update(x => x = data.cards);
@@ -21,7 +21,12 @@
         site_name: "sbkr",
         url: "https://sbkr.pages.dev/about",
         title: title,
-        description: description
+        description: description,
+        images: [
+            {
+                url: "/images/thumbnail.png"
+            }
+        ]
     }}
     additionalMetaTags={[
         {

@@ -2,6 +2,7 @@
 title: 2023 3월 업데이트
 publishedAt: 2023/03
 headerImage: https://cdn.sanity.io/images/5hlpazgd/production/76566509d2090aa29393d996ce1e7f8cdda224e1-1920x622.png
+isHeaderShadowNeeded: true
 summary: 3월에는 신규 카드 2장이 추가되고, 일부 밸런스가 조정되며, 성 패트릭 데이 이벤트가 진행됩니다!
 source: https://stormbound-kitty.com/releases/03-2023
 ---

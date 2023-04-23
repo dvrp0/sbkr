@@ -1,11 +1,12 @@
-<script>
+<script lang="ts">
     import { MetaTags } from "svelte-meta-tags";
 
-    export let title = "";
-    export let publishedAt = "";
-    export let headerImage = "";
-    export let summary = "";
-    export let source = "";
+    export let title: string;
+    export let publishedAt: string;
+    export let headerImage: string;
+    export let summary: string;
+    export let source: string;
+    export let isHeaderShadowNeeded: boolean;
 
     let splitted = publishedAt.split("/");
     let id = `${splitted[0]}-${splitted[1]}`;
@@ -41,7 +42,12 @@
 />
 
 <article class="post">
-    <img class="header" alt="이미지" src={headerImage} />
+    <div class="headers">
+        <img alt="이미지" src={headerImage} />
+        {#if isHeaderShadowNeeded}
+        <img alt="이미지" src="/images/headers/header_shadow.png" />
+        {/if}
+    </div>
     <h1>{title}</h1>
     <div class="intro">
         <p class="summary">{summary}</p>
@@ -56,11 +62,17 @@
 </article>
 
 <style>
-    .header {
+    .headers {
+        display: grid;
+    }
+
+    .headers img {
         width: var(--large);
         margin-bottom: -4.8rem;
         margin-left: calc((var(--large) - 100%) / 2 * -1);
         margin-right: calc((var(--large) - 100%) / 2 * -1);
+        grid-column-start: 1;
+        grid-row-start: 1;
     }
 
     .intro {
@@ -86,7 +98,7 @@
     }
 
     @media (max-width: 74rem) {
-        .header {
+        .headers img {
             width: 100%;
             margin-left: auto;
             margin-right: auto;

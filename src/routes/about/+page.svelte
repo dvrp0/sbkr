@@ -15,7 +15,12 @@
         site_name: "sbkr",
         url: "https://sbkr.pages.dev/about",
         title: title,
-        description: description
+        description: description,
+        images: [
+            {
+                url: "/images/thumbnail.png"
+            }
+        ]
     }}
     additionalMetaTags={[
         {
@@ -56,6 +61,7 @@
         align-items: center;
         justify-contents: center;
         margin: 1.5rem 0;
+        margin-left: 0.75rem;
     }
 
     .links img {

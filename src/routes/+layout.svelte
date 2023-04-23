@@ -38,6 +38,10 @@
         list-style-type: none;
     }
 
+    nav ul a {
+        text-decoration: none;
+    }
+
     .nav-container {
         padding: 0 calc((var(--large) - 100%) / 2 * -1);
         display: flex;

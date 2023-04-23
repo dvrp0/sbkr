@@ -5,6 +5,7 @@ export type ArticleMeta = {
     title: string;
     publishedAt: string;
     headerImage: string;
+    isHeaderShadowNeeded: boolean;
     summary: string;
     source: string;
     draft: boolean;

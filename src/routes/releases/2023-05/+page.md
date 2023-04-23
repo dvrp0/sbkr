@@ -1,10 +1,10 @@
 ---
-title: 2023 4월 업데이트
-publishedAt: 2023/04
-headerImage: https://cdn.sanity.io/images/5hlpazgd/production/9f67b1c463e79201e5d8cb82319713cb9af59637-1920x622.png
-isHeaderShadowNeeded: true
-summary: 4월에는 신규 카드 2장이 추가되고, 일부 밸런스가 조정되며, 부활절 이벤트가 진행됩니다!
-source: https://stormbound-kitty.com/releases/04-2023
+title: 2023 5월 업데이트
+publishedAt: 2023/05
+headerImage: 
+summary: 5월에는 신규 카드 2장이 추가되고, 일부 밸런스가 조정되며,
+source: https://stormbound-kitty.com/releases/05-2023
+draft: true
 ---
 
 <script>
@@ -21,42 +21,48 @@ source: https://stormbound-kitty.com/releases/04-2023
 ## 밸런스 변경점
 이번 업데이트에는 평소와 같이 일부 밸런스가 조정됩니다.
 
-  - <CardLink target="서풍의 선원" />: 체력 <Old>2/3/4/5/6</Old> → 3/4/5/6/7
-  - <CardLink target="의욕 상실의 공격" />: 데미지 <Old>2/3/4/5/6</Old> → 3/4/5/6/7
-  - <CardLink target="파우누스 동료" />: 체력 <Old>1/1/2/2/3</Old> → 2/2/3/3/4
-  - <CardLink target="가시 많은 밤나무" />: 체력 <Old>5/6/8/10/12</Old> → 6/7/9/11/14
-  - <CardLink target="공간의 사원" />: 손으로 돌아오는 카드 마나 <Old>0</Old> → 1
+  - <CardLink target="시간의 사원" />: 체력 <Old>2/3/4/5/6</Old> → 3/4/5/6/7
+  - <CardLink target="공간의 사원" />: 손으로 돌아오는 카드 마나 <Old>1</Old> → 2
+  - <CardLink target="처형" />: 데미지 <Old>4/5/6/7/8</Old> → 5/6/7/8/9
+  - <CardLink target="장난꾸러기" />: 체력 <Old>2/3/4/4/5</Old> → 4/5/6/7/8
+  - <CardLink target="앙심 품은 놈팡이" />: <Old>사망 시, 가장 약한 적 유닛을 파괴합니다</Old> → 사망 시, 2/3/4/5/6 체력 이하인 가장 약한 적 유닛을 파괴합니다
 
 <Comment>
 
-공간의 사원을 소유하고 계신 분들에게는 코인 및 합성석 보상이 지급됩니다. 보상은 카드 레벨과 희귀도에 따라 달라집니다.
+앙심 품은 놈팡이와 공간의 사원을 소유하고 계신 분들에게는 코인 및 합성석 보상이 지급됩니다. 보상은 카드 레벨과 희귀도에 따라 달라집니다.
 
+  - <Icon type="common" /> 일반 카드: <Icon type="stone" /> 1 합성석(레벨 1), <Icon type="coin" /> 20 코인 및 <Icon type="stone" /> 5 합성석(레벨 2), <Icon type="coin" /> 50 코인 및 <Icon type="stone" /> 10 합성석(레벨 3), <Icon type="coin" /> 150 코인 및 <Icon type="stone" /> 20 합성석(레벨 4), <Icon type="coin" /> 300 코인 및 <Icon type="stone" /> 50 합성석(레벨 5)
   - <Icon type="legendary" /> 레전더리 카드: <Icon type="stone" /> 1 합성석(레벨 1), <Icon type="coin" /> 20 코인 및 <Icon type="stone" /> 5 합성석(레벨 2), <Icon type="coin" /> 50 코인 및 <Icon type="stone" /> 10 합성석(레벨 3), <Icon type="coin" /> 150 코인 및 <Icon type="stone" /> 20 합성석(레벨 4), <Icon type="coin" /> 300 코인 및 <Icon type="stone" /> 50 합성석(레벨 5)
 
 </Comment>
 <Comment>
 
-**역주**: 놈팡이 너프가 예정되어 있었으나 코드에서 버그가 발생해 조금 지연되었다고 합니다. 또한 다음 달에 처형 1 데미지 증가, 시간의 사원 체력 증가 등의 조정이 이뤄질 수 있다고 언급했습니다.
 
 </Comment>
 
 ## 신규 카드
-4월에는 두 장의 신규 카드가 추가됩니다. 바로 첫 번째 4 이동 카드인 중립 언데드와 중립 프로스틀링입니다.
+5월에는 두 장의 신규 카드가 추가됩니다. 바로 중립 펠린 고대인과 중립 토드입니다.
 
-<Card type="unit" faction="neutral" name="초음속 돌파자" unitType="언데드" cost={5} strengths={[2, 3, 4, 5, 6]} movement={4} rarity="common" cardart="https://cdn.sanity.io/images/5hlpazgd/production/0fe79ea53702745615390d3798572f10ea0b0667-2186x1477.png" abilities={[
-    "",
-    "",
-    "",
-    "",
-    ""
+<Card type="unit" faction="neutral" name="떠도는 새끼 개구리" unitType="토드" cost={4} strengths={[3, 4, 5, 6, 7]} movement={1} rarity="rare" cardart="" abilities={[
+    "카드 사용 시, *주변의* 적 유닛 하나마다 *2 체력*을 *획득*합니다",
+    "카드 사용 시, *주변의* 적 유닛 하나마다 *2 체력*을 *획득*합니다",
+    "카드 사용 시, *주변의* 적 유닛 하나마다 *2 체력*을 *획득*합니다",
+    "카드 사용 시, *주변의* 적 유닛 하나마다 *2 체력*을 *획득*합니다",
+    "카드 사용 시, *주변의* 적 유닛 하나마다 *2 체력*을 *획득*합니다"
 ]}/>
-<Card type="unit" faction="neutral" name="눈더미" unitType="프로스틀링" cost={6} strengths={[6, 7, 9, 11, 13]} movement={1} rarity="common" cardart="https://cdn.sanity.io/images/5hlpazgd/production/643123423424614079500d55ffc333a59487dc53-1730x2017.png" abilities={[
-    "공격 후, *주변의* 적 유닛 또는 건물 *2개*에게 이 유닛의 체력만큼의 *데미지*를 *입힙니다*",
-    "공격 후, *주변의* 적 유닛 또는 건물 *2개*에게 이 유닛의 체력만큼의 *데미지*를 *입힙니다*",
-    "공격 후, *주변의* 적 유닛 또는 건물 *2개*에게 이 유닛의 체력만큼의 *데미지*를 *입힙니다*",
-    "공격 후, *주변의* 적 유닛 또는 건물 *2개*에게 이 유닛의 체력만큼의 *데미지*를 *입힙니다*",
-    "공격 후, *주변의* 적 유닛 또는 건물 *2개*에게 이 유닛의 체력만큼의 *데미지*를 *입힙니다*"
+<Card type="unit" faction="neutral" name="천사 같은 티카" unitType="펠린 고대인" cost={3} strengths={[2, 3, 4, 5, 6]} movement={1} rarity="epic" cardart="" abilities={[
+    "이동하기 전, *주변의* 무작위 적 유닛을 *혼란*시키고 바로 앞 타일로 *순간이동*합니다",
+    "이동하기 전, *주변의* 무작위 적 유닛을 *혼란*시키고 바로 앞 타일로 *순간이동*합니다",
+    "이동하기 전, *주변의* 무작위 적 유닛을 *혼란*시키고 바로 앞 타일로 *순간이동*합니다",
+    "이동하기 전, *주변의* 무작위 적 유닛을 *혼란*시키고 바로 앞 타일로 *순간이동*합니다",
+    "이동하기 전, *주변의* 무작위 적 유닛을 *혼란*시키고 바로 앞 타일로 *순간이동*합니다"
 ]}/>
+
+<Comment>
+
+티카는 스톰바운드 게임즈 CEO의 친구분이 키우는 고양이 이름이라고 합니다.
+
+</Comment>
 
 각 신규 카드마다 특별 상품이 판매될 예정입니다. 카드 10장, <Icon type="coin" /> 750 코인, <Icon type="stone" /> 5 합성석을 획득할 수 있습니다.
 
@@ -65,8 +71,8 @@ source: https://stormbound-kitty.com/releases/04-2023
 
 신규 카드의 0 마나 버전이 덱에 자동으로 추가됩니다(즉 모든 덱이 13장). 신규 카드를 소유하고 있지 않거나 레벨을 올리지 않았다면 1레벨로, 레벨을 올렸다면 해당 레벨로 추가됩니다.
 
-  - 4월 13일에 시작하는 워리어 난투는 <CardLink target="초음속 돌파자" /> 난투입니다.
-  - 4월 27일에 시작하는 워리어 난투는 <CardLink target="눈더미" /> 난투입니다.
+  - 4월 13일에 시작하는 워리어 난투는 <CardLink target="천사 같은 티카" /> 난투입니다.
+  - 4월 27일에 시작하는 워리어 난투는 <CardLink target="떠도는 새끼 개구리" /> 난투입니다.
 
 4월 6일에 시작하는 난투의 입장료가 50% 감소합니다(패스 보유 시 60%).
 
@@ -90,9 +96,9 @@ source: https://stormbound-kitty.com/releases/04-2023
 
 ## 자주 묻는 질문
 ### 언제 업데이트가 진행되나요?
-아래에서 4월 업데이트에 대한 자세한 일정을 확인하시기 바랍니다.
+아래에서 5월 업데이트에 대한 자세한 일정을 확인하시기 바랍니다.
 
-  - **밸런스 변경점**: 4월 1일 오후 4시
+  - **밸런스 변경점**: 5월 1일 오후 4시
   - **입장료 50% 감소 난투**: 4월 6일 오후 4시 ~ 4월 10일 오후 4시
   - **초음속 돌파자 출시**: 4월 7일 오후 4시
   - **부활절 코인 보너스**: 4월 6일 오후 4시 ~ 4월 17일 오후 4시

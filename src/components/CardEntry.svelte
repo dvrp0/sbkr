@@ -2,6 +2,7 @@
     import { cards } from "../store";
     import { type CardData, convertFaction } from "$lib/card";
     import Icon from "$components/Icon.svelte";
+    import CardLink from "$components/CardLink.svelte";
 
     export let entryId: string;
     export let change: string = "";
@@ -14,7 +15,7 @@
         <img alt={card.id} src="/images/cards/cardart_{card.id.toUpperCase()}.png" />
     </div>
     <div class="entry-info">
-        <span><a href="/cards/{card.id}">{card.name}</a></span>
+        <CardLink target={card.name} />
         {#if change !== ""}
         <div class="entry-info-change">
             {#if change === "0"}
