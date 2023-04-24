@@ -1,12 +1,12 @@
-<script lang="ts">
+<script>
     import { MetaTags } from "svelte-meta-tags";
 
-    export let title: string;
-    export let publishedAt: string;
-    export let headerImage: string;
-    export let summary: string;
-    export let source: string;
-    export let isHeaderShadowNeeded: boolean;
+    export let title = "";
+    export let publishedAt = "";
+    export let headerImage = "";
+    export let summary = "";
+    export let source = "";
+    export let isHeaderShadowNeeded = false;
 
     let splitted = publishedAt.split("/");
     let id = `${splitted[0]}-${splitted[1]}`;

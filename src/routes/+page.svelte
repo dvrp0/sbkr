@@ -15,11 +15,11 @@
 <MetaTags
     title={title}
     description={description}
-    canonical="https://sbkr.pages.dev/about"
+    canonical="https://sbkr.pages.dev"
     openGraph={{
         type: "website",
         site_name: "sbkr",
-        url: "https://sbkr.pages.dev/about",
+        url: "https://sbkr.pages.dev",
         title: title,
         description: description,
         images: [

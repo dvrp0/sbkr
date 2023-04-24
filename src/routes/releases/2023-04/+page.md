@@ -43,14 +43,14 @@ source: https://stormbound-kitty.com/releases/04-2023
 ## 신규 카드
 4월에는 두 장의 신규 카드가 추가됩니다. 바로 첫 번째 4 이동 카드인 중립 언데드와 중립 프로스틀링입니다.
 
-<Card type="unit" faction="neutral" name="초음속 돌파자" unitType="언데드" cost={5} strengths={[2, 3, 4, 5, 6]} movement={4} rarity="common" cardart="https://cdn.sanity.io/images/5hlpazgd/production/0fe79ea53702745615390d3798572f10ea0b0667-2186x1477.png" abilities={[
+<Card type="unit" faction="neutral" name="초음속 돌파자" unitType="언데드" cost={5} strengths={[2, 3, 4, 5, 6]} movement={4} rarity="common" cardart="/images/cards/cardart_U069.png" abilities={[
     "",
     "",
     "",
     "",
     ""
 ]}/>
-<Card type="unit" faction="neutral" name="눈더미" unitType="프로스틀링" cost={6} strengths={[6, 7, 9, 11, 13]} movement={1} rarity="common" cardart="https://cdn.sanity.io/images/5hlpazgd/production/643123423424614079500d55ffc333a59487dc53-1730x2017.png" abilities={[
+<Card type="unit" faction="neutral" name="눈더미" unitType="프로스틀링" cost={6} strengths={[6, 7, 9, 11, 13]} movement={1} rarity="common" cardart="/images/cards/cardart_U068.png" abilities={[
     "공격 후, *주변의* 적 유닛 또는 건물 *2개*에게 이 유닛의 체력만큼의 *데미지*를 *입힙니다*",
     "공격 후, *주변의* 적 유닛 또는 건물 *2개*에게 이 유닛의 체력만큼의 *데미지*를 *입힙니다*",
     "공격 후, *주변의* 적 유닛 또는 건물 *2개*에게 이 유닛의 체력만큼의 *데미지*를 *입힙니다*",
