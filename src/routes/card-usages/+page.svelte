@@ -2,7 +2,7 @@
     import type { PageData } from "./$types"
     import { MetaTags } from "svelte-meta-tags";
 
-    export let data: PageData
+    export let data: PageData;
 
     let posts = data.posts;
     let title: string = "카드 사용량";
@@ -33,7 +33,7 @@
     ]}
 />
 
-{#each posts as post}
+{#each posts as post (post.id)}
 <article class="entry">
     <img class="image" alt="메인 이미지" src="{post.headerImage}" />
     <h2 class="title"><a href={`/card-usages/${post.id}`}>{post.title}</a></h2>

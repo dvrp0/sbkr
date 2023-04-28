@@ -6,7 +6,7 @@
     export let data: PageData;
 
     let posts = data.posts;
-    cards.update(x => x = data.cards);
+    cards.set(data.cards);
 
     let title: string = "sbkr";
     let description: string = "sbkr은 스톰바운드의 한국어 컨텐츠를 제공하는 웹사이트입니다.";
@@ -40,7 +40,7 @@
     ]}
 />
 
-{#each posts as post}
+{#each posts as post (post.id)}
 <article class="entry">
     <img class="image" alt="메인 이미지" src={post.headerImage} />
     <h2 class="title"><a href={`/releases/${post.id}`}>{post.title}</a></h2>

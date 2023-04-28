@@ -70,10 +70,10 @@
         <li>본 데이터는 파벌간 우위를 나타내지 않으며, 항상 겨울-철갑-그림자-동방 순으로 표시합니다. 동일한 파벌 내의 사용량 순위만이 유의미합니다.</li>
         <li>다만 중립 카드가 사용량이 가장 높게 나오는 이유는 모든 파벌의 덱에서 사용되기 때문입니다.</li>
     </ul>
-    {#each Object.entries(usage).reverse() as [key, value]}
+    {#each Object.entries(usage).reverse() as [key, value] (key)}
     <h2>{key}</h2>
         <div class="entries">
-            {#each value as entry}
+            {#each value as entry (entry)}
             <CardEntry entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
             {/each}
         </div>

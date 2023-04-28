@@ -10,6 +10,7 @@ export interface CardData
     movement: number;
     type: string;
     descriptions: string[];
+    stringified: string;
 }
 
 export function convertType(type: string): string

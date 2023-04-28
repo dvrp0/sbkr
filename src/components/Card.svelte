@@ -26,7 +26,7 @@
 
 <div class="container">
     <div class="cards" class:multiple={isMultiple}>
-    {#each levels as _, i}
+    {#each levels as _, i (i)}
         <div class="card" style="background-image: url({cardImage});">
             <div class="card-contents">
                 <p class="stat cost">{unpack(cost, i)}</p>

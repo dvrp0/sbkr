@@ -5,23 +5,22 @@
     import { MetaTags } from "svelte-meta-tags";
     import Card from "$components/Card.svelte";
 
-    export let data: PageData
+    export let data: PageData;
 
     let card: CardData = $cards.find(({ id }) => id === data.id) ?? {} as CardData;
-    let stringified: string = data.stringified;
 </script>
 
 <MetaTags
     title={card.name}
     titleTemplate="%s - sbkr"
-    description={stringified}
+    description={card.stringified}
     canonical="https://sbkr.pages.dev/cards/{card.id}"
     openGraph={{
         type: "website",
         site_name: "sbkr",
         url: `https://sbkr.pages.dev/cards/${card.id}`,
         title: card.name,
-        description: stringified,
+        description: card.stringified,
         images: [
             {
                 url: `/images/cards/cardart_${card.id.toUpperCase()}.png`

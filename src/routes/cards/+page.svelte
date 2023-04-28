@@ -4,7 +4,7 @@
 </script>
 
 <div class="entries">
-    {#each $cards as card}
+    {#each $cards as card (card.id)}
     <CardEntry entryId={card.id} />
     {/each}
 </div>
