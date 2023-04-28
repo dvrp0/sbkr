@@ -39,14 +39,14 @@ source: https://stormbound-kitty.com/releases/05-2023
 ## 신규 카드
 5월에는 두 장의 신규 카드가 추가됩니다. 바로 중립 펠린 고대인과 중립 토드입니다.
 
-<Card type="unit" faction="neutral" name="천사 같은 티카" unitType="펠린 고대인" cost={3} strengths={[2, 3, 4, 5, 6]} movement={1} rarity="epic" cardart="/images/cards/cardart_u071.png" abilities={[
+<Card type="unit" faction="neutral" name="천사 같은 티카" unitType="펠린 고대인" cost={3} strengths={[2, 3, 4, 5, 6]} movement={1} rarity="epic" cardart="/images/cards/cardart_U071.png" abilities={[
     "이동하기 전, *주변의* 무작위 적 유닛을 *혼란*시키고 바로 앞 타일로 *순간이동*합니다",
     "이동하기 전, *주변의* 무작위 적 유닛을 *혼란*시키고 바로 앞 타일로 *순간이동*합니다",
     "이동하기 전, *주변의* 무작위 적 유닛을 *혼란*시키고 바로 앞 타일로 *순간이동*합니다",
     "이동하기 전, *주변의* 무작위 적 유닛을 *혼란*시키고 바로 앞 타일로 *순간이동*합니다",
     "이동하기 전, *주변의* 무작위 적 유닛을 *혼란*시키고 바로 앞 타일로 *순간이동*합니다"
 ]}/>
-<Card type="unit" faction="neutral" name="떠도는 새끼 개구리" unitType="토드" cost={4} strengths={[3, 4, 5, 6, 7]} movement={1} rarity="rare" cardart="/images/cards/cardart_u070.png" abilities={[
+<Card type="unit" faction="neutral" name="떠도는 새끼 개구리" unitType="토드" cost={4} strengths={[3, 4, 5, 6, 7]} movement={1} rarity="rare" cardart="/images/cards/cardart_U070.png" abilities={[
     "카드 사용 시, *주변의* 적 유닛 하나마다 *2 체력*을 *획득*합니다",
     "카드 사용 시, *주변의* 적 유닛 하나마다 *2 체력*을 *획득*합니다",
     "카드 사용 시, *주변의* 적 유닛 하나마다 *2 체력*을 *획득*합니다",
