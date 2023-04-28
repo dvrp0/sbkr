@@ -2,7 +2,6 @@
     import { cards } from "../store";
     import { type CardData, convertFaction, convertRarity, convertType } from "$lib/card";
     import Card from "$components//Card.svelte";
-    import Icon from "$components/Icon.svelte";
 
     export let target: string;
 
