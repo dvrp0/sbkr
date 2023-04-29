@@ -1,7 +1,7 @@
 import { getCardUsagesMetas } from "$lib/server/article";
-import type { PageServerLoad } from "./$types";
 
-export const load: PageServerLoad = () => {
+export async function load()
+{
     const posts = getCardUsagesMetas();
 
     return { posts };

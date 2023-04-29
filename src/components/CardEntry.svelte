@@ -1,11 +1,14 @@
 <script lang="ts">
-    import { cards } from "../store";
     import { type CardData, convertFaction } from "$lib/card";
+    import { getContext } from "svelte";
+    import type { Readable } from "svelte/store";
     import Icon from "$components/Icon.svelte";
     import CardLink from "$components/CardLink.svelte";
 
     export let entryId: string;
     export let change: string = "";
+
+    const cards = getContext<Readable<CardData[]>>("cards");
 
     let card: CardData = $cards.find(({ id }) => id === entryId) ?? {} as CardData;
 </script>

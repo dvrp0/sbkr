@@ -1,12 +1,10 @@
 <script lang="ts">
     import type { PageData } from "./$types";
-    import { cards } from "../store";
     import { MetaTags } from "svelte-meta-tags";
 
     export let data: PageData;
 
     let posts = data.posts;
-    cards.set(data.cards);
 
     let title: string = "sbkr";
     let description: string = "sbkr은 스톰바운드의 한국어 컨텐츠를 제공하는 웹사이트입니다.";

@@ -1,6 +1,10 @@
 <script lang="ts">
-    import { cards } from "../../store";
+    import type { CardData } from "$lib/card";
+    import { getContext } from "svelte";
+    import type { Readable } from "svelte/store";
     import CardEntry from "$components/CardEntry.svelte";
+
+    const cards = getContext<Readable<CardData[]>>("cards");
 </script>
 
 <div class="entries">

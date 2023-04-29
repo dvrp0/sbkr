@@ -1,9 +1,7 @@
 import { getCardUsagesMetas, type ArticleMeta } from "$lib/server/article";
-import type { PageServerLoad } from "./$types";
 
-// export const prerender = false;
-
-export const load: PageServerLoad = async ({ fetch, params }) => {
+export async function load({ fetch, params })
+{
     const meta = getCardUsagesMetas().find(x => x.id == params.league) as ArticleMeta;
 
     const usage = async () => {

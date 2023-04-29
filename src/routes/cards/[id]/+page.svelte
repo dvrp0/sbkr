@@ -1,13 +1,16 @@
 <script lang="ts">
     import type { PageData } from "./$types"
     import { type CardData, convertType, convertRarity, convertFaction } from "$lib/card";
-    import { cards } from "../../../store";
+    import { getContext } from "svelte";
+    import type { Readable } from "svelte/store";
     import { MetaTags } from "svelte-meta-tags";
     import Card from "$components/Card.svelte";
 
     export let data: PageData;
 
-    let card: CardData = $cards.find(({ id }) => id === data.id) ?? {} as CardData;
+    const cards = getContext<Readable<CardData[]>>("cards");
+
+    let card = $cards.find(({ id }) => id === data.id) ?? {} as CardData;
 </script>
 
 <MetaTags

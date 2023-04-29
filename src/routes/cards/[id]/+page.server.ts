@@ -1,6 +1,5 @@
-import type { PageServerLoad } from "./$types";
-
-export const load: PageServerLoad = async ({ params }) => {
+export async function load({ params })
+{
     return {
         id: params.id
     };
