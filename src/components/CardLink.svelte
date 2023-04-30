@@ -1,17 +1,16 @@
 <script lang="ts">
     import { type CardData, convertFaction, convertRarity, convertType } from "$lib/card";
     import { getContext } from "svelte";
-    import type { Readable } from "svelte/store";
     import Card from "$components/Card.svelte";
 
     export let target: string;
 
     const margin = { x: 3, y: 3};
-    const cards = getContext<Readable<CardData[]>>("cards");
+    const cards = getContext<CardData[]>("cards");
 
     let isHovered: boolean = false;
     let position = { x: 0, y: 0 };
-    let card: CardData = $cards.find(({ name }) => name === target) ?? { id: "u001" } as CardData;
+    let card: CardData = cards.find(({ name }) => name === target) ?? {} as CardData;
 
     function handleFocus()
     {

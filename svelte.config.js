@@ -8,32 +8,35 @@ import mdsvexConfig from "./mdsvex.config.js";
 
 /** @type {import("@sveltejs/kit").Config} */
 const config = {
-  extensions: [".svelte", ".md"],
-  preprocess: [
-    preprocess({
-        postcss: {
-            plugins: [
-                postcssPresetEnv({
-                    browsers: "> 1% and last 3 versions",
-                    features: {
-                        "nesting-rules": true,
-                        "media-query-ranges": true
-                    }
-                }),
-                postcssImport()
-            ]
-        }
-    }),
-    mdsvex(mdsvexConfig),
-  ],
+    extensions: [".svelte", ".md"],
+    preprocess: [
+        preprocess({
+            postcss: {
+                plugins: [
+                    postcssPresetEnv({
+                        browsers: "> 1% and last 3 versions",
+                        features: {
+                            "nesting-rules": true,
+                            "media-query-ranges": true
+                        }
+                    }),
+                    postcssImport()
+                ]
+            }
+        }),
+        mdsvex(mdsvexConfig)
+    ],
 
-  kit: {
-    adapter: adapter(),
-    alias: {
-        "$components": path.resolve("./src/components"),
-        "$assets": path.resolve("./src/assets")
+    kit: {
+        adapter: adapter(),
+        alias: {
+            "$components": path.resolve("./src/components"),
+            "$assets": path.resolve("./src/assets")
+        },
+        prerender: {
+            concurrency: 10
+        }
     }
-  }
 };
 
 export default config;
