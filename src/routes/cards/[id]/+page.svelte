@@ -6,7 +6,7 @@
 
     export let data: PageData;
 
-    let card = cards.find(({ id }) => id === data.id) ?? {} as CardData;
+    const card = cards.find(({ id }) => id === data.id) ?? {} as CardData;
 </script>
 
 <MetaTags

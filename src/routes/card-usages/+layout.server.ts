@@ -4,5 +4,7 @@ export async function load()
 {
     const posts = getCardUsagesMetas();
 
-    return { posts };
+    return {
+        posts
+    };
 }

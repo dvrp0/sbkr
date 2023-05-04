@@ -6,7 +6,7 @@
     export let entryId: string;
     export let change: string = "";
 
-    let card: CardData = cards.find(({ id }) => id === entryId) ?? {} as CardData;
+    const card: CardData = cards.find(({ id }) => id === entryId) ?? {} as CardData;
 </script>
 
 <div class="entry {convertFaction(card.kingdom)}">
