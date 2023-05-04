@@ -1,9 +1,6 @@
 <script lang="ts">
-    import type { CardData } from "$lib/card";
-    import { getContext } from "svelte";
+    import { cards } from "$lib/card";
     import CardEntry from "$components/CardEntry.svelte";
-
-    const cards = getContext<CardData[]>("cards");
 </script>
 
 <div class="entries">

@@ -1,13 +1,10 @@
 <script lang="ts">
     import type { PageData } from "./$types"
-    import { type CardData, convertType, convertRarity, convertFaction } from "$lib/card";
-    import { getContext } from "svelte";
+    import { type CardData, cards, convertType, convertRarity, convertFaction } from "$lib/card";
     import { MetaTags } from "svelte-meta-tags";
     import Card from "$components/Card.svelte";
 
     export let data: PageData;
-
-    const cards = getContext<CardData[]>("cards");
 
     let card = cards.find(({ id }) => id === data.id) ?? {} as CardData;
 </script>

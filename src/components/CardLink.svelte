@@ -1,13 +1,11 @@
 <script lang="ts">
-    import { type CardData, convertFaction, convertRarity, convertType } from "$lib/card";
-    import { getContext } from "svelte";
+    import { type CardData, cards, convertFaction, convertRarity, convertType } from "$lib/card";
     import Card from "$components/Card.svelte";
 
     export let target: string;
 
     const margin = { x: 3, y: 3};
-    const cards = getContext<CardData[]>("cards");
-
+    
     let isHovered: boolean = false;
     let position = { x: 0, y: 0 };
     let card: CardData = cards.find(({ name }) => name === target) ?? {} as CardData;

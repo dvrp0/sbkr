@@ -1,11 +1,5 @@
 <script lang="ts">
     import "../app.postcss";
-    import type { LayoutData } from "./$types";
-    import { setContext } from "svelte";
-
-    export let data: LayoutData;
-
-    setContext("cards", data.cards);
 </script>
 
 <nav>

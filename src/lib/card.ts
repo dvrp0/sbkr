@@ -48,3 +48,5 @@ export function convertFaction(faction: string): string
     else
         return "neutral";
 }
+
+export const cards: CardData[] = CARDS;
