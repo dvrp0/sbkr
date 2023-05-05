@@ -35,16 +35,16 @@
 </script>
 
 {#if isHovered}
-<div class="tooltip" style="top: {position.y}px; left: {position.x}px;" in:fade={{duration}} out:fade={{duration}}>
-    <Card type={convertType(card.type)} faction={convertFaction(card.kingdom)} name={card.name} unitType={card.unitTypes}
-          cost={card.cost} strengths={card.strengths} movement={card.movement} rarity={convertRarity(card.rarity)}
-          cardart={`/images/cards/cardart_${card.id.toUpperCase()}.png`} abilities={card.descriptions} count={1} />
-</div>
+    <div class="tooltip" style="top: {position.y}px; left: {position.x}px;" in:fade={{duration}} out:fade={{duration}}>
+        <Card type={convertType(card.type)} faction={convertFaction(card.kingdom)} name={card.name} unitType={card.unitTypes}
+            cost={card.cost} strengths={card.strengths} movement={card.movement} rarity={convertRarity(card.rarity)}
+            cardart={`/images/cards/cardart_${card.id.toUpperCase()}.png`} abilities={card.descriptions} count={1} />
+    </div>
 {/if}
 
 <strong>
     <a href="/cards/{card.id}" on:focus={handleFocus} on:mouseover={handleMouseOver} on:mousemove={handleMouseMove}
-       on:mouseleave={handleMouseLeave}>
+        on:mouseleave={handleMouseLeave}>
         {target}
     </a>
 </strong>

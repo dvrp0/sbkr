@@ -39,16 +39,16 @@
 />
 
 {#each posts as post (post.id)}
-<article class="entry">
-    <a href="/releases/{post.id}">
-        <img class="image" alt="메인 이미지" src={post.headerImage} />
-    </a>
-    <h2 class="title">
-        <a href="/releases/{post.id}">{post.title}</a>
-    </h2>
-    <p class="published-at">{post.publishedAt}</p>
-    <p class="summary">{post.summary}</p>
-</article>
+    <article class="entry">
+        <a href="/releases/{post.id}">
+            <img class="image" alt="메인 이미지" src={post.headerImage} />
+        </a>
+        <h2 class="title">
+            <a href="/releases/{post.id}">{post.title}</a>
+        </h2>
+        <p class="published-at">{post.publishedAt}</p>
+        <p class="summary">{post.summary}</p>
+    </article>
 {/each}
 
 <style>

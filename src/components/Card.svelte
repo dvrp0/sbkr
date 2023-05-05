@@ -12,7 +12,7 @@
     export let isMultiple: boolean = false;
     export let count: number = 5;
 
-    let cardImage: string = `/images/card-backgrounds/${faction}-${rarity == "legendary" ? "legendary" : ""}${type}.webp`;;
+    let cardImage: string = `/images/card-backgrounds/${faction}-${rarity == "legendary" ? "legendary" : ""}${type}.webp`;
     let levels: number[] = Array(count);
 
     function unpack(value: any, index: number)

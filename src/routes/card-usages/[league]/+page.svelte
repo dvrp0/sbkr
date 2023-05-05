@@ -71,10 +71,10 @@
         <li>다만 중립 카드가 사용량이 가장 높게 나오는 이유는 모든 파벌의 덱에서 사용되기 때문입니다.</li>
     </ul>
     {#each Object.entries(usage).reverse() as [key, value] (key)}
-    <h2>{key}</h2>
+        <h2>{key}</h2>
         <div class="entries">
             {#each value as entry (entry)}
-            <CardEntry entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
+                <CardEntry entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
             {/each}
         </div>
     {/each}

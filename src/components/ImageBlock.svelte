@@ -6,17 +6,17 @@
 
 <div class={type}>
     {#if position == "left" || position == "top"}
-    <div class="image" class:left={position == "left"}>
-        <img alt="이미지" {src} />
-    </div>
+        <div class="image" class:left={position == "left"}>
+            <img alt="이미지" {src} />
+        </div>
     {/if}
-    <div class:less-margin={position == "left" || position == "right"}>
-        <slot />
-    </div>
+        <div class:less-margin={position == "left" || position == "right"}>
+            <slot />
+        </div>
     {#if position == "right" || position == "bottom"}
-    <div class="image" class:right={position == "right"}>
-        <img alt="이미지" {src} />
-    </div>
+        <div class="image" class:right={position == "right"}>
+            <img alt="이미지" {src} />
+        </div>
     {/if}
 </div>
 

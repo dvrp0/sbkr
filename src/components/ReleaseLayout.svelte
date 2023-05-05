@@ -45,7 +45,7 @@
     <div class="headers">
         <img alt="이미지" src={headerImage} />
         {#if isHeaderShadowNeeded}
-        <img alt="이미지" src="/images/headers/header_shadow.png" />
+            <img alt="이미지" src="/images/headers/header_shadow.png" />
         {/if}
     </div>
     <h1>{title}</h1>
@@ -54,7 +54,7 @@
         <div class="links">
             <a href="/"><img alt="뒤로 가기" src="/images/icons/back.webp" /></a>
             {#if source != ""}
-            <a href={source}><img alt="Kitty" src="/images/icons/kitty.webp" /></a>
+                <a href={source}><img alt="Kitty" src="/images/icons/kitty.webp" /></a>
             {/if}
         </div>
     </div>

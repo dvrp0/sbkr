@@ -16,20 +16,20 @@
     <div class="entry-info">
         <CardLink target={card.name} />
         {#if change !== ""}
-        <div class="entry-info-change">
-            {#if change === "0"}
-            <span>-</span>
-            {:else if change === "new"}
-            <Icon type="new" />
-            <span class="margin">신규</span>
-            {:else if parseInt(change) > 0}
-            <Icon type="up" />
-            <span class="margin">{change}</span>
-            {:else}
-            <Icon type="down" />
-            <span class="margin">{Math.abs(parseInt(change))}</span>
-            {/if}
-        </div>
+            <div class="entry-info-change">
+                {#if change === "0"}
+                    <span>-</span>
+                {:else if change === "new"}
+                    <Icon type="new" />
+                    <span class="margin">신규</span>
+                {:else if parseInt(change) > 0}
+                    <Icon type="up" />
+                    <span class="margin">{change}</span>
+                {:else}
+                    <Icon type="down" />
+                    <span class="margin">{Math.abs(parseInt(change))}</span>
+                {/if}
+            </div>
         {/if}
     </div>
 </div>
