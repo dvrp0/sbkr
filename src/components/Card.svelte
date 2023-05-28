@@ -93,8 +93,8 @@
     }
 
     .name {
-        font-variation-settings: "wght" 500;
         font-size: 0.9em;
+        font-variation-settings: "wght" 500;
         margin-top: 0.4em;
         margin-bottom: -0.25em;
     }

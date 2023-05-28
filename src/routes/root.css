@@ -7,18 +7,18 @@
 }
 
 :root {
-    --c-accent: #FFFFFF;
-    --c-foreground: #F5F2E5;
+    --c-accent: #ffffff;
+    --c-foreground: #f5f2e5;
     --c-foreground-dark: #a0a0a0;
     --c-foreground-comment: #8fadb9;
     --c-foreground-hover: #bcd0e2;
-    --c-background: #06161E;
+    --c-background: #06161e;
     --c-background-light: #132229;
-    --c-background-light-swarm: #292E2B;
-    --c-background-light-ironclad: #23252B;
-    --c-background-light-shadowfen: #1A2D30;
-    --c-background-light-winter: #132D36;
-    --c-background-nav: #131E23;
+    --c-background-light-swarm: #292e2b;
+    --c-background-light-ironclad: #23252b;
+    --c-background-light-shadowfen: #1a2d30;
+    --c-background-light-winter: #132d36;
+    --c-background-nav: #131e23;
     --c-rarity-common: #f5f1e5;
     --c-rarity-rare: #95d7f9;
     --c-rarity-epic: #dba8f5;

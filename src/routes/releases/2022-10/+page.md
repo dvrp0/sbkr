@@ -79,9 +79,9 @@ source: https://stormbound-kitty.com/releases/01-2023
   2. 영웅 리그의 인원이 500명 이상이라면, 플레이어는 다이아몬드 리그에 남습니다. 이때부터 자신의 현재 및 최고 점수, 영웅 리그로 승격하는 데 필요한 점수를 확인할 수 있습니다.
 
 <FlexibleList allowOverflow>
-    <img alt="스크린샷" src="https://dcimg4.dcinside.co.kr/viewimage.php?id=3ea9df34e8d037b360bb87&no=24b0d769e1d32ca73dea87fa11d02831dd19b8e7fc4eb19683da708446d82daeaea2a3d6b0059d76899727834b0624383e23d1915c59bdef37c6eeca439fa15c18547c38c7cd1c#screenshot"/>
-    <img alt="스크린샷" src="https://dcimg4.dcinside.co.kr/viewimage.php?id=3ea9df34e8d037b360bb87&no=24b0d769e1d32ca73dea87fa11d02831dd19b8e7fc4eb19683da708446d82daeaea2a3d6b0059d76899727834b0624383e23d1915c59bdef37c6ee9e4a97a20b07ffbe78bd7215#screenshot"/>
-    <img alt="스크린샷" src="https://dcimg4.dcinside.co.kr/viewimage.php?id=3ea9df34e8d037b360bb87&no=24b0d769e1d32ca73dea87fa11d02831dd19b8e7fc4eb19683da708446d82daeaea2a3d6b0059d76899727834b0624383e23d1915c59bdef37c6ee9d43ccf65ebf821eec5bc411#screenshot"/>
+    <img alt="스크린샷" src="https://dcimg4.dcinside.co.kr/viewimage.php?id=3ea9df34e8d037b360bb87&no=24b0d769e1d32ca73dea87fa11d02831dd19b8e7fc4eb19683da708446d82daeaea2a3d6b0059d76899727834b0624383e23d1915c59bdef37c6eeca439fa15c18547c38c7cd1c#screenshot" />
+    <img alt="스크린샷" src="https://dcimg4.dcinside.co.kr/viewimage.php?id=3ea9df34e8d037b360bb87&no=24b0d769e1d32ca73dea87fa11d02831dd19b8e7fc4eb19683da708446d82daeaea2a3d6b0059d76899727834b0624383e23d1915c59bdef37c6ee9e4a97a20b07ffbe78bd7215#screenshot" />
+    <img alt="스크린샷" src="https://dcimg4.dcinside.co.kr/viewimage.php?id=3ea9df34e8d037b360bb87&no=24b0d769e1d32ca73dea87fa11d02831dd19b8e7fc4eb19683da708446d82daeaea2a3d6b0059d76899727834b0624383e23d1915c59bdef37c6ee9d43ccf65ebf821eec5bc411#screenshot" />
 </FlexibleList>
 
 ### 보상
