@@ -11,6 +11,7 @@
     export let cardart: string | string[];
     export let isMultiple: boolean = false;
     export let count: number = 5;
+    export let noMargin: boolean = false;
 
     let cardImage: string = `/images/card-backgrounds/${faction}-${rarity == "legendary" ? "legendary" : ""}${type}.webp`;
     let levels: number[] = Array(count);
@@ -24,7 +25,7 @@
     }
 </script>
 
-<div class="container">
+<div class="container" class:no-side-margin={noMargin} style="--container: calc(var(--card) * {count} + var(--padding) * {(count - 1) * 2});">
     <div class="cards" class:multiple={isMultiple}>
     {#each levels as _, i (i)}
         <div class="card" style="background-image: url({cardImage});">
@@ -59,7 +60,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
 
     .container {
-        margin: 2rem calc(((var(--large) - 100%) / 2 * -1) - var(--padding));
+        margin: 2rem calc(((var(--container) - 100%) / 2 * -1) - var(--padding));
     }
 
     .cards {
@@ -234,5 +235,10 @@
         .rarity img {
             width: 50%;
         }
+    }
+
+    .no-side-margin {
+        margin-left: 0;
+        margin-right: 0;
     }
 </style>

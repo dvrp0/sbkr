@@ -46,7 +46,7 @@
     </div>
     <Card type={convertType(card.type)} faction={convertFaction(card.kingdom)} name={card.name} unitType={card.unitTypes}
           cost={card.cost} strengths={card.strengths} movement={card.movement} rarity={convertRarity(card.rarity)}
-          cardart={`/images/cards/cardart_${card.id.toUpperCase()}.png`} abilities={card.descriptions}/>
+          cardart={`/images/cards/cardart_${card.id.toUpperCase()}.png`} abilities={card.descriptions} />
 </article>
 
 <style>
