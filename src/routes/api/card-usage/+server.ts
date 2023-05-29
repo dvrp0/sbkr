@@ -31,11 +31,12 @@ async function saveUsageData(key: string, platform: Readonly<App.Platform> | und
 export async function POST({ request, platform })
 {
     const key = await request.text();
-    let result = await platform!.env.CARD_USAGES.getWithMetadata(key);
+    const result = await platform!.env.CARD_USAGES.getWithMetadata(key);
+    const createdAt = (result.metadata as { createdAt: number }).createdAt;
 
     if (result && result.value)
     {
-        if (!result.metadata || Date.now() - result.metadata.createdAt >= SWR_TTL)
+        if (!result.metadata || Date.now() - createdAt >= SWR_TTL)
         {
             console.log("Revalidating");
             platform!.context.waitUntil(saveUsageData(key, platform));
@@ -43,7 +44,7 @@ export async function POST({ request, platform })
 
         return json({
             ...JSON.parse(result.value),
-            updatedAt: result.metadata.createdAt
+            updatedAt: createdAt
         });
     }
 
