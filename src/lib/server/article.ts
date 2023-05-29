@@ -9,6 +9,17 @@ export type ArticleMeta = {
     draft: boolean;
 };
 
+export const leagues = [
+    ["heroes", "영웅"],
+    ["diamond", "다이아몬드"],
+    ["platinum", "플래티넘"],
+    ["gold", "골드"],
+    ["silver", "실버"],
+    ["bronze", "브론즈"],
+    ["iron", "아이언"],
+    ["starters", "스타터"]
+];
+
 export function getPatchNotesMetas(): ArticleMeta[]
 {
     const globs = import.meta.glob<{ metadata: ArticleMeta }>("../../routes/releases/**/+page.md", { eager: true });
@@ -26,17 +37,6 @@ export function getPatchNotesMetas(): ArticleMeta[]
 
 export function getCardUsagesMetas(): ArticleMeta[]
 {
-    const leagues = [
-        ["heroes", "영웅"],
-        ["diamond", "다이아몬드"],
-        ["platinum", "플래티넘"],
-        ["gold", "골드"],
-        ["silver", "실버"],
-        ["bronze", "브론즈"],
-        ["iron", "아이언"],
-        ["starters", "스타터"]
-    ];
-
     return leagues.map(league => ({
         title: `${league[1]} 리그 카드 사용량`,
         headerImage: `/images/headers/header_${league[0]}.png`,
