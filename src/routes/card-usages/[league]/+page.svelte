@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { PageData } from "./$types";
     import { MetaTags } from "svelte-meta-tags";
+    import { onMount } from "svelte";
     import CardEntry from "$components/CardEntry.svelte";
 
     export let data: PageData;
@@ -12,6 +13,18 @@
     let league = data.league;
     let usage = data.usage;
     let change = data.change;
+    let updatedAt = data.updatedAt;
+
+    onMount(async () => {
+        const result = await fetch("/api/card-usage", {
+            method: "POST",
+            body: league
+        }).then(response => response.json());
+
+        usage = result["usage"];
+        change = result["change"];
+        updatedAt = result["updatedAt"];
+    });
 
     function convertToJSONKey(value: string): keyof JSON
     {
@@ -21,6 +34,13 @@
     function convertToString(value: any): string
     {
         return value as string;
+    }
+
+    function formatMilliseconds(milliseconds: number): string
+    {
+        const date = new Date(milliseconds).toISOString();
+
+        return `${date.replace("T", " ").replaceAll("-", "/").slice(0, -5)}`;
     }
 </script>
 
@@ -64,7 +84,7 @@
         </div>
     </div>
     <ul>
-        <li>모든 데이터는 게임에서 바로 추출되었으며 매일 오후 12시에 업데이트됩니다.</li>
+        <li>모든 데이터는 게임에서 바로 추출되었으며 일정 시간마다 업데이트됩니다. (최근 업데이트: {formatMilliseconds(updatedAt)})</li>
         <li>각 소제목은 카드가 등장하는 비율을 나타냅니다. 0.5 – 0.6로 분류된 카드들은 지난 30일 동안 이 리그에서 플레이된 모든 덱 중 50~60%에 포함됐다는 의미입니다.</li>
         <li>승패나 한 번이라도 사용됐는지 여부와는 상관없이, 랭크전에서 플레이된 덱에 카드가 포함됐다면 집계됩니다.</li>
         <li>본 데이터는 파벌간 우위를 나타내지 않으며, 항상 겨울-철갑-그림자-동방 순으로 표시합니다. 동일한 파벌 내의 사용량 순위만이 유의미합니다.</li>

@@ -14,10 +14,10 @@
   resolved "https://registry.npmjs.org/@cloudflare/workerd-linux-64/-/workerd-linux-64-1.20230518.0.tgz"
   integrity sha512-/pfR+YBpMOPr2cAlwjtInil0hRZjD8KX9LqK9JkfkEiaBH8CYhnJQcOdNHZI+3OjcY09JnQtEVC5xC4nbW7Bvw==
 
-"@cloudflare/workers-types@^4.20221111.1":
-  version "4.20221111.1"
-  resolved "https://registry.npmjs.org/@cloudflare/workers-types/-/workers-types-4.20221111.1.tgz"
-  integrity sha512-BNV2wN8V6Zduvo7UzxcdjBbLQ906D2KhS804PDufLgx/sanGJCHVJMOIaLvS/b61JKtot1U7P/l1fjrjZ7/E3A==
+"@cloudflare/workers-types@^4.20221111.1", "@cloudflare/workers-types@^4.20230518.0":
+  version "4.20230518.0"
+  resolved "https://registry.npmjs.org/@cloudflare/workers-types/-/workers-types-4.20230518.0.tgz"
+  integrity sha512-A0w1V+5SUawGaaPRlhFhSC/SCDT9oQG8TMoWOKFLA4qbqagELqEAFD4KySBIkeVOvCBLT1DZSYBMCxbXddl0kw==
 
 "@csstools/postcss-cascade-layers@^1.1.1":
   version "1.1.1"
@@ -2410,10 +2410,10 @@ type-fest@^0.20.2:
   resolved "https://registry.npmjs.org/type-fest/-/type-fest-0.20.2.tgz"
   integrity sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==
 
-typescript@*, "typescript@^3.9.5 || ^4.0.0", typescript@^4.8.3, "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta", typescript@>=4.1.0:
-  version "4.8.4"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-4.8.4.tgz"
-  integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==
+typescript@*, "typescript@^3.9.5 || ^4.0.0", typescript@^4.9.5, "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta", typescript@>=4.1.0:
+  version "4.9.5"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz"
+  integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 undici@^5.13.0, undici@~5.22.0:
   version "5.22.0"

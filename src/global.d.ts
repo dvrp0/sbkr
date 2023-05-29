@@ -1,1 +1,1 @@
-declare const CARDS: CardData[];
+declare const CARDS: import("$lib/card").CardData[];
