@@ -1,7 +1,6 @@
 <script lang="ts">
     import type { PageData } from "./$types";
     import { MetaTags } from "svelte-meta-tags";
-    import { onMount } from "svelte";
     import CardEntry from "$components/CardEntry.svelte";
 
     export let data: PageData;
@@ -14,17 +13,6 @@
     let usage = data.usage;
     let change = data.change;
     let updatedAt = data.updatedAt;
-
-    onMount(async () => {
-        const result = await fetch("/api/card-usage", {
-            method: "POST",
-            body: league
-        }).then(response => response.json());
-
-        usage = result["usage"];
-        change = result["change"];
-        updatedAt = result["updatedAt"];
-    });
 
     function convertToJSONKey(value: string): keyof JSON
     {

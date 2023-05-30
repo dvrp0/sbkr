@@ -1,15 +1,13 @@
 export async function load({ fetch, params })
 {
-    const usage = await fetch(`https://sbkr-1-x0172776.deta.app/usages?league=${params.league}`)
-        .then(response => response.json())
-        .then(result => result["result"] as JSON);
-    const change = await fetch(`https://sbkr-1-x0172776.deta.app/usage-changes?league=${params.league}`)
-        .then(response => response.json())
-        .then(result => result["result"] as JSON);
+    const result = await fetch("/api/card-usage", {
+        method: "POST",
+        body: params.league
+    }).then(response => response.json());
 
     return {
-        usage,
-        change,
-        updatedAt: Date.now()
+        usage: result["usage"] as JSON,
+        change: result["change"] as JSON,
+        updatedAt: result["updatedAt"] as number
     };
 }
