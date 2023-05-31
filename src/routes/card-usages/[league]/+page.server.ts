@@ -5,9 +5,9 @@ export async function load({ fetch, params })
         body: params.league
     }).then(response => response.json());
 
-    return {
-        usage: result["usage"] as JSON,
-        change: result["change"] as JSON,
-        updatedAt: result["updatedAt"] as number
+    return result as {
+        usage: JSON;
+        change: JSON;
+        updatedAt: number;
     };
 }

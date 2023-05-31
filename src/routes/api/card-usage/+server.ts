@@ -6,7 +6,7 @@ export async function POST({ fetch, request, platform })
 {
     const key = await request.text();
     const result = await platform!.env.CARD_USAGES.getWithMetadata(key);
-    const createdAt = (result.metadata as { createdAt: number })?.createdAt ?? 0;
+    const createdAt = (result.metadata as { createdAt: number; })?.createdAt ?? 0;
 
     if (result && result.value)
     {
