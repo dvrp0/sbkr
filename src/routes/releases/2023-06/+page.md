@@ -1,7 +1,7 @@
 ---
 title: 2023 6월 업데이트
 publishedAt: 2023/06
-headerImage: https://media.discordapp.net/attachments/815214884920098817/1113480826668187728/image.png
+headerImage: https://clan.akamai.steamstatic.com/images/32724087/0de56b71a8cd5141d564a94872aefa7c9e0d8d6a.png
 isHeaderShadowNeeded: true
 summary: 6월에는 신규 카드 2장이 추가되고, 일부 밸런스가 조정되며, 스톰바운드 뉴스레터가 추가됩니다!
 source: https://stormbound-kitty.com/releases/06-2023
