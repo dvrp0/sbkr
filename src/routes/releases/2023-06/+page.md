@@ -27,7 +27,7 @@ source: https://stormbound-kitty.com/releases/06-2023
   - <CardLink target="조류 추적자" />: 마나 <Old>6</Old> → 5, 파괴 대상 <Old>유닛들</Old> → 유닛과 건물들
 
 ## 신규 카드
-5월에는 두 장의 신규 카드가 추가됩니다. 바로 중립 해적 고대인과 철갑 컨스트럭트 고대인입니다. 이 컨스트럭트는 무엇에 대한 설계도일까요?
+6월에는 두 장의 신규 카드가 추가됩니다. 바로 중립 해적 고대인과 철갑 컨스트럭트 고대인입니다. 이 컨스트럭트는 무엇에 대한 설계도일까요?
 
 <Card type="unit" faction="neutral" name="귀중한 우두머리" unitType="해적 고대인" cost={4} strengths={[4, 5, 6, 7, 8]} movement={1} rarity="epic" cardart="/images/cards/cardart_U072.png" abilities={[
     "이동하기 전, 내 손에서 가장 비싼 카드를 덱에 있는 더 저렴한 카드로 *교체*합니다",
