@@ -42,7 +42,7 @@
                 </div>
                 <div class="stats">
                     <p class="stat strength" class:invisible={unpack(type, i) == "spell"}>{strengths[i]}</p>
-                    <p class="stat" class:invisible={unpack(type, i) != "unit"}>{unpack(movement, i)}</p>
+                    <p class="stat" class:invisible={unpack(type, i) != "unit"} class:movement={strengths[i] >= 10}>{unpack(movement, i)}</p>
                 </div>
                 <div class="levels">
                     <div class="rarity">
@@ -145,6 +145,11 @@
 
     .strength {
         margin-right: 5.625em;
+    }
+
+    .movement {
+        margin-left: -0.3em;
+        padding-right: 0.3em;
     }
 
     .levels {
