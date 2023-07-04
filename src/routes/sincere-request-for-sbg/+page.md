@@ -2,9 +2,39 @@
 layout: false
 ---
 
-<script>
+<script lang="ts">
+    import { MetaTags } from "svelte-meta-tags";
     import Comment from "$components/Comment.svelte";
+
+    let title: string = "Feedback";
 </script>
+
+<MetaTags
+    title={title}
+    titleTemplate="%s - sbkr"
+    canonical="https://sbkr.pages.dev/sincere-request-for-sbg"
+    openGraph={{
+        type: "website",
+        site_name: "sbkr",
+        url: "https://sbkr.pages.dev/sincere-request-for-sbg",
+        title: title,
+        images: [
+            {
+                url: "/images/thumbnail.png"
+            }
+        ]
+    }}
+    additionalMetaTags={[
+        {
+            property: "author",
+            content: "DVRP"
+        },
+        {
+            property: "theme-color",
+            content: "#06161E"
+        }
+    ]}
+/>
 
 <article class="post">
     <img class="header" alt="이미지" src="/images/headers/header_cards.png" />
@@ -64,9 +94,9 @@ Let's take a look at the 7 patches that were done this year.
 
   - **January**: 6 balance changes, 2 new cards, new login system, brawl QoL update. base demolisher nerf
   - **February**: 6 balance changes, 2 new cards, Valentine's brawl, nickname change feature
-  - **March**: 9 balance changes, 2 new cards, draft became P2W, skip button, more ads added and SBG thinks it's a QoL
+  - **March**: 9 balance changes, 2 new cards, draft rework, skip button, more ads
   - **April**: 5 balance changes, 2 new cards
-  - **May**: 5 balance changes, 2 new cards, draft changed but still P2W
+  - **May**: 5 balance changes, 2 new cards, draft update
   - **June**: 4 balance changes, 2 new cards, newsletter
   - **July**: 3 balance changes, 2 new cards
 
@@ -80,7 +110,7 @@ What meaningful updates were there? **None**. Not even one. Half a year has pass
   - Base demolisher nerfed **5 days after its release**
   - **20 rubies** for replacing daily cards
   - Ancients have **zero coherencies** in terms of theme compared to other unit types
-  - **Text format** is still a mess even though there's a well-organized guideline
+  - **Text format** is still a mess even though there's a well-organized [guideline](https://stormbound-kitty.com/releases/04-2022#copy-improvements)
   - Vindictive wretches reached 10-30% usage in Bronze, Silver, Gold, and Heroes **a month** after its release and took 3 months to nerf
   - Draft become **totally unenjoyable** and SBG thinks it became more enjoyable for more players
   - Book of Ancients gives Temple cards even though Book of Temples exists, because of [**the one big narrative from the vision of the lead designer**](https://discord.com/channels/293674725069029377/447484918801629195/1007307044925210715), this one is more than hilarious. It's impossible for me to comprehend how a lead designer can justify a decision that hinders players' experience, using the lore as a reason. Quoting VengenfulRaven's words, which are truly what I want to say:
