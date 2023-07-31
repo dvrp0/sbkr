@@ -22,7 +22,7 @@ source: https://stormbound-kitty.com/releases/08-2023
 이번 업데이트에는 평소와 같이 일부 밸런스가 조정됩니다.
 
   - <CardLink target="대지의 신" />: 체력 <Old>5/6/7/9/11</Old> → 6/7/8/10/12, 체력 획득량 <Old>3/3/3/4/4</Old> → 4/4/4/5/5
-  - <CardLink target="거머리 소환사" />: 체력 <Old>3/4/4/5/6</Old> → 4/5/5/6/7
+  - <CardLink target="시체 소환사" />: 체력 <Old>3/4/4/5/6</Old> → 4/5/5/6/7
   - <CardLink target="전선 기술자" />: 체력 <Old>2/3/4/5/6</Old> → 3/4/5/5/6
   - <CardLink target="수리, 생명의 군주" />: 체력 부여량 <Old>3/4/5/6/7</Old> → 1/2/3/4/5
   - <CardLink target="잊혀진 영혼" />: 이동 속도 <Old>1</Old> → 0
