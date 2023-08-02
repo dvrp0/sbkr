@@ -2,6 +2,7 @@
     import type { PageData } from "./$types"
     import { type CardData, cards, convertType, convertRarity, convertFaction } from "$lib/card";
     import { MetaTags } from "svelte-meta-tags";
+    import Badge from "$components/Badge.svelte";
     import Card from "$components/Card.svelte";
 
     export let data: PageData;
@@ -42,7 +43,9 @@
     <img class="header" alt="이미지" src="/images/headers/header_cards.png" />
     <h1>{card.name}</h1>
     <div class="intro">
-        <p class="summary">{card.kingdom} {card.rarity} {card.type}</p>
+        <Badge kingdom={convertFaction(card.kingdom)} text={card.kingdom} rightMargin />
+        <Badge text={card.rarity} rightMargin />
+        <Badge text={card.type} />
     </div>
     <Card type={convertType(card.type)} faction={convertFaction(card.kingdom)} name={card.name} unitType={card.unitTypes}
           cost={card.cost} strengths={card.strengths} movement={card.movement} rarity={convertRarity(card.rarity)}
@@ -59,9 +62,9 @@
 
     .intro {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        margin-top: -3rem;
+        justify-content: center;
+        margin-top: -2rem;
     }
 
     .summary {
