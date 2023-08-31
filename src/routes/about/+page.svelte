@@ -6,16 +6,16 @@
 </script>
 
 <MetaTags
-    title={title}
+    {title}
     titleTemplate="%s - sbkr"
-    description={description}
+    {description}
     canonical="https://sbkr.pages.dev/about"
     openGraph={{
         type: "website",
         site_name: "sbkr",
         url: "https://sbkr.pages.dev/about",
-        title: title,
-        description: description,
+        title,
+        description,
         images: [
             {
                 url: "/images/thumbnail.png"

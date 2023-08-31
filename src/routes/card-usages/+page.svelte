@@ -1,8 +1,7 @@
 <script lang="ts">
-    import type { PageData } from "./$types"
     import { MetaTags } from "svelte-meta-tags";
 
-    export let data: PageData;
+    export let data;
 
     let posts = data.posts;
     let title: string = "카드 사용량";
@@ -10,16 +9,16 @@
 </script>
 
 <MetaTags
-    title={title}
+    {title}
     titleTemplate="%s - sbkr"
-    description={description}
+    {description}
     canonical="https://sbkr.pages.dev/card-usages"
     openGraph={{
         type: "website",
         site_name: "sbkr",
         url: "https://sbkr.pages.dev/releases/card-usages",
-        title: title,
-        description: description
+        title,
+        description
     }}
     additionalMetaTags={[
         {

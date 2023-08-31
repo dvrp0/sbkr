@@ -2,18 +2,18 @@
     import Icon from "$components/Icon.svelte";
 
     export let kingdom: string | undefined = undefined;
-    export let text: string;
     export let rightMargin = false;
+    export let darkBackground = false;
 </script>
 
-<div class="container" class:rightMargin={rightMargin}
+<div class="container" class:right-margin={rightMargin} class:dark-background={darkBackground}
     style="--background: var(--c-background-light{kingdom === "neutral" || kingdom === undefined ? "" : `-${kingdom}`});">
     {#if kingdom !== undefined}
         <div class="kingdom">
             <Icon type={kingdom} />
         </div>
     {/if}
-    {text}
+    <slot />
 </div>
 
 <style>
@@ -23,13 +23,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 0.85rem;
         color: var(--c-foreground-dark);
         background-color: var(--background);
         border-radius: 20px;
     }
 
-    .rightMargin {
+    .right-margin {
         margin-right: 0.5rem;
+    }
+
+    .dark-background {
+        background-color: var(--c-background);
     }
 
     .kingdom {

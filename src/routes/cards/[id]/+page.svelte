@@ -1,11 +1,10 @@
 <script lang="ts">
-    import type { PageData } from "./$types"
     import { type CardData, cards, convertType, convertRarity, convertKingdom } from "$lib/card";
     import { MetaTags } from "svelte-meta-tags";
     import Badge from "$components/Badge.svelte";
     import Card from "$components/Card.svelte";
 
-    export let data: PageData;
+    export let data;
 
     const card = cards.find(({ id }) => id === data.id) ?? {} as CardData;
 </script>
@@ -43,9 +42,9 @@
     <img class="header" alt="이미지" src="/images/headers/header_cards.png" />
     <h1>{card.name}</h1>
     <div class="intro">
-        <Badge kingdom={convertKingdom(card.kingdom)} text={card.kingdom} rightMargin />
-        <Badge text={card.rarity} rightMargin />
-        <Badge text={card.type} />
+        <Badge kingdom={convertKingdom(card.kingdom)} rightMargin>{card.kingdom}</Badge>
+        <Badge rightMargin>{card.rarity}</Badge>
+        <Badge>{card.type}</Badge>
     </div>
     <Card type={convertType(card.type)} faction={convertKingdom(card.kingdom)} name={card.name} unitType={card.unitTypes}
           cost={card.cost} strengths={card.strengths} movement={card.movement} rarity={convertRarity(card.rarity)}

@@ -1,66 +1,56 @@
 <script lang="ts">
     import { type CardData, cards, convertKingdom } from "$lib/card";
-    import Icon from "$components/Icon.svelte";
+    import Badge from "$components/Badge.svelte";
     import CardLink from "$components/CardLink.svelte";
+    import Icon from "$components/Icon.svelte";
 
+    export let rank: number;
     export let entryId: string;
-    export let change: string = "";
+    export let change: string;
 
     const card: CardData = cards.find(({ id }) => id === entryId) ?? {} as CardData;
+    const kingdom = convertKingdom(card.kingdom);
 </script>
 
-<div class="entry {convertKingdom(card.kingdom)}">
+<div class="entry"
+    style="--background: var(--c-background-light{kingdom === "neutral" ? "" : `-${kingdom}`});">
     <div class="entry-image">
         <img alt={card.id} src="/images/cards/cardart_{card.id.toUpperCase()}.png" />
     </div>
     <div class="entry-info">
-        <CardLink target={card.name} />
-        {#if change !== ""}
-            <div class="entry-info-change">
-                {#if change === "0"}
-                    <span>-</span>
-                {:else if change === "new"}
-                    <Icon type="new" />
-                    <span class="margin">신규</span>
-                {:else if parseInt(change) > 0}
-                    <Icon type="up" />
-                    <span class="margin">{change}</span>
-                {:else}
-                    <Icon type="down" />
-                    <span class="margin">{Math.abs(parseInt(change))}</span>
+        <div class="entry-badge">
+            <Badge {kingdom} darkBackground>
+                {card.kingdom} #{rank}
+                {#if change !== ""}
+                    <div class="entry-info-change">
+                        {#if change === "0"}
+                            <span>-</span>
+                        {:else if change === "new"}
+                            <Icon type="new" />
+                            <span class="margin">신규</span>
+                        {:else if parseInt(change) > 0}
+                            <Icon type="up" />
+                            <span class="margin">{change}</span>
+                        {:else}
+                            <Icon type="down" />
+                            <span class="margin">{Math.abs(parseInt(change))}</span>
+                        {/if}
+                    </div>
                 {/if}
-            </div>
-        {/if}
+            </Badge>
+        </div>
+        <CardLink target={card.name} noKingdomIcon />
     </div>
 </div>
 
 <style>
     .entry {
-        display: flex;
         width: calc(50% - 2.5em);
-        padding: 1em;
         margin-right: 0.5em;
         margin-bottom: 0.5em;
-    }
-
-    .neutral {
-        background-color: var(--c-background-light);
-    }
-
-    .swarm {
-        background-color: var(--c-background-light-swarm);
-    }
-
-    .ironclad {
-        background-color: var(--c-background-light-ironclad);
-    }
-
-    .shadowfen {
-        background-color: var(--c-background-light-shadowfen);
-    }
-
-    .winter {
-        background-color: var(--c-background-light-winter);
+        padding: 1em;
+        display: flex;
+        background-color: var(--background);
     }
 
     .entry-image {
@@ -83,7 +73,12 @@
         justify-content: center;
     }
 
+    .entry-badge {
+        margin-bottom: 0.25rem;
+    }
+
     .entry-info-change {
+        margin-left: 0.5rem;
         display: flex;
         align-items: center;
     }

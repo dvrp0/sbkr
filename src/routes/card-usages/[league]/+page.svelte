@@ -1,9 +1,8 @@
 <script lang="ts">
-    import type { PageData } from "./$types";
     import { MetaTags } from "svelte-meta-tags";
     import CardEntry from "$components/CardEntry.svelte";
 
-    export let data: PageData;
+    export let data;
 
     let title = data.title;
     let headerImage = data.headerImage;
@@ -13,6 +12,8 @@
     let usage = data.usage;
     let change = data.change;
     let updatedAt = data.updatedAt;
+
+    const entries = Object.entries(usage).reverse();
 
     function convertToJSONKey(value: string): keyof JSON
     {
@@ -32,10 +33,32 @@
 
         return kst.replaceAll("-", "/");
     }
+
+    function getRankOffset(index: number, kingdom: string): number
+    {
+        if (index === 0)
+            return 0;
+
+        // let offset = 0;
+
+        // for (let i = index - 1; i >= 0; i--)
+        // {
+        //     const previous = entries[i][1];
+
+        //     offset += previous[kingdom].length;
+        // }
+
+        return entries
+            .slice(0, index)
+            .map(x => x[1][kingdom].length)
+            .reduce((acc, cur) => acc + cur, 0);
+
+        // return offset;
+    }
 </script>
 
 <MetaTags
-    title={title}
+    {title}
     titleTemplate="%s - sbkr"
     description={summary}
     canonical="https://sbkr.pages.dev/card-usages/{league}"
@@ -43,7 +66,7 @@
         type: "website",
         site_name: "sbkr",
         url: `https://sbkr.pages.dev/card-usages/${league}`,
-        title: title,
+        title,
         description: summary,
         images: [
             {
@@ -80,11 +103,28 @@
         <li>본 데이터는 파벌간 우위를 나타내지 않으며, 항상 겨울-철갑-그림자-동방 순으로 표시합니다. 동일한 파벌 내의 사용량 순위만이 유의미합니다.</li>
         <li>다만 중립 카드가 사용량이 가장 높게 나오는 이유는 모든 파벌의 덱에서 사용되기 때문입니다.</li>
     </ul>
-    {#each Object.entries(usage).reverse() as [key, value] (key)}
-        <h2>{key}</h2>
+    {#each entries as [tier, value], tierIndex (tier)}
+        <h2>{tier}</h2>
         <div class="entries">
-            {#each value as entry (entry)}
-                <CardEntry entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
+            {#each value["neutral"] as entry, i (entry)}
+                {@const rankOffset = getRankOffset(tierIndex, "neutral")}
+                <CardEntry rank={rankOffset + i + 1} entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
+            {/each}
+            {#each value["winter"] as entry, i (entry)}
+                {@const rankOffset = getRankOffset(tierIndex, "winter")}
+                <CardEntry rank={rankOffset + i + 1} entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
+            {/each}
+            {#each value["ironclad"] as entry, i (entry)}
+                {@const rankOffset = getRankOffset(tierIndex, "ironclad")}
+                <CardEntry rank={rankOffset + i + 1} entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
+            {/each}
+            {#each value["shadowfen"] as entry, i (entry)}
+                {@const rankOffset = getRankOffset(tierIndex, "shadowfen")}
+                <CardEntry rank={rankOffset + i + 1} entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
+            {/each}
+            {#each value["swarm"] as entry, i (entry)}
+                {@const rankOffset = getRankOffset(tierIndex, "swarm")}
+                <CardEntry rank={rankOffset + i + 1} entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
             {/each}
         </div>
     {/each}
