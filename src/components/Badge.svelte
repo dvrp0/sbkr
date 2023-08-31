@@ -2,7 +2,6 @@
     import Icon from "$components/Icon.svelte";
 
     export let kingdom: string | undefined = undefined;
-    export let text: string;
     export let rightMargin = false;
 </script>
 
@@ -13,7 +12,7 @@
             <Icon type={kingdom} />
         </div>
     {/if}
-    {text}
+    <slot />
 </div>
 
 <style>
