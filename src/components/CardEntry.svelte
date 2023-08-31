@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { type CardData, cards, convertFaction } from "$lib/card";
+    import { type CardData, cards, convertKingdom } from "$lib/card";
     import Icon from "$components/Icon.svelte";
     import CardLink from "$components/CardLink.svelte";
 
@@ -9,7 +9,7 @@
     const card: CardData = cards.find(({ id }) => id === entryId) ?? {} as CardData;
 </script>
 
-<div class="entry {convertFaction(card.kingdom)}">
+<div class="entry {convertKingdom(card.kingdom)}">
     <div class="entry-image">
         <img alt={card.id} src="/images/cards/cardart_{card.id.toUpperCase()}.png" />
     </div>

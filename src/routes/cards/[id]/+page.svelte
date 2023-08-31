@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { PageData } from "./$types"
-    import { type CardData, cards, convertType, convertRarity, convertFaction } from "$lib/card";
+    import { type CardData, cards, convertType, convertRarity, convertKingdom } from "$lib/card";
     import { MetaTags } from "svelte-meta-tags";
     import Badge from "$components/Badge.svelte";
     import Card from "$components/Card.svelte";
@@ -43,11 +43,11 @@
     <img class="header" alt="이미지" src="/images/headers/header_cards.png" />
     <h1>{card.name}</h1>
     <div class="intro">
-        <Badge kingdom={convertFaction(card.kingdom)} text={card.kingdom} rightMargin />
+        <Badge kingdom={convertKingdom(card.kingdom)} text={card.kingdom} rightMargin />
         <Badge text={card.rarity} rightMargin />
         <Badge text={card.type} />
     </div>
-    <Card type={convertType(card.type)} faction={convertFaction(card.kingdom)} name={card.name} unitType={card.unitTypes}
+    <Card type={convertType(card.type)} faction={convertKingdom(card.kingdom)} name={card.name} unitType={card.unitTypes}
           cost={card.cost} strengths={card.strengths} movement={card.movement} rarity={convertRarity(card.rarity)}
           cardart={`/images/cards/cardart_${card.id.toUpperCase()}.png`} abilities={card.descriptions} />
 </article>

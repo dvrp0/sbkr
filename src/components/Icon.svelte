@@ -30,6 +30,26 @@
         case "new":
             src = "/images/icons/new.webp"
             break;
+
+        case "neutral":
+            src= "/images/icons/neutral.webp"
+            break;
+
+        case "swarm":
+            src = "/images/icons/swarm.webp"
+            break;
+
+        case "winter":
+            src = "/images/icons/winter.webp"
+            break;
+
+        case "shadowfen":
+            src = "/images/icons/shadowfen.webp"
+            break;
+
+        case "ironclad":
+            src = "/images/icons/ironclad.webp"
+            break;
     }
 </script>
 

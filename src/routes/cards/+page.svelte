@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { cards, convertType, convertRarity, convertFaction } from "$lib/card";
+    import { cards, convertType, convertRarity, convertKingdom } from "$lib/card";
     import Card from "$components/Card.svelte";
 
     let shownCards = cards;
@@ -8,7 +8,7 @@
 <div class="entries">
     {#each shownCards as card (card.id)}
         <a href="/cards/{card.id}">
-            <Card type={convertType(card.type)} faction={convertFaction(card.kingdom)} name={card.name} unitType={card.unitTypes}
+            <Card type={convertType(card.type)} faction={convertKingdom(card.kingdom)} name={card.name} unitType={card.unitTypes}
                 cost={card.cost} strengths={card.strengths} movement={card.movement} rarity={convertRarity(card.rarity)}
                 cardart={`/images/cards/cardart_${card.id.toUpperCase()}.png`} abilities={card.descriptions} count={1} noMargin />
         </a>

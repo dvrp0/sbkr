@@ -35,7 +35,7 @@ export function convertRarity(rarity: string): string
         return "legendary";
 }
 
-export function convertFaction(faction: string): string
+export function convertKingdom(faction: string): string
 {
     if (faction == "동방의 무리")
         return "swarm";

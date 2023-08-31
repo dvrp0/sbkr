@@ -1,7 +1,8 @@
 <script lang="ts">
-    import { type CardData, cards, convertFaction, convertRarity, convertType } from "$lib/card";
+    import { type CardData, cards, convertKingdom, convertRarity, convertType } from "$lib/card";
     import { fade } from "svelte/transition";
     import Card from "$components/Card.svelte";
+    import Icon from "$components/Icon.svelte";
 
     export let target: string;
 
@@ -36,18 +37,17 @@
 
 {#if isHovered}
     <div class="tooltip" style="top: {position.y}px; left: {position.x}px;" in:fade={{duration}} out:fade={{duration}}>
-        <Card type={convertType(card.type)} faction={convertFaction(card.kingdom)} name={card.name} unitType={card.unitTypes}
+        <Card type={convertType(card.type)} faction={convertKingdom(card.kingdom)} name={card.name} unitType={card.unitTypes}
             cost={card.cost} strengths={card.strengths} movement={card.movement} rarity={convertRarity(card.rarity)}
             cardart={`/images/cards/cardart_${card.id.toUpperCase()}.png`} abilities={card.descriptions} count={1} />
     </div>
 {/if}
 
-<strong>
-    <a href="/cards/{card.id}" on:focus={handleFocus} on:mouseover={handleMouseOver} on:mousemove={handleMouseMove}
-        on:mouseleave={handleMouseLeave}>
-        {target}
-    </a>
-</strong>
+<Icon type={convertKingdom(card.kingdom)} />
+<a href="/cards/{card.id}" on:focus={handleFocus} on:mouseover={handleMouseOver} on:mousemove={handleMouseMove}
+    on:mouseleave={handleMouseLeave}>
+    {target}
+</a>
 
 <style>
     .tooltip {
