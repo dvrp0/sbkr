@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import { onMount } from "svelte";
     import { MetaTags } from "svelte-meta-tags";
 
@@ -9,9 +9,9 @@
     export let source = "";
     export let isHeaderShadowNeeded = false;
 
-    let innerHeight: number;
-    let scrollHeight: number;
-    let scrollY: number;
+    let innerHeight = 0;
+    let scrollHeight = 0;
+    let scrollY = 0;
 
     let splitted = publishedAt.split("/");
     let id = `${splitted[0]}-${splitted[1]}`;

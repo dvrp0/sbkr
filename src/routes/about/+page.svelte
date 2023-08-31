@@ -49,7 +49,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-contents: center;
+        justify-content: center;
     }
 
     .logo {
@@ -59,7 +59,7 @@
     .links {
         display: flex;
         align-items: center;
-        justify-contents: center;
+        justify-content: center;
         margin: 1.5rem 0;
         margin-left: 0.75rem;
     }

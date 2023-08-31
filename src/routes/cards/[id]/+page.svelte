@@ -67,11 +67,6 @@
         margin-top: -2rem;
     }
 
-    .summary {
-        text-align: center;
-        padding: 0 20%;
-    }
-
     @media (max-width: 74rem) {
         .header {
             width: 100%;
