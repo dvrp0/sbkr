@@ -16,7 +16,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 0.75rem;
         color: var(--c-foreground-dark);
         background-color: var(--background);
         border-radius: 20px;
