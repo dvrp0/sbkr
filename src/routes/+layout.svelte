@@ -25,6 +25,7 @@
     nav {
         width: 100%;
         position: fixed;
+        z-index: 100;
         background-color: var(--c-background-nav);
     }
 
