@@ -10,14 +10,14 @@ layout: false
 </script>
 
 <MetaTags
-    title={title}
+    {title}
     titleTemplate="%s - sbkr"
     canonical="https://sbkr.pages.dev/sincere-request-for-sbg"
     openGraph={{
         type: "website",
         site_name: "sbkr",
         url: "https://sbkr.pages.dev/sincere-request-for-sbg",
-        title: title,
+        title,
         images: [
             {
                 url: "/images/thumbnail.png"

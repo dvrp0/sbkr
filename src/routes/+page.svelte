@@ -1,8 +1,7 @@
 <script lang="ts">
-    import type { PageData } from "./$types";
     import { MetaTags } from "svelte-meta-tags";
 
-    export let data: PageData;
+    export let data;
 
     let posts = data.posts;
 
@@ -11,15 +10,15 @@
 </script>
 
 <MetaTags
-    title={title}
-    description={description}
+    {title}
+    {description}
     canonical="https://sbkr.pages.dev"
     openGraph={{
         type: "website",
         site_name: "sbkr",
         url: "https://sbkr.pages.dev",
-        title: title,
-        description: description,
+        title,
+        description,
         images: [
             {
                 url: "/images/thumbnail.png"

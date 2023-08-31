@@ -22,7 +22,7 @@
 </script>
 
 <MetaTags
-    title={title}
+    {title}
     titleTemplate="%s - sbkr"
     description={summary}
     canonical="https://sbkr.pages.dev/releases/{id}"
@@ -30,7 +30,7 @@
         type: "website",
         site_name: "sbkr",
         url: `https://sbkr.pages.dev/releases/${id}`,
-        title: title,
+        title,
         description: summary,
         images: [
             {
