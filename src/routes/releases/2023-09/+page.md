@@ -9,6 +9,7 @@ source: https://stormbound-kitty.com/releases/09-2023
 
 <script>
     import Old from "$components/Old.svelte";
+    import New from "$components/New.svelte";
     import ImageBlock from "$components/ImageBlock.svelte";
     import FlexibleList from "$components/FlexibleList.svelte";
     import Icon from "$components/Icon.svelte";
@@ -34,12 +35,12 @@ source: https://stormbound-kitty.com/releases/09-2023
 ## 밸런스 변경점
 이번 업데이트에는 평소와 같이 일부 밸런스가 조정됩니다.
 
-  - <CardLink target="흡수하는 말썽쟁이" />: 체력 <Old>3/4/5/6/7</Old> → 4/5/6/7/8, 데미지 <Old>1/2/2/3/3</Old> → 2/3/3/4/4
-  - <CardLink target="근원의 설계도" />: 체력 <Old>2/3/4/5/6</Old> → 3/4/5/6/7
-  - <CardLink target="앰버하이드" />: 체력 <Old>4/5/6/7/8</Old> → 5/6/7/8/9, 체력 흡수 대상 <Old>무작위 유닛</Old> → 가장 강력한 유닛
-  - <CardLink target="부화의 현자" />: 소환하는 토드 수 <Old>1/2/3/3/4</Old> → 2/3/3/4/5, 토드 소환 범위 <Old>인접</Old> → 인접/인접/주변/주변/주변
-  - <CardLink target="장난꾸러기" />: 체력 <Old>4/5/6/7/8</Old> → 3/4/5/6/7
-  - <CardLink target="천사 같은 티카" />: 혼란 범위 <Old>주변</Old> → 인접
+  - <CardLink target="흡수하는 말썽쟁이" />: 체력 <Old>3/4/5/6/7</Old> → <New type="buff">4/5/6/7/8</New>, 데미지 <Old>1/2/2/3/3</Old> → <New type="buff">2/3/3/4/4</New>
+  - <CardLink target="근원의 설계도" />: 체력 <Old>2/3/4/5/6</Old> → <New type="buff">3/4/5/6/7</New>
+  - <CardLink target="앰버하이드" />: 체력 <Old>4/5/6/7/8</Old> → <New type="buff">5/6/7/8/9</New>, 체력 흡수 대상 <Old>무작위 유닛</Old> → <New type="buff">가장 강력한 유닛</New>
+  - <CardLink target="부화의 현자" />: 소환하는 토드 수 <Old>1/2/3/3/4</Old> → <New type="buff">2/3/3/4/5</New>, 토드 소환 범위 <Old>인접</Old> → <New type="buff">인접/인접/주변/주변/주변</New>
+  - <CardLink target="장난꾸러기" />: 체력 <Old>4/5/6/7/8</Old> → <New type="nerf">3/4/5/6/7</New>
+  - <CardLink target="천사 같은 티카" />: 혼란 범위 <Old>주변</Old> → <New type="nerf">인접</New>
 
 <Comment>
 

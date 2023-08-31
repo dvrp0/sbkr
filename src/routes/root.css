@@ -12,6 +12,8 @@
     --c-foreground-dark: #a0a0a0;
     --c-foreground-comment: #8fadb9;
     --c-foreground-hover: #bcd0e2;
+    --c-foreground-buff: #55d992;
+    --c-foreground-nerf: #e65a71;
     --c-background: #06161e;
     --c-background-light: #132229;
     --c-background-light-swarm: #292e2b;
