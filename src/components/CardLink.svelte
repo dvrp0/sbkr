@@ -47,13 +47,16 @@
 {#if !noKingdomIcon}
     <Icon type={convertKingdom(card.kingdom)} />
 {/if}
-<a href="/cards/{card.id}" on:focus={handleFocus} on:mouseover={handleMouseOver} on:mousemove={handleMouseMove}
-    on:mouseleave={handleMouseLeave}>
-    {target}
-</a>
+<span>
+    <a href="/cards/{card.id}" on:focus={handleFocus} on:mouseover={handleMouseOver} on:mousemove={handleMouseMove}
+        on:mouseleave={handleMouseLeave}>
+        {target}
+    </a>
+</span>
 
 <style>
     .tooltip {
         position: absolute;
+        z-index: 100;
     }
 </style>
