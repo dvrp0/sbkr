@@ -1,9 +1,8 @@
 <script lang="ts">
-    import type { PageData } from "./$types";
     import { MetaTags } from "svelte-meta-tags";
     import CardEntry from "$components/CardEntry.svelte";
 
-    export let data: PageData;
+    export let data;
 
     let title = data.title;
     let headerImage = data.headerImage;
@@ -35,7 +34,7 @@
 </script>
 
 <MetaTags
-    title={title}
+    {title}
     titleTemplate="%s - sbkr"
     description={summary}
     canonical="https://sbkr.pages.dev/card-usages/{league}"
@@ -43,7 +42,7 @@
         type: "website",
         site_name: "sbkr",
         url: `https://sbkr.pages.dev/card-usages/${league}`,
-        title: title,
+        title,
         description: summary,
         images: [
             {
@@ -83,8 +82,20 @@
     {#each Object.entries(usage).reverse() as [key, value] (key)}
         <h2>{key}</h2>
         <div class="entries">
-            {#each value as entry (entry)}
-                <CardEntry entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
+            {#each value["neutral"] as entry, i (entry)}
+                <CardEntry rank={i + 1} entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
+            {/each}
+            {#each value["winter"] as entry, i (entry)}
+                <CardEntry rank={i + 1} entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
+            {/each}
+            {#each value["ironclad"] as entry, i (entry)}
+                <CardEntry rank={i + 1} entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
+            {/each}
+            {#each value["shadowfen"] as entry, i (entry)}
+                <CardEntry rank={i + 1} entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
+            {/each}
+            {#each value["swarm"] as entry, i (entry)}
+                <CardEntry rank={i + 1} entryId={entry} change={convertToString(change[convertToJSONKey(entry)])} />
             {/each}
         </div>
     {/each}

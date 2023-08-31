@@ -5,6 +5,7 @@
     import Icon from "$components/Icon.svelte";
 
     export let target: string;
+    export let noKingdomIcon = false;
 
     const margin = { x: 3, y: 3};
     const duration = 150;
@@ -43,7 +44,9 @@
     </div>
 {/if}
 
-<Icon type={convertKingdom(card.kingdom)} />
+{#if !noKingdomIcon}
+    <Icon type={convertKingdom(card.kingdom)} />
+{/if}
 <a href="/cards/{card.id}" on:focus={handleFocus} on:mouseover={handleMouseOver} on:mousemove={handleMouseMove}
     on:mouseleave={handleMouseLeave}>
     {target}

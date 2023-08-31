@@ -1,10 +1,12 @@
 <script lang="ts">
     import { type CardData, cards, convertKingdom } from "$lib/card";
-    import Icon from "$components/Icon.svelte";
+    import Badge from "$components/Badge.svelte";
     import CardLink from "$components/CardLink.svelte";
+    import Icon from "$components/Icon.svelte";
 
+    export let rank: number;
     export let entryId: string;
-    export let change: string = "";
+    export let change: string;
 
     const card: CardData = cards.find(({ id }) => id === entryId) ?? {} as CardData;
 </script>
@@ -14,7 +16,8 @@
         <img alt={card.id} src="/images/cards/cardart_{card.id.toUpperCase()}.png" />
     </div>
     <div class="entry-info">
-        <CardLink target={card.name} />
+        <Badge kingdom={convertKingdom(card.kingdom)}>{card.kingdom} #{rank}</Badge>
+        <CardLink target={card.name} noKingdomIcon />
         {#if change !== ""}
             <div class="entry-info-change">
                 {#if change === "0"}
