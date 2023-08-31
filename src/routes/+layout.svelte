@@ -23,6 +23,8 @@
     @import "./root.css";
 
     nav {
+        width: 100%;
+        position: fixed;
         background-color: var(--c-background-nav);
     }
 
@@ -43,6 +45,7 @@
     }
 
     .nav-container {
+        height: 4rem;
         padding: 0 calc((var(--large) - 100%) / 2 * -1);
         display: flex;
         align-items: center;

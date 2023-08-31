@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+    import { onMount } from "svelte";
     import { MetaTags } from "svelte-meta-tags";
 
     export let title = "";
@@ -8,8 +9,16 @@
     export let source = "";
     export let isHeaderShadowNeeded = false;
 
+    let innerHeight: number;
+    let scrollHeight: number;
+    let scrollY: number;
+
     let splitted = publishedAt.split("/");
     let id = `${splitted[0]}-${splitted[1]}`;
+
+    onMount(() => {
+        scrollHeight = document.body.scrollHeight;
+    });
 </script>
 
 <MetaTags
@@ -41,6 +50,9 @@
     ]}
 />
 
+<svelte:window bind:innerHeight bind:scrollY />
+
+<div class="progress" style="--progress: {scrollY / (scrollHeight - innerHeight) * 100}%;" />
 <article class="post">
     <div class="headers">
         <img alt="이미지" src={headerImage} />
@@ -62,6 +74,16 @@
 </article>
 
 <style>
+    .progress {
+        width: var(--progress);
+        height: 0.1rem;
+        margin-top: 4rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--c-foreground);
+    }
+
     .headers {
         display: grid;
     }
