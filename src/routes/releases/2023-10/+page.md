@@ -26,7 +26,7 @@ source: https://stormbound-kitty.com/releases/10-2023
   - <CardLink target="엄격한 갑판수" />: 체력 <Old>1/2/3/4/5</Old> → <New type="buff">2/3/4/5/6</New>
   - <CardLink target="개인 시종" />: 체력 부여량 <Old>2/2/3/3/4</Old> → <New type="buff">3/3/4/4/5</New>
   - <CardLink target="길 잃은 영혼" />: 같은 타일로 순간이동 <Old>가능</Old> → <New type="buff">불가</New>
-  - <CardLink target="블레이드 스톰" />: 데미지 <Old>2/2/3/3/4</Old> → <New type="nerf">1/2/2~3/3~4/4~5</New>
+  - <CardLink target="블레이드 스톰" />: 데미지 <Old>1/2/3/4/5</Old> → <New type="nerf">1/2/2~3/3~4/4~5</New>
   - <CardLink target="빛의 인도자 가르디" />: 생성하는 사원 카드의 희귀도 <Old>레어 이상</Old> → <New type="nerf">일반 이상</New>
   - <CardLink target="강화의 영약" />: 체력 부여량 <Old>3/4/5/5/6</Old> → <New type="buff">4/5/6/6/7</New>
 
