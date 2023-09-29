@@ -39,7 +39,6 @@
 
     .kingdom {
         margin-right: 0.25rem;
-        filter: brightness(0) invert(1);
         opacity: 0.4;
     }
 </style>
