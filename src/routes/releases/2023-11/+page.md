@@ -41,7 +41,7 @@ source: https://stormbound-kitty.com/releases/11-2023
 ## 신규 카드
 신규 해적 엘더인 <CardLink target="주름진 장루원" />이 10월 27일에 출시됩니다.
 
-<Card type="unit" faction="neutral" name="주름진 장루원" unitType="해적 고대인" cost={3} strengths={[3, 4, 5, 6, 7]} movement={0} rarity="epic" cardart="/images/cards/cardart_U075.png" abilities={[
+<Card type="unit" faction="neutral" name="주름진 장루원" unitType="해적 엘더" cost={3} strengths={[3, 4, 5, 6, 7]} movement={0} rarity="epic" cardart="/images/cards/cardart_U075.png" abilities={[
     "데미지를 견뎌낸 후, 적 덱의 맨 위로부터 *마나가 1 적은* 일회성 *카드 복사본*을 *생성*해 덱에 추가합니다",
     "데미지를 견뎌낸 후, 적 덱의 맨 위로부터 *마나가 1 적은* 일회성 *카드 복사본*을 *생성*해 덱에 추가합니다",
     "데미지를 견뎌낸 후, 적 덱의 맨 위로부터 *마나가 1 적은* 일회성 *카드 복사본*을 *생성*해 덱에 추가합니다",
