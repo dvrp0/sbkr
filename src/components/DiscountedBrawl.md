@@ -103,6 +103,10 @@ layout: false
 </div>
 
 <style>
+    .container {
+        margin-bottom: 2rem;
+    }
+
     table {
         width: 100%;
         text-align: center;
