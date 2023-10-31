@@ -26,8 +26,8 @@ source: https://stormbound-kitty.com/releases/11-2023
   - <CardLink target="반짝반짝 야옹이" />: 혼란 대상 <Old>자신</Old> → <New type="nerf">자신과 다른 아군 유닛</New>
   - <CardLink target="대드루이드 이어린" />: 체력 <Old>7/9/11/12/15</Old> → <New type="nerf">7/8/9/10/12</New>
   - <CardLink target="돌격의 호랑이" />: 마나 <Old>2</Old> → <New type="buff">3</New>, 체력 <Old>1/2/3/4/5</Old> → <New type="buff">3/4/5/6/7</New>
-
-나머지 변경점은 10월 31일에 모두 공개됩니다.
+  - <CardLink target="용맹한 에드릭" />: 체력 <Old>3/4/5/6/7</Old> → <New type="buff">4/5/6/7/8</New>
+  - <CardLink target="성장의 지도자" />: 체력 <Old>4/5/6/7/8</Old> → <New type="buff">5/6/7/8/9</New>
 
 <Comment>
 
