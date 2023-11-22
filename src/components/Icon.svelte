@@ -1,7 +1,7 @@
 <script lang="ts">
     export let type: string;
 
-    let src: string = "";
+    let target: string = "";
 
     switch (type)
     {
@@ -9,53 +9,31 @@
         case "ruby":
         case "stone":
         case "crown":
-            src = `/images/icons/${type}.webp`;
+        case "up":
+        case "down":
+        case "new":
+        case "neutral":
+        case "swarm":
+        case "winter":
+        case "shadowfen":
+        case "ironclad":
+        case "refer":
+        case "refer-comment":
+            target = type;
             break;
 
         case "common":
         case "rare":
         case "epic":
         case "legendary":
-            src = `/images/icons/${type}_4.webp`
-            break;
-
-        case "up":
-            src = "/images/icons/up.webp"
-            break;
-
-        case "down":
-            src = "/images/icons/down.webp"
-            break;
-
-        case "new":
-            src = "/images/icons/new.webp"
-            break;
-
-        case "neutral":
-            src= "/images/icons/neutral.webp"
-            break;
-
-        case "swarm":
-            src = "/images/icons/swarm.webp"
-            break;
-
-        case "winter":
-            src = "/images/icons/winter.webp"
-            break;
-
-        case "shadowfen":
-            src = "/images/icons/shadowfen.webp"
-            break;
-
-        case "ironclad":
-            src = "/images/icons/ironclad.webp"
+            target = `${type}_4`;
             break;
     }
 </script>
 
-<img alt="아이콘" {src} />
+<img alt="아이콘" src="/images/icons/{target}.webp" />
 
-<style>
+<style lang="postcss">
     img {
         display: inline-block;
         width: 1em;
