@@ -29,7 +29,7 @@
     <div class="cards" class:multiple={isMultiple}>
     {#each levels as _, i (i)}
         <div class="card" style="background-image: url({cardImage});">
-            <div class="card-contents">
+            <div class="card-contents {unpack(type, i)}">
                 <p class="stat cost">{unpack(cost, i)}</p>
                 <p class="name">{unpack(name, i)}</p>
                 <p class="unit-type" class:invisible={unpack(type, i) != "unit"}>{unpack(unitType, i)}</p>
@@ -48,7 +48,7 @@
                     <div class="rarity">
                         <img alt="희귀도" src="/images/icons/{unpack(rarity, i)}_{isMultiple ? 1 : i + 1}.webp" />
                     </div>
-                    <p class="level {unpack(rarity, i)} {unpack(type, i)}">레벨 {isMultiple ? 1 : i + 1}</p>
+                    <p class="level {unpack(rarity, i)}">레벨 {isMultiple ? 1 : i + 1}</p>
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
     </div>
 </div>
 
-<style>
+<style lang="postcss">
     @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
 
     .container {
@@ -86,7 +86,7 @@
 
     .card-contents {
         width: 80%;
-        height: 100%;
+        height: calc(100% - 0.85em);
         display: inline-flex;
         flex-direction: column;
         align-items: center;
@@ -174,7 +174,7 @@
     .level {
         font-variation-settings: "wght" 500;
         font-size: 0.75em;
-        margin-top: 0;
+        margin: 0;
     }
 
     .invisible {
@@ -195,18 +195,6 @@
 
     .legendary {
         color: var(--c-rarity-legendary);
-    }
-
-    .unit {
-        margin-bottom: 1.15em;
-    }
-
-    .building {
-        margin-bottom: 0.925em;
-    }
-
-    .spell {
-        margin-bottom: 1.325em;
     }
 
     @media (max-width: 74rem) {
