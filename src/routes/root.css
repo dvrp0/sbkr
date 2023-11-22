@@ -154,5 +154,10 @@ article.post {
         & ul {
             margin-bottom: 0;
         }
+
+        & a {
+            color: var(--c-foreground-comment);
+            text-decoration-color: var(--c-foreground-comment);
+        }
     }
 }
