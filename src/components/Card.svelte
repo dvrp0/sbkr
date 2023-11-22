@@ -37,8 +37,8 @@
                 <img class="cardart" class:small={abilities[i] === ""} alt="카드아트" src={unpack(cardart, i)} />
                 <div class="fill" />
                 <div class="ability" class:invisible={abilities[i] === ""}>
-                    <p>{@html abilities[i] === "" ? "." :
-                        abilities[i].replace(/^\*/g, "<strong>").replace(/\s\*/g, " <strong>").replace(/\*/g, "</strong>")}</p>
+                    {@html abilities[i] === "" ? "." :
+                        abilities[i].replace(/^\*/g, "<strong>").replace(/\s\*/g, " <strong>").replace(/\*/g, "</strong>")}
                 </div>
                 <div class="stats">
                     <p class="stat strength" class:invisible={unpack(type, i) == "spell"}>{strengths[i]}</p>
@@ -122,7 +122,8 @@
     .ability {
         font-size: 0.75em;
         line-height: 1.5em;
-        margin-bottom: 0.25em;
+        margin-top: 1em;
+        margin-bottom: 1.25em;
     }
 
     .stats {

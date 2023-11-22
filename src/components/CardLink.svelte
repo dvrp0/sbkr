@@ -57,6 +57,8 @@
 <style>
     .tooltip {
         position: absolute;
+        color: var(--c-foreground);
+        font-variation-settings: "wght" 400;
         z-index: 100;
     }
 </style>
