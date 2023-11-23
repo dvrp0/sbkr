@@ -85,7 +85,7 @@
     }
 
     .card-contents {
-        width: 80%;
+        width: 85%;
         height: calc(100% - 0.85em);
         display: inline-flex;
         flex-direction: column;
@@ -120,7 +120,7 @@
     }
 
     .ability {
-        font-size: 0.75em;
+        font-size: 0.7em;
         line-height: 1.5em;
         margin-top: 1em;
         margin-bottom: 1.25em;
