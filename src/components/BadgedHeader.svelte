@@ -3,10 +3,16 @@
 
     export let heading: string;
     export let badge: string;
+
+    const id = heading.toLowerCase().replace(/\s/g, "-");
 </script>
 
 <div class="container">
-    <h2>{heading}</h2>
+    <h2 {id}>
+        <a href="#{id}">
+            {heading}
+        </a>
+    </h2>
     <div class="badge-wrapper">
         <Badge>{badge}</Badge>
     </div>
