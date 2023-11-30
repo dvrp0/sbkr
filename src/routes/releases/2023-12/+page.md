@@ -1,11 +1,10 @@
 ---
 title: 2023 12월 업데이트
 publishedAt: 2023/12
-headerImage: 
+headerImage: https://cdn.sanity.io/images/5hlpazgd/production/8725ff6a629d11e1e2ab2e1183982900f6ba86d3-1920x622.png
 isHeaderShadowNeeded: true
-summary: 12월에는 일부 밸런스가 조정되고, 새 카드가 추가되며, 할로윈 이벤트가 진행됩니다!
+summary: 12월에는 일부 밸런스가 조정되고, 신규 카드가 추가되며, 크리스마스 이벤트가 진행됩니다!
 source: https://stormbound-kitty.com/releases/12-2023
-draft: true
 ---
 
 <script>
@@ -27,6 +26,7 @@ draft: true
   - <CardLink target="머리 없는 다혈질" />: 체력 <Old>3/4/5/6/7</Old> → <New type="buff">4/5/6/7/8</New>
   - <CardLink target="집결하는 극단원" />: 체력 <Old>1/2/3/4/5</Old> → <New type="buff">2/3/4/5/6</New>
   - <CardLink target="기계 공방" />: 체력 <Old>3/3/4/5/6</Old> → <New type="buff">5/5/6/7/8</New>
+  - <CardLink target="기계 노동자" />: 소환하는 공방 체력 <Old>3/3/4/5/6</Old> → <New type="buff">5/5/6/7/8</New>
   - <CardLink target="디버그 로거" />: 체력 <Old>4/5/6/7/8</Old> → <New type="buff">5/6/7/8/9</New>
   - <CardLink target="새벽의 불꽃" />: 체력 <Old>8/10/12/15/18</Old> → <New type="nerf">6/8/10/13/16</New>
   - <CardLink target="수정방호자" />: 이동 속도 <Old>1</Old> → <New type="nerf">0</New>
@@ -45,4 +45,4 @@ draft: true
 
   - **밸런스 변경점**: 12월 1일 오후 4시
 
-모든 시간은 한국 표준시 기준입니다.
+모든 시간은 한국 표준시 기준입니다. 신규 카드와 크리스마스 이벤트에 관한 정보는 12월 말에 공개될 예정입니다. 기대해 주세요!
