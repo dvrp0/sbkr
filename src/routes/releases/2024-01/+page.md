@@ -59,7 +59,7 @@ source: https://stormbound-kitty.com/releases/01-2024
 
 <Comment>
 
-**역주**: 광기의 상아는 기존 4 마나 1 이동 8 체력의 공식을 벗어나 9 체력으로 출시되었는데요. 이는 상아가 4 마나 1 이동 카드들에게 9 체력이 적합한지 알아보는 일종의 테스트이기 떄문이며, 다른 4 마나 1 이동 카드들도 곧 아주 면밀히 살펴볼 예정이라고 합니다. 만약 해당 카드들이 버프된다면 미드레인지 덱이 어그로에 대항할 수 있는 더 나은 도구가 주어지는 것이라고 언급하기도 했습니다.
+**역주**: 광기의 상아는 기존 4 마나 1 이동 8 체력의 공식을 벗어나 9 체력으로 출시되었는데요. 이는 상아가 4 마나 1 이동 카드들에게 9 체력이 적합한지 알아보는 일종의 테스트이기 때문이며, 다른 4 마나 1 이동 카드들도 곧 아주 면밀히 살펴볼 예정이라고 합니다. 만약 해당 카드들이 버프된다면 미드레인지 덱이 어그로에 대항할 수 있는 더 나은 도구가 주어지는 것이라고 언급하기도 했습니다.
 
 <FlexibleList allowOverflow>
     <img alt="스크린샷" src="https://media.discordapp.net/attachments/815214884920098817/1199701178544558100/image.png#screenshot" />
@@ -73,6 +73,8 @@ source: https://stormbound-kitty.com/releases/01-2024
 </FlexibleList>
 
 그렇기 때문에 상황만 맞는다면 엘로스처럼 내 기지에서 상대 기지까지 단숨에 이동할 수 있습니다.
+<br>
+소소하지만 번역명에 사용된 '상아'는 달을 뜻하는 옛말로, 엘더와 잘 어울리는 단어라고 생각해 사용했습니다. 원문인 Lunatic Lunas는 일종의 언어유희인데 살리기 어렵더라고요...
 
 </Comment>
 
@@ -113,7 +115,7 @@ source: https://stormbound-kitty.com/releases/01-2024
 이미 Kongregate를 통해 계정을 생성하셨거나 병합하는 과정을 거치셨다면 계속해서 Kongregate를 통해 로그인하실 수 있습니다. 보다 원활한 플레이 경험을 위해, 현재 사용 중이신 계정을 Google 또는 Apple과 연동하는 것을 권장해 드립니다. **환경 설정**에서 **"로그인 방법 추가"** 버튼을 누른 뒤 Google 또는 Apple을 선택하세요.
 
 <FlexibleList allowOverflow>
-    <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/021edc6961aace3eb7b0393669268726fcd06f26-800x570.png" />
+    <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/021edc6961aace3eb7b0393669268726fcd06f26-800x570.png#landscape" />
 </FlexibleList>
 
 계정 연동과 관련한 어려움을 겪으실 경우 contact@stormboundgames.com으로 메일을 보내 주세요.
