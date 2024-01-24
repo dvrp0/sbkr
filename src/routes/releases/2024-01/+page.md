@@ -3,7 +3,7 @@ title: 2024 1월 업데이트
 publishedAt: 2024/01
 headerImage: https://cdn.sanity.io/images/5hlpazgd/production/2b534b4166167136dd8860bc3cf15ab146f67057-1920x622.png
 isHeaderShadowNeeded: true
-summary: 1월에는 일부 밸런스가 조정됩니다!
+summary: 1월에는 일부 밸런스가 조정되고, 신규 카드가 추가되며, 경제 변경 등 다양한 개선이 진행됩니다!
 source: https://stormbound-kitty.com/releases/01-2024
 ---
 
@@ -49,7 +49,7 @@ source: https://stormbound-kitty.com/releases/01-2024
 
 신규 펠린 <CardLink target="광기의 상아" />가 게임에 곧 등장할 예정입니다!
 
-<Card type="unit" faction="neutral" name="광기의 상아" cost={4} strengths={[5, 6, 7, 8, 9]} movement={1} rarity="rare" cardart="/images/cards/cardart_U074.png" abilities={[
+<Card type="unit" faction="neutral" name="광기의 상아" unitType="펠린 엘더" cost={4} strengths={[5, 6, 7, 8, 9]} movement={1} rarity="rare" cardart="/images/cards/cardart_U074.png" abilities={[
     "데미지를 견뎌낸 후, 자신이 전방의 첫 번째 적 유닛을 공격하도록 *강제*합니다",
     "데미지를 견뎌낸 후, 자신이 전방의 첫 번째 적 유닛을 공격하도록 *강제*합니다",
     "데미지를 견뎌낸 후, 자신이 전방의 첫 번째 적 유닛을 공격하도록 *강제*합니다",
