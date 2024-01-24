@@ -3,7 +3,7 @@ title: 2023 12월 업데이트
 publishedAt: 2023/12
 headerImage: https://cdn.sanity.io/images/5hlpazgd/production/8725ff6a629d11e1e2ab2e1183982900f6ba86d3-1920x622.png
 isHeaderShadowNeeded: true
-summary: 12월에는 일부 밸런스가 조정되고, 신규 카드가 추가되며, 크리스마스 이벤트가 진행됩니다!
+summary: 12월에는 일부 밸런스가 조정되고, 크리스마스 이벤트가 진행됩니다!
 source: https://stormbound-kitty.com/releases/12-2023
 ---
 
