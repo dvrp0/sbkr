@@ -1,7 +1,7 @@
 ---
 title: 2024 1월 업데이트
 publishedAt: 2024/01
-headerImage: https://cdn.sanity.io/images/5hlpazgd/production/2b534b4166167136dd8860bc3cf15ab146f67057-1920x622.png
+headerImage: https://media.discordapp.net/attachments/815214884920098817/1202206002116837376/image.png
 isHeaderShadowNeeded: true
 summary: 1월에는 일부 밸런스가 조정되고, 신규 카드가 추가되며, 경제 변경 등 다양한 개선이 진행됩니다!
 source: https://stormbound-kitty.com/releases/01-2024
@@ -66,7 +66,7 @@ source: https://stormbound-kitty.com/releases/01-2024
     <img alt="스크린샷" src="https://media.discordapp.net/attachments/815214884920098817/1199701664572129340/image.png#screenshot" />
 </FlexibleList>
 
-능력 설명에서 이동 관련 부분이 암시적으로 제시되고 있어 해석이 모호할 수 있는데요. 상아의 능력이 발동된 이 상황에서 상아는 두 타일 앞에 있는 3 체력 펠린을 공격하기 위해 이동합니다. 이 과정에서 사진에 나와 있듯 여러 타일을 이동하는 것이 가능하며, 능력이 여러 번 발동하는 것 또한 가능합니다.
+능력 설명에서 이동 관련 부분이 암시적으로 제시되고 있어 정확히 무슨 능력인 건지 모호할 수 있는데요. 상아의 능력이 발동된 이 상황에서 상아는 두 타일 앞에 있는 3 체력 펠린을 공격하기 위해 이동합니다. 이 과정에서 사진에 나와 있듯 여러 타일을 이동하는 것이 가능하며, 능력이 여러 번 발동하는 것 또한 가능합니다. 다만 아군 건물이나 유닛까지 뛰어넘어 이동할 수는 없습니다.
 
 <FlexibleList allowOverflow>
     <img alt="스크린샷" src="https://media.discordapp.net/attachments/815214884920098817/1199702850297663538/image.png#screenshot" />
@@ -90,14 +90,14 @@ source: https://stormbound-kitty.com/releases/01-2024
 ## 상점 및 경제 변경
 **스톰바운드의 경제 및 진행 속도와 관련해 계획된 변경 사항 중 첫 번째가 이번 달에 적용됩니다.**
 
-이제부터 **상점에서 구매할 수 있는 모든 고서**(겸손의 책과 고결의 책 제외)**에서 지급되는 카드의 양이 영구적으로 한 장 증가합니다.** 또한 이제부터 **하루에 등장하는 특별 고서**(유닛 종족, 카드 유형 및 혼돈의 책)**의 수가 하나에서 두 개로 늘어납니다.** 다음 변경점들도 기대해 주세요!
+이제부터 **상점에서 구매할 수 있는 모든 고서**(겸손의 책과 고결의 책 제외)**에서 지급되는 카드의 양이 영구적으로 한 장 증가합니다.** 또한 **하루에 등장하는 특별 고서**(유닛 종족, 카드 유형별 책 및 혼돈의 책)**의 수가 하나에서 두 개로 늘어납니다.** 다음에 적용될 변경점들도 기대해 주세요!
 
 <FlexibleList allowOverflow>
     <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/653b5095e21f4376ada242512e28708ff2df5467-1920x1080.png#landscape" />
 </FlexibleList>
 
 ## 게임 속도
-**지금부터 스톰바운드 게임플레이 속도가 약 17% 빨라집니다.** 왜 굳이 17%인지 궁금하신가요? 내부 테스트를 거친 결과, 해당 수치가 스톰바운드의 가장 중요한 요소를 유지하면서도 게임을 더욱 즐겁게 만드는 최적의 속도라고 판단했기 때문입니다.
+**지금부터 스톰바운드의 게임플레이 속도가 약 17% 빨라집니다.** 왜 굳이 17%일까요? 내부 테스트를 거친 결과, 해당 수치가 스톰바운드의 가장 중요한 요소를 유지하면서도 게임을 더욱 즐겁게 만드는 최적의 속도라고 판단했기 때문입니다.
 
 **이 변경점은 게임이 업데이트된 이후**부터 적용된다는 점을 알려드립니다. **1월 25일** 점검 이후부터 모든 플레이어들에게 적용됩니다.
 
@@ -118,7 +118,7 @@ source: https://stormbound-kitty.com/releases/01-2024
     <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/021edc6961aace3eb7b0393669268726fcd06f26-800x570.png#landscape" />
 </FlexibleList>
 
-계정 연동과 관련한 어려움을 겪으실 경우 contact@stormboundgames.com으로 메일을 보내 주세요.
+계정 연동과 관련해 어려움을 겪으실 경우 contact@stormboundgames.com으로 메일을 보내 주세요.
 
 ## 자주 묻는 질문
 ### 언제 업데이트가 진행되나요?
