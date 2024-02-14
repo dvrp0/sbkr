@@ -1,13 +1,14 @@
 import { json } from "@sveltejs/kit";
+import { PUBLIC_API_ENDPOINT } from "$env/static/public";
 import { leagues } from "$lib/server/article";
 
 export async function POST({ fetch, platform })
 {
     console.log("Revalidating");
-    const usages = await fetch("https://sbkr-1-x0172776.deta.app/usages")
+    const usages = await fetch(`${PUBLIC_API_ENDPOINT}/usages`)
         .then(response => response.json())
         .then(result => result["result"] as JSON);
-    const changes = await fetch("https://sbkr-1-x0172776.deta.app/usage-changes")
+    const changes = await fetch(`${PUBLIC_API_ENDPOINT}/usage-changes`)
         .then(response => response.json())
         .then(result => result["result"] as JSON);
     const now = Date.now();
