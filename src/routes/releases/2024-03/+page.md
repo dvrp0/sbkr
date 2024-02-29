@@ -4,7 +4,7 @@ publishedAt: 2024/3
 headerImage: https://i.imgur.com/SY3C2KT.png
 isHeaderShadowNeeded: true
 summary: 3월에는 일부 밸런스가 조정됩니다!
-source: https://stormbound-kitty.com/releases/02-2024
+source: https://stormbound-kitty.com/releases/03-2024
 ---
 
 <script>
