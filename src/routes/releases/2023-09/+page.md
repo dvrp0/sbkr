@@ -82,14 +82,14 @@ source: https://stormbound-kitty.com/releases/09-2023
 이벤트 기간 동안 4가지의 특별한 인앱 결제 상품이 등장합니다. 해당 상품으로 획득한 책에서는 카드가 추가로 등장하지 않는다는 점을 알려드립니다. 카드 추가 지급은 인게임 재화로 구매한 책에만 적용됩니다.
 
 <FlexibleList allowOverflow setFontSizeFixed>
-<ImageBlock position="top" type="vertical" src="https://media.discordapp.net/attachments/815214884920098817/1152159070527176714/image.png#bundle">
+<ImageBlock position="top" type="vertical" src="https://i.imgur.com/JqIF1yP.png#bundle">
 
 **생일 상자 번들 ($4.99)**
   - 신화의 고서 1개
   - <Icon type="coin" /> 100 코인
 
 </ImageBlock>
-<ImageBlock position="top" type="vertical" src="https://media.discordapp.net/attachments/815214884920098817/1152159070829154364/image.png#bundle">
+<ImageBlock position="top" type="vertical" src="https://i.imgur.com/tPyKHod.png#bundle">
 
 **거대한 파티 팩 ($19.99)**
   - 신화의 고서 4개
@@ -97,7 +97,7 @@ source: https://stormbound-kitty.com/releases/09-2023
   - <Icon type="coin" /> 500 코인
 
 </ImageBlock>
-<ImageBlock position="top" type="vertical" src="https://media.discordapp.net/attachments/815214884920098817/1152159071378624542/image.png#bundle">
+<ImageBlock position="top" type="vertical" src="https://i.imgur.com/pRUlTlu.png#bundle">
 
 **메가 케이크 팩 ($49.99)**
   - 신화의 고서 10개
@@ -106,7 +106,7 @@ source: https://stormbound-kitty.com/releases/09-2023
   - <Icon type="coin" /> 1500 코인
 
 </ImageBlock>
-<ImageBlock position="top" type="vertical" src="https://media.discordapp.net/attachments/815214884920098817/1152159071621890048/image.png#bundle">
+<ImageBlock position="top" type="vertical" src="https://i.imgur.com/C1m0sGS.png#bundle">
 
 **슈퍼 글래머 팩 ($99.99)**
   - 신화의 고서 20개

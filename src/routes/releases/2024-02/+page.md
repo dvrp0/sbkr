@@ -1,9 +1,9 @@
 ---
 title: 2024 2월 업데이트
 publishedAt: 2024/2
-headerImage: https://media.discordapp.net/attachments/815214884920098817/1207251275578736650/image.png?ex=65def75d&is=65cc825d&hm=3e65bf26ef5f31b09ca3cf336289c7bbe1a98d675f2632e99daf8af599440b47
+headerImage: https://i.imgur.com/wbNO24F.png
 isHeaderShadowNeeded: true
-summary: 2월에는 일부 밸런스가 조정됩니다!
+summary: 2월에는 일부 밸런스가 조정되고, 발렌타인 이벤트가 진행됩니다!
 source: https://stormbound-kitty.com/releases/02-2024
 ---
 

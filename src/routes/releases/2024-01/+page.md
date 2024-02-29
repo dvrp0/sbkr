@@ -1,7 +1,7 @@
 ---
 title: 2024 1월 업데이트
 publishedAt: 2024/01
-headerImage: https://media.discordapp.net/attachments/815214884920098817/1202206002116837376/image.png
+headerImage: https://i.imgur.com/mbPGITe.png
 isHeaderShadowNeeded: true
 summary: 1월에는 일부 밸런스가 조정되고, 신규 카드가 추가되며, 경제 변경 등 다양한 개선이 진행됩니다!
 source: https://stormbound-kitty.com/releases/01-2024
@@ -62,14 +62,14 @@ source: https://stormbound-kitty.com/releases/01-2024
 **역주**: 광기의 상아는 기존 4 마나 1 이동 8 체력의 공식을 벗어나 9 체력으로 출시되었는데요. 이는 상아가 4 마나 1 이동 카드들에게 9 체력이 적합한지 알아보는 일종의 테스트이기 때문이며, 다른 4 마나 1 이동 카드들도 곧 아주 면밀히 살펴볼 예정이라고 합니다. 만약 해당 카드들이 버프된다면 미드레인지 덱이 어그로에 대항할 수 있는 더 나은 도구가 주어지는 것이라고 언급하기도 했습니다.
 
 <FlexibleList allowOverflow>
-    <img alt="스크린샷" src="https://media.discordapp.net/attachments/815214884920098817/1199701178544558100/image.png#screenshot" />
-    <img alt="스크린샷" src="https://media.discordapp.net/attachments/815214884920098817/1199701664572129340/image.png#screenshot" />
+    <img alt="스크린샷" src="https://i.imgur.com/gOrn2I5.png#screenshot" />
+    <img alt="스크린샷" src="https://i.imgur.com/UoN2lhk.png#screenshot" />
 </FlexibleList>
 
 능력 설명에서 이동 관련 부분이 암시적으로 제시되고 있어 정확히 무슨 능력인 건지 모호할 수 있는데요. 상아의 능력이 발동된 이 상황에서 상아는 두 타일 앞에 있는 3 체력 펠린을 공격하기 위해 이동합니다. 이 과정에서 사진에 나와 있듯 여러 타일을 이동하는 것이 가능하며, 능력이 여러 번 발동하는 것 또한 가능합니다. 다만 아군 건물이나 유닛까지 뛰어넘어 이동할 수는 없습니다.
 
 <FlexibleList allowOverflow>
-    <img alt="스크린샷" src="https://media.discordapp.net/attachments/815214884920098817/1199702850297663538/image.png#screenshot" />
+    <img alt="스크린샷" src="https://i.imgur.com/Ox6KRc5.png#screenshot" />
 </FlexibleList>
 
 그렇기 때문에 상황만 맞는다면 엘로스처럼 내 기지에서 상대 기지까지 단숨에 이동할 수 있습니다.
