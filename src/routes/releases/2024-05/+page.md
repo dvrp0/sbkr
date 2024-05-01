@@ -39,6 +39,11 @@ source: https://stormbound-kitty.com/releases/05-2024
   - <Icon type="epic" /> 에픽 카드: <Icon type="coin" /> 15 코인 및 <Icon type="stone" /> 2 합성석(레벨 2), <Icon type="coin" /> 40 코인 및 <Icon type="stone" /> 5 합성석(레벨 3), <Icon type="coin" /> 120 코인 및 <Icon type="stone" /> 10 합성석(레벨 4), <Icon type="coin" /> 250 코인 및 <Icon type="stone" /> 20 합성석(레벨 5)
 
 </Comment>
+<Comment>
+
+**역주**: 곧 <CardLink target="현자의 선물" />, <CardLink target="옹호자" />, <CardLink target="사냥꾼 우베스" />를 조정할 계획이며 6월에 이루어질 가능성이 높다고 합니다. 또한 <CardLink target="불타는 물줄기" />가 건물에도 데미지를 입히도록 변경할 생각이라고 합니다.
+
+</Comment>
 
 ## 자주 묻는 질문
 ### 언제 업데이트가 진행되나요?
