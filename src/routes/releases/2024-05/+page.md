@@ -3,7 +3,7 @@ title: 2024 5월 업데이트
 publishedAt: 2024/5
 headerImage: https://i.imgur.com/XKKezmV.png
 isHeaderShadowNeeded: true
-summary: 5월에는 일부 밸런스가 조정되고, 부활절 및 반려동물의 날 이벤트가 진행되고, 경제가 개선됩니다!
+summary: 5월에는 일부 밸런스가 조정됩니다!
 source: https://stormbound-kitty.com/releases/05-2024
 ---
 
