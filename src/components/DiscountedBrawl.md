@@ -4,6 +4,7 @@ layout: false
 
 <script lang="ts">
     import Icon from "./Icon.svelte";
+    import Table from "$components/Table.svelte";
 
     export let percentage: number = 50;
     let type: string = "casual";
@@ -14,7 +15,7 @@ layout: false
     }
 </script>
 
-<div class="container">
+<Table>
     <div class="buttons">
         <button class:selected={type == "casual"} on:click={() => assign_type("casual")}>캐주얼</button>
         <button class:selected={type == "warrior"} on:click={() => assign_type("warrior")}>워리어</button>
@@ -100,27 +101,9 @@ layout: false
 |<Icon type="crown" /> 200 왕관|<Icon type="coin" /> 200 코인 (-200)|<Icon type="legendary" /> 레전더리 카드 7장|
 |<Icon type="crown" /> 250 왕관|<Icon type="coin" /> 250 코인 (-250)|<Icon type="stone" /> 200 합성석|
     {/if}
-</div>
+</Table>
 
 <style>
-    .container {
-        margin-bottom: 2rem;
-    }
-
-    table {
-        width: 100%;
-        text-align: center;
-        table-layout: fixed;
-        border-collapse: collapse;
-        /* border-style: hidden; */
-    }
-
-    table th,
-    table td {
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        padding: 8px;
-    }
-
     button {
         width: 100%;
         background-color: var(--c-background-light);
