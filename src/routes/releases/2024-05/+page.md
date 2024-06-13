@@ -3,7 +3,7 @@ title: 2024 5월 업데이트
 publishedAt: 2024/5
 headerImage: https://i.imgur.com/7ed3hhg.png
 isHeaderShadowNeeded: true
-summary: 5월에는 일부 밸런스가 조정됩니다!
+summary: 5월에는 일부 밸런스가 조정되고, 마법 및 고대인 이벤트가 진행됩니다!
 source: https://stormbound-kitty.com/releases/05-2024
 ---
 
@@ -53,7 +53,6 @@ source: https://stormbound-kitty.com/releases/05-2024
 </FlexibleList>
 
 ### 마법 선물
-
 이벤트 기간 동안 모든 분들께 <Icon type="coin" /> 200 코인의 특별 선물을 드립니다. 선물을 받으시려면 **이벤트가 종료되기 전까지** 특별 코드 **HOCUSBOCUS**를 입력하세요.
 
 코드를 입력하는 단계는 다음과 같습니다.
