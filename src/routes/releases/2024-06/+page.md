@@ -1,9 +1,9 @@
 ---
 title: 2024 6월 업데이트
 publishedAt: 2024/6
-headerImage: https://i.imgur.com/c5Kf5fo.png
+headerImage: https://i.imgur.com/jK3Y0aw.png
 isHeaderShadowNeeded: true
-summary: 6월에는 일부 밸런스가 조정되고, 기지 레벨링 체계가 재설계되며, 여름 이벤트가 진행됩니다!
+summary: 6월에는 일부 밸런스가 조정되고, 기지 레벨링 체계가 재설계되며, 여름 및 해적 이벤트가 진행됩니다!
 source: https://stormbound-kitty.com/releases/06-2024
 ---
 
@@ -161,6 +161,43 @@ source: https://stormbound-kitty.com/releases/06-2024
 
 <DiscountedBrawl />
 
+## 해적 이벤트
+6월 24일부터 7월 1일까지 해적 이벤트가 진행됩니다! 어서 배 위에 올라타고 해적들이 모은 보물들을 확인해 보세요.
+
+<FlexibleList allowOverflow>
+    <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/30b2b8d1c727742f9e6925eefa37ebbd4413b6f0-1500x1068.png#landscape" width="70%" />
+</FlexibleList>
+
+### 해적 선물
+이벤트 기간 동안 모든 분들께 <Icon type="coin" /> 200 코인의 특별 선물을 드립니다. 선물을 받으시려면 **이벤트가 종료되기 전까지** 특별 코드 **PIRATEGOLD**을 입력하세요.
+
+코드를 입력하는 단계는 다음과 같습니다.
+
+1. 메인 화면의 우상단에 위치한 게임 옵션을 여세요.
+2. 옵션에서 찾을 수 있는 **코드 사용** 버튼을 누르세요.
+3. 코드를 입력하고 **받기** 버튼을 누르세요.
+
+<FlexibleList allowOverflow>
+    <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/782061675a637bde5a5f243153f99e49b82c64e1-1572x1080.png#landscape" />
+</FlexibleList>
+
+**코드는 6월 24일부터 7월 1일 오후 4시까지만 사용 가능하다는 점을 다시 한번 말씀드립니다.** 코드 활성화에 어려움을 겪으실 경우 공식 디스코드에서 @Aileen에게 문의하거나 contact@stormboundgames.com으로 메일을 보내 주세요.
+
+### 더 많은 루비와 코인
+이벤트 기간 동안 코인 구매 시 최대 30%, 루비 구매 시 최대 50%의 추가 보너스를 획득하실 수 있습니다.
+
+### 더 많은 카드
+이벤트 기간 동안 상점에서 해적의 책과 청사진 어휘를 구매하면 카드 두 장을 추가로 획득할 수 있습니다.
+
+### 해적 특별 상품
+아바타가 포함된 두 개의 특별 상품이 판매될 예정입니다.
+
+<FlexibleList>
+    <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/c6d5d2106bc906a02b7a9c8ebf3ad7bb295e4ad4-800x450.png#bundle" />
+</FlexibleList>
+
+또한 지금부터 특별 상품들을 각각 **3번씩** 구매할 수 있게 됩니다. 아바타는 최초 구매 시에만 지급됩니다.
+
 ## 자주 묻는 질문
 ### 언제 업데이트가 진행되나요?
 아래에서 6월 업데이트에 대한 자세한 일정을 확인하시기 바랍니다.
@@ -173,5 +210,10 @@ source: https://stormbound-kitty.com/releases/06-2024
   - **추가 카드 지급 (전설의 책 및 혼돈의 책)**: 6월 13일 오후 4시 ~ 6월 17일 오후 4시
   - **추가 코인 지급**: 6월 13일 오후 4시 ~ 6월 17일 오후 4시
   - **여름 이벤트 상점 상품**: 6월 13일 오후 4시 ~ 6월 17일 오후 4시
+  - **해적 이벤트**: 6월 24일 오후 4시 ~ 7월 1일 오후 4시
+  - **해적 이벤트 기념 선물(200 코인)**: 6월 24일 오후 4시 ~ 7월 1일 오후 4시
+  - **추가 카드 지급 (해적의 책 및 청사진 어휘)**: 6월 24일 오후 4시 ~ 7월 1일 오후 4시
+  - **루비 및 코인 구매 보너스**: 6월 24일 오후 4시 ~ 7월 1일 오후 4시
+  - **해적 이벤트 상점 상품**: 6월 24일 오후 4시 ~ 7월 8일 오후 4시
 
 모든 시간은 한국 표준시 기준입니다.
