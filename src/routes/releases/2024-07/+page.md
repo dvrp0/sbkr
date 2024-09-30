@@ -1,6 +1,6 @@
 ---
 title: 2024 7월 업데이트
-publishedAt: 2024/7
+publishedAt: 2024/07
 headerImage: https://i.imgur.com/yrVCa8U_d.webp?maxwidth=1520&fidelity=grand
 isHeaderShadowNeeded: true
 summary: 7월에는 일부 밸런스가 조정되고, 휴가철 및 장엄함 이벤트가 진행되며, 루비 패스가 추가됩니다!

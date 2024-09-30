@@ -1,6 +1,6 @@
 ---
 title: 2024 3월 업데이트
-publishedAt: 2024/3
+publishedAt: 2024/03
 headerImage: https://i.imgur.com/K6JFwXl.png
 isHeaderShadowNeeded: true
 summary: 3월에는 일부 밸런스가 조정되고, 성 패트릭의 날 이벤트가 진행됩니다!

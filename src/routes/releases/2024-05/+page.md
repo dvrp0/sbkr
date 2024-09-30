@@ -1,6 +1,6 @@
 ---
 title: 2024 5월 업데이트
-publishedAt: 2024/5
+publishedAt: 2024/05
 headerImage: https://i.imgur.com/7ed3hhg.png
 isHeaderShadowNeeded: true
 summary: 5월에는 일부 밸런스가 조정되고, 마법 및 고대인 이벤트가 진행됩니다!

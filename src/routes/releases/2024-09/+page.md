@@ -1,6 +1,6 @@
 ---
 title: 2024 9월 업데이트
-publishedAt: 2024/9
+publishedAt: 2024/09
 headerImage: https://i.imgur.com/bnG63Yc.png
 isHeaderShadowNeeded: true
 summary: 9월에는 일부 밸런스가 조정되고, 신규 카드가 출시되며, 7주년 이벤트가 진행됩니다!
@@ -151,8 +151,6 @@ source: https://stormbound-kitty.com/releases/09-2024
 <FlexibleList>
     <img alt="스크린샷" src="https://cdn.sanity.io/images/5hlpazgd/production/1aec144291b83cf0d6f30bf664b5e112bf36927b-1042x400.png#bundle" />
 </FlexibleList>
-
-또한 지금부터 특별 상품들을 각각 **3번씩** 구매할 수 있게 됩니다. 아바타는 최초 구매 시에만 지급됩니다.
 
 ## 저렴해진 난투
 9월 19일에 시작하는 난투의 입장료가 50% 감소합니다(패스 보유 시 60%).
