@@ -1,6 +1,6 @@
 ---
 title: 2024 2월 업데이트
-publishedAt: 2024/2
+publishedAt: 2024/02
 headerImage: https://i.imgur.com/wbNO24F.png
 isHeaderShadowNeeded: true
 summary: 2월에는 일부 밸런스가 조정되고, 발렌타인 이벤트가 진행됩니다!

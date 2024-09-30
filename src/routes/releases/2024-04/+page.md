@@ -1,6 +1,6 @@
 ---
 title: 2024 4월 업데이트
-publishedAt: 2024/4
+publishedAt: 2024/04
 headerImage: https://i.imgur.com/HGmi3Kd.png
 isHeaderShadowNeeded: true
 summary: 4월에는 일부 밸런스가 조정되고, 부활절, 반려동물의 날 및 책의 날 이벤트가 진행되고, 경제가 개선됩니다!
