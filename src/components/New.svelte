@@ -1,8 +1,13 @@
 <script lang="ts">
-    export let type: "buff" | "nerf" | "adjust";
+    interface Props {
+        type: "buff" | "nerf" | "adjust";
+        children?: import('svelte').Snippet;
+    }
+
+    let { type, children }: Props = $props();
 </script>
 
-<strong class={type}><slot /></strong>
+<strong class={type}>{@render children?.()}</strong>
 
 <style >
     .buff {

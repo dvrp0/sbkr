@@ -1,11 +1,21 @@
 <script lang="ts">
-    export let allowOverflow: boolean = false;
-    export let setFontSizeFixed: boolean = false;
-    export let disableVertical: boolean = false;
+    interface Props {
+        allowOverflow?: boolean;
+        setFontSizeFixed?: boolean;
+        disableVertical?: boolean;
+        children?: import('svelte').Snippet;
+    }
+
+    let {
+        allowOverflow = false,
+        setFontSizeFixed = false,
+        disableVertical = false,
+        children
+    }: Props = $props();
 </script>
 
 <div class="list" class:overflow={allowOverflow} class:variable-font={!setFontSizeFixed} class:vertical={!disableVertical}>
-    <slot />
+    {@render children?.()}
 </div>
 
 <style>

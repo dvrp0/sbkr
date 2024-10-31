@@ -1,7 +1,17 @@
 <script lang="ts">
-    export let position: string = "left";
-    export let type: string = "horizontal";
-    export let src: string;
+    interface Props {
+        position?: string;
+        type?: string;
+        src: string;
+        children?: import('svelte').Snippet;
+    }
+
+    let {
+        position = "left",
+        type = "horizontal",
+        src,
+        children
+    }: Props = $props();
 </script>
 
 <div class={type}>
@@ -11,7 +21,7 @@
         </div>
     {/if}
         <div class:less-margin={position == "left" || position == "right"}>
-            <slot />
+            {@render children?.()}
         </div>
     {#if position == "right" || position == "bottom"}
         <div class="image" class:right={position == "right"}>

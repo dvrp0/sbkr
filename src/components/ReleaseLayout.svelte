@@ -2,16 +2,31 @@
     import { onMount } from "svelte";
     import { MetaTags } from "svelte-meta-tags";
 
-    export let title = "";
-    export let publishedAt = "";
-    export let headerImage = "";
-    export let summary = "";
-    export let source = "";
-    export let isHeaderShadowNeeded = false;
+    /**
+     * @typedef {Object} Props
+     * @property {string} [title]
+     * @property {string} [publishedAt]
+     * @property {string} [headerImage]
+     * @property {string} [summary]
+     * @property {string} [source]
+     * @property {boolean} [isHeaderShadowNeeded]
+     * @property {import('svelte').Snippet} [children]
+     */
 
-    let innerHeight = 0;
-    let scrollHeight = 0;
-    let scrollY = 0;
+    /** @type {Props} */
+    let {
+        title = "",
+        publishedAt = "",
+        headerImage = "",
+        summary = "",
+        source = "",
+        isHeaderShadowNeeded = false,
+        children
+    } = $props();
+
+    let innerHeight = $state(0);
+    let scrollHeight = $state(0);
+    let scrollY = $state(0);
 
     let splitted = publishedAt.split("/");
     let id = `${splitted[0]}-${splitted[1]}`;
@@ -52,7 +67,7 @@
 
 <svelte:window bind:innerHeight bind:scrollY />
 
-<div class="progress" style="--progress: {scrollY / (scrollHeight - innerHeight) * 100}%;" />
+<div class="progress" style="--progress: {scrollY / (scrollHeight - innerHeight) * 100}%;"></div>
 <article class="post">
     <div class="headers">
         <img alt="이미지" src={headerImage} />
@@ -70,7 +85,7 @@
             {/if}
         </div>
     </div>
-    <slot />
+    {@render children?.()}
 </article>
 
 <style>

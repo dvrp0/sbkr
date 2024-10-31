@@ -4,15 +4,19 @@
     import Card from "$components/Card.svelte";
     import Icon from "$components/Icon.svelte";
 
-    export let target: string;
-    export let noKingdomIcon = false;
+    interface Props {
+        target: string;
+        noKingdomIcon?: boolean;
+    }
+
+    let { target, noKingdomIcon = false }: Props = $props();
 
     const margin = { x: 3, y: 3};
     const duration = 150;
     const card: CardData = cards.find(({ name }) => name === target) ?? {} as CardData;
     
-    let isHovered: boolean = false;
-    let position = { x: 0, y: 0 };
+    let isHovered: boolean = $state(false);
+    let position = $state({ x: 0, y: 0 });
 
     function handleFocus()
     {
@@ -48,8 +52,8 @@
     <Icon type={convertKingdom(card.kingdom)} />
 {/if}
 <span>
-    <a href="/cards/{card.id}" on:focus={handleFocus} on:mouseover={handleMouseOver} on:mousemove={handleMouseMove}
-        on:mouseleave={handleMouseLeave}>
+    <a href="/cards/{card.id}" onfocus={handleFocus} onmouseover={handleMouseOver} onmousemove={handleMouseMove}
+        onmouseleave={handleMouseLeave}>
         {target}
     </a>
 </span>

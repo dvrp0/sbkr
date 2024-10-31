@@ -4,7 +4,7 @@
     import Badge from "$components/Badge.svelte";
     import Card from "$components/Card.svelte";
 
-    export let data;
+    let { data } = $props();
 
     const card = cards.find(({ id }) => id === data.id) ?? {} as CardData;
 </script>

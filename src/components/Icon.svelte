@@ -1,7 +1,11 @@
 <script lang="ts">
-    export let type: string;
+    interface Props {
+        type: string;
+    }
 
-    let target: string = "";
+    let { type }: Props = $props();
+
+    let target: string = $state("");
 
     switch (type)
     {

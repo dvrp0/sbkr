@@ -1,17 +1,35 @@
 <script lang="ts">
-    export let type: string | string[];
-    export let faction: string | string[];
-    export let name: string | string[];
-    export let unitType: string | string[] = ".";
-    export let movement: number | number[] = 0;
-    export let cost: number | number[];
-    export let strengths: number[] = [0];
-    export let abilities: string[];
-    export let rarity: string | string[];
-    export let cardart: string | string[];
-    export let isMultiple: boolean = false;
-    export let count: number = 5;
-    export let noMargin: boolean = false;
+    interface Props {
+        type: string | string[];
+        faction: string | string[];
+        name: string | string[];
+        unitType?: string | string[];
+        movement?: number | number[];
+        cost: number | number[];
+        strengths?: number[];
+        abilities: string[];
+        rarity: string | string[];
+        cardart: string | string[];
+        isMultiple?: boolean;
+        count?: number;
+        noMargin?: boolean;
+    }
+
+    let {
+        type,
+        faction,
+        name,
+        unitType = ".",
+        movement = 0,
+        cost,
+        strengths = [0],
+        abilities,
+        rarity,
+        cardart,
+        isMultiple = false,
+        count = 5,
+        noMargin = false
+    }: Props = $props();
 
     let cardImage: string = `/images/card-backgrounds/${faction}-${rarity == "legendary" ? "legendary" : ""}${type}.webp`;
     let levels: number[] = Array(count);
@@ -33,9 +51,9 @@
                 <p class="stat cost">{unpack(cost, i)}</p>
                 <p class="name">{unpack(name, i)}</p>
                 <p class="unit-type" class:invisible={unpack(type, i) != "unit"}>{unpack(unitType, i)}</p>
-                <div class="fill" />
+                <div class="fill"></div>
                 <img class="cardart" class:small={abilities[i] === ""} alt="카드아트" src={unpack(cardart, i)} />
-                <div class="fill" />
+                <div class="fill"></div>
                 <div class="ability" class:invisible={abilities[i] === ""}>
                     {@html abilities[i] === "" ? "." :
                         abilities[i].replace(/^\*/g, "<strong>").replace(/\s\*/g, " <strong>").replace(/\*/g, "</strong>")}

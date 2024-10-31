@@ -1,8 +1,12 @@
 <script lang="ts">
     import Badge from "$components/Badge.svelte";
 
-    export let heading: string;
-    export let badge: string;
+    interface Props {
+        heading: string;
+        badge: string;
+    }
+
+    let { heading, badge }: Props = $props();
 
     const id = heading.toLowerCase().replace(/\s/g, "-");
 </script>
