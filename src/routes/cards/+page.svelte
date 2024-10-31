@@ -2,7 +2,7 @@
     import { cards, convertType, convertRarity, convertKingdom } from "$lib/card";
     import Card from "$components/Card.svelte";
 
-    let shownCards = cards;
+    let shownCards = cards.filter(x => !x.hideInList);
 </script>
 
 <div class="entries">

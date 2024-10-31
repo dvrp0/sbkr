@@ -11,6 +11,7 @@ export interface CardData
     type: string;
     descriptions: string[];
     stringified: string;
+    hideInList?: boolean;
 }
 
 export function convertType(type: string): string

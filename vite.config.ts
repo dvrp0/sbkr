@@ -11,7 +11,7 @@ export default defineConfig(async ({ mode }) => {
                 .then(data => data.sort((a, b) => {
                     if (a.cost === b.cost)
                         return a.name.localeCompare(b.name);
-    
+
                     return a.cost - b.cost;
                 }))
         },
