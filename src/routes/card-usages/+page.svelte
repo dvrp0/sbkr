@@ -1,7 +1,7 @@
 <script lang="ts">
     import { MetaTags } from "svelte-meta-tags";
 
-    export let data;
+    let { data } = $props();
 
     let posts = data.posts;
     let title: string = "카드 사용량";

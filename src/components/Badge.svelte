@@ -1,9 +1,19 @@
 <script lang="ts">
     import Icon from "$components/Icon.svelte";
 
-    export let kingdom: string | undefined = undefined;
-    export let rightMargin = false;
-    export let darkBackground = false;
+    interface Props {
+        kingdom?: string | undefined;
+        rightMargin?: boolean;
+        darkBackground?: boolean;
+        children?: import('svelte').Snippet;
+    }
+
+    let {
+        kingdom = undefined,
+        rightMargin = false,
+        darkBackground = false,
+        children
+    }: Props = $props();
 </script>
 
 <div class="container" class:right-margin={rightMargin} class:dark-background={darkBackground}
@@ -13,7 +23,7 @@
             <Icon type={kingdom} />
         </div>
     {/if}
-    <slot />
+    {@render children?.()}
 </div>
 
 <style>

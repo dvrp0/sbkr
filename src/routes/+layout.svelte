@@ -1,5 +1,10 @@
 <script lang="ts">
     import "../app.postcss";
+    interface Props {
+        children?: import('svelte').Snippet;
+    }
+
+    let { children }: Props = $props();
 </script>
 
 <nav>
@@ -15,7 +20,7 @@
 
 <main>
     <div class="main-content">
-        <slot />
+        {@render children?.()}
     </div>
 </main>
 

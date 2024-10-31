@@ -4,9 +4,13 @@
     import CardLink from "$components/CardLink.svelte";
     import Icon from "$components/Icon.svelte";
 
-    export let rank: number;
-    export let entryId: string;
-    export let change: string;
+    interface Props {
+        rank: number;
+        entryId: string;
+        change: string;
+    }
+
+    let { rank, entryId, change }: Props = $props();
 
     const card: CardData = cards.find(({ id }) => id === entryId) ?? {} as CardData;
     const kingdom = convertKingdom(card.kingdom);

@@ -2,7 +2,7 @@
     import { MetaTags } from "svelte-meta-tags";
     import CardEntry from "$components/CardEntry.svelte";
 
-    export let data;
+    let { data } = $props();
 
     let title = data.title;
     let headerImage = data.headerImage;
